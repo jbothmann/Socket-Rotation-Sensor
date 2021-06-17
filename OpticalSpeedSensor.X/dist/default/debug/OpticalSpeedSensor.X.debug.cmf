@@ -11,11 +11,11 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\np0083\AppData\Local\Temp\sig8.o
+$C:\Users\np0083\AppData\Local\Temp\s1a8.o
 reset_vec CODE 0 0 0 2 2
 end_init CODE 0 38 38 2 2
 config CONFIG 4 8007 8007 2 2
-$dist/default/production\OpticalSpeedSensor.X.production.o
+$dist/default/debug\OpticalSpeedSensor.X.debug.o
 cinit CODE 0 3A 3A D 2
 text1 CODE 0 37A 37A AD 2
 text2 CODE 0 427 427 8B 2
@@ -124,20 +124,20 @@ STRING 4CF-1FFF 2
 # are in ascending order of addresses.
 # All other numeric values are in decimal.
 %LINETAB
-$dist/default/production\OpticalSpeedSensor.X.production.o
-3A cinit CODE >797:C:\Users\np0083\AppData\Local\Temp\sig8.s
-3A cinit CODE >800:C:\Users\np0083\AppData\Local\Temp\sig8.s
-3A cinit CODE >851:C:\Users\np0083\AppData\Local\Temp\sig8.s
-3B cinit CODE >855:C:\Users\np0083\AppData\Local\Temp\sig8.s
-3C cinit CODE >856:C:\Users\np0083\AppData\Local\Temp\sig8.s
-3D cinit CODE >857:C:\Users\np0083\AppData\Local\Temp\sig8.s
-3E cinit CODE >858:C:\Users\np0083\AppData\Local\Temp\sig8.s
-3F cinit CODE >859:C:\Users\np0083\AppData\Local\Temp\sig8.s
-40 cinit CODE >860:C:\Users\np0083\AppData\Local\Temp\sig8.s
-43 cinit CODE >866:C:\Users\np0083\AppData\Local\Temp\sig8.s
-43 cinit CODE >868:C:\Users\np0083\AppData\Local\Temp\sig8.s
-44 cinit CODE >869:C:\Users\np0083\AppData\Local\Temp\sig8.s
-45 cinit CODE >870:C:\Users\np0083\AppData\Local\Temp\sig8.s
+$dist/default/debug\OpticalSpeedSensor.X.debug.o
+3A cinit CODE >797:C:\Users\np0083\AppData\Local\Temp\s1a8.s
+3A cinit CODE >800:C:\Users\np0083\AppData\Local\Temp\s1a8.s
+3A cinit CODE >851:C:\Users\np0083\AppData\Local\Temp\s1a8.s
+3B cinit CODE >855:C:\Users\np0083\AppData\Local\Temp\s1a8.s
+3C cinit CODE >856:C:\Users\np0083\AppData\Local\Temp\s1a8.s
+3D cinit CODE >857:C:\Users\np0083\AppData\Local\Temp\s1a8.s
+3E cinit CODE >858:C:\Users\np0083\AppData\Local\Temp\s1a8.s
+3F cinit CODE >859:C:\Users\np0083\AppData\Local\Temp\s1a8.s
+40 cinit CODE >860:C:\Users\np0083\AppData\Local\Temp\s1a8.s
+43 cinit CODE >866:C:\Users\np0083\AppData\Local\Temp\s1a8.s
+43 cinit CODE >868:C:\Users\np0083\AppData\Local\Temp\s1a8.s
+44 cinit CODE >869:C:\Users\np0083\AppData\Local\Temp\s1a8.s
+45 cinit CODE >870:C:\Users\np0083\AppData\Local\Temp\s1a8.s
 4 intentry CODE >356:C:\Users\np0083\Documents\Slotted Opto Switch Sensor\OpticalSpeedSensor.X\OpticalSpeedSensor.c
 6 intentry CODE >359:C:\Users\np0083\Documents\Slotted Opto Switch Sensor\OpticalSpeedSensor.X\OpticalSpeedSensor.c
 B intentry CODE >371:C:\Users\np0083\Documents\Slotted Opto Switch Sensor\OpticalSpeedSensor.X\OpticalSpeedSensor.c
@@ -397,14 +397,14 @@ FC text3 CODE >101:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\s
 356 maintext CODE >316:C:\Users\np0083\Documents\Slotted Opto Switch Sensor\OpticalSpeedSensor.X\OpticalSpeedSensor.c
 358 maintext CODE >317:C:\Users\np0083\Documents\Slotted Opto Switch Sensor\OpticalSpeedSensor.X\OpticalSpeedSensor.c
 35C maintext CODE >321:C:\Users\np0083\Documents\Slotted Opto Switch Sensor\OpticalSpeedSensor.X\OpticalSpeedSensor.c
-4BF clrtext CODE >840:C:\Users\np0083\AppData\Local\Temp\sig8.s
-4BF clrtext CODE >841:C:\Users\np0083\AppData\Local\Temp\sig8.s
-4C0 clrtext CODE >842:C:\Users\np0083\AppData\Local\Temp\sig8.s
-4C0 clrtext CODE >843:C:\Users\np0083\AppData\Local\Temp\sig8.s
-4C1 clrtext CODE >844:C:\Users\np0083\AppData\Local\Temp\sig8.s
-4C2 clrtext CODE >845:C:\Users\np0083\AppData\Local\Temp\sig8.s
-4C3 clrtext CODE >846:C:\Users\np0083\AppData\Local\Temp\sig8.s
-4C4 clrtext CODE >847:C:\Users\np0083\AppData\Local\Temp\sig8.s
+4BF clrtext CODE >840:C:\Users\np0083\AppData\Local\Temp\s1a8.s
+4BF clrtext CODE >841:C:\Users\np0083\AppData\Local\Temp\s1a8.s
+4C0 clrtext CODE >842:C:\Users\np0083\AppData\Local\Temp\s1a8.s
+4C0 clrtext CODE >843:C:\Users\np0083\AppData\Local\Temp\s1a8.s
+4C1 clrtext CODE >844:C:\Users\np0083\AppData\Local\Temp\s1a8.s
+4C2 clrtext CODE >845:C:\Users\np0083\AppData\Local\Temp\s1a8.s
+4C3 clrtext CODE >846:C:\Users\np0083\AppData\Local\Temp\s1a8.s
+4C4 clrtext CODE >847:C:\Users\np0083\AppData\Local\Temp\s1a8.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -417,70 +417,70 @@ FC text3 CODE >101:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\s
 # was defined in a psect then <psect> will be "-". File-name
 # is the name of the object file in which the symbol was defined.
 %SYMTAB
-___latbits 2 0 ABS 0 - dist/default/production\OpticalSpeedSensor.X.production.o
+___latbits 2 0 ABS 0 - dist/default/debug\OpticalSpeedSensor.X.debug.o
 __Hspace_0 4CF 0 ABS 0 - -
 __Hspace_1 7A 0 ABS 0 - -
 __Hspace_2 0 0 ABS 0 - -
 __Hspace_3 0 0 ABS 0 - -
 __Hspace_4 10010 0 ABS 0 - -
 __Heeprom_data 0 0 EEDATA 3 eeprom_data -
-_T1CONbits 18 0 ABS 0 - dist/default/production\OpticalSpeedSensor.X.production.o
+_T1CONbits 18 0 ABS 0 - dist/default/debug\OpticalSpeedSensor.X.debug.o
 __Hstrings 0 0 ABS 0 strings -
-_WPUA 20C 0 ABS 0 - dist/default/production\OpticalSpeedSensor.X.production.o
-_WPUC 20E 0 ABS 0 - dist/default/production\OpticalSpeedSensor.X.production.o
-___sp 0 0 STACK 2 stack C:\Users\np0083\AppData\Local\Temp\sig8.o
-_main 3F6 0 CODE 0 maintext dist/default/production\OpticalSpeedSensor.X.production.o
-btemp 7E 0 ABS 0 - dist/default/production\OpticalSpeedSensor.X.production.o
-start 70 0 CODE 0 init C:\Users\np0083\AppData\Local\Temp\sig8.o
-__end_of_TMR1_Init 97E 0 CODE 0 text4 dist/default/production\OpticalSpeedSensor.X.production.o
-__size_of___fldiv 0 0 ABS 0 - dist/default/production\OpticalSpeedSensor.X.production.o
-__size_of_main 0 0 ABS 0 - dist/default/production\OpticalSpeedSensor.X.production.o
+_WPUA 20C 0 ABS 0 - dist/default/debug\OpticalSpeedSensor.X.debug.o
+_WPUC 20E 0 ABS 0 - dist/default/debug\OpticalSpeedSensor.X.debug.o
+___sp 0 0 STACK 2 stack C:\Users\np0083\AppData\Local\Temp\s1a8.o
+_main 3F6 0 CODE 0 maintext dist/default/debug\OpticalSpeedSensor.X.debug.o
+btemp 7E 0 ABS 0 - dist/default/debug\OpticalSpeedSensor.X.debug.o
+start 70 0 CODE 0 init C:\Users\np0083\AppData\Local\Temp\s1a8.o
+__end_of_TMR1_Init 97E 0 CODE 0 text4 dist/default/debug\OpticalSpeedSensor.X.debug.o
+__size_of___fldiv 0 0 ABS 0 - dist/default/debug\OpticalSpeedSensor.X.debug.o
+__size_of_main 0 0 ABS 0 - dist/default/debug\OpticalSpeedSensor.X.debug.o
 __HbssCOMMON 0 0 ABS 0 bssCOMMON -
-__size_of_TMR1_Init 0 0 ABS 0 - dist/default/production\OpticalSpeedSensor.X.production.o
-_OPTION_REGbits 95 0 ABS 0 - dist/default/production\OpticalSpeedSensor.X.production.o
-__size_of_Enable_Timer1_Int 0 0 ABS 0 - dist/default/production\OpticalSpeedSensor.X.production.o
-__size_of_Enable_External_Rising_Int 0 0 ABS 0 - dist/default/production\OpticalSpeedSensor.X.production.o
+__size_of_TMR1_Init 0 0 ABS 0 - dist/default/debug\OpticalSpeedSensor.X.debug.o
+_OPTION_REGbits 95 0 ABS 0 - dist/default/debug\OpticalSpeedSensor.X.debug.o
+__size_of_Enable_Timer1_Int 0 0 ABS 0 - dist/default/debug\OpticalSpeedSensor.X.debug.o
+__size_of_Enable_External_Rising_Int 0 0 ABS 0 - dist/default/debug\OpticalSpeedSensor.X.debug.o
 __Hpowerup 0 0 CODE 0 powerup -
-_TMR1_Init 964 0 CODE 0 text4 dist/default/production\OpticalSpeedSensor.X.production.o
-intlevel0 0 0 ENTRY 0 functab C:\Users\np0083\AppData\Local\Temp\sig8.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\np0083\AppData\Local\Temp\sig8.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\np0083\AppData\Local\Temp\sig8.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\np0083\AppData\Local\Temp\sig8.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\np0083\AppData\Local\Temp\sig8.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\np0083\AppData\Local\Temp\sig8.o
+_TMR1_Init 964 0 CODE 0 text4 dist/default/debug\OpticalSpeedSensor.X.debug.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\np0083\AppData\Local\Temp\s1a8.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\np0083\AppData\Local\Temp\s1a8.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\np0083\AppData\Local\Temp\s1a8.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\np0083\AppData\Local\Temp\s1a8.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\np0083\AppData\Local\Temp\s1a8.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\np0083\AppData\Local\Temp\s1a8.o
 __LbssCOMMON 0 0 ABS 0 bssCOMMON -
-_OSCCONbits 99 0 ABS 0 - dist/default/production\OpticalSpeedSensor.X.production.o
-wtemp0 7E 0 ABS 0 - dist/default/production\OpticalSpeedSensor.X.production.o
+_OSCCONbits 99 0 ABS 0 - dist/default/debug\OpticalSpeedSensor.X.debug.o
+wtemp0 7E 0 ABS 0 - dist/default/debug\OpticalSpeedSensor.X.debug.o
 __Hfunctab 0 0 ENTRY 0 functab -
 __Hclrtext 0 0 ABS 0 clrtext -
-_ADRESH 9C 0 ABS 0 - dist/default/production\OpticalSpeedSensor.X.production.o
-_ADRESL 9B 0 ABS 0 - dist/default/production\OpticalSpeedSensor.X.production.o
-_Enable_External_Rising_Int 994 0 CODE 0 text6 dist/default/production\OpticalSpeedSensor.X.production.o
-__size_of_ISR_Routine 0 0 ABS 0 - dist/default/production\OpticalSpeedSensor.X.production.o
-_DACCON0 118 0 ABS 0 - dist/default/production\OpticalSpeedSensor.X.production.o
-__end_of___flge 964 0 CODE 0 text2 dist/default/production\OpticalSpeedSensor.X.production.o
-_bADCLow 60 0 BANK0 1 bssBANK0 dist/default/production\OpticalSpeedSensor.X.production.o
+_ADRESH 9C 0 ABS 0 - dist/default/debug\OpticalSpeedSensor.X.debug.o
+_ADRESL 9B 0 ABS 0 - dist/default/debug\OpticalSpeedSensor.X.debug.o
+_Enable_External_Rising_Int 994 0 CODE 0 text6 dist/default/debug\OpticalSpeedSensor.X.debug.o
+__size_of_ISR_Routine 0 0 ABS 0 - dist/default/debug\OpticalSpeedSensor.X.debug.o
+_DACCON0 118 0 ABS 0 - dist/default/debug\OpticalSpeedSensor.X.debug.o
+__end_of___flge 964 0 CODE 0 text2 dist/default/debug\OpticalSpeedSensor.X.debug.o
+_bADCLow 60 0 BANK0 1 bssBANK0 dist/default/debug\OpticalSpeedSensor.X.debug.o
 __Lmaintext 0 0 ABS 0 maintext -
-___fldiv@aexp 3F 0 BANK0 1 cstackBANK0 dist/default/production\OpticalSpeedSensor.X.production.o
-___fldiv@bexp 3E 0 BANK0 1 cstackBANK0 dist/default/production\OpticalSpeedSensor.X.production.o
-___fldiv@sign 37 0 BANK0 1 cstackBANK0 dist/default/production\OpticalSpeedSensor.X.production.o
+___fldiv@aexp 3F 0 BANK0 1 cstackBANK0 dist/default/debug\OpticalSpeedSensor.X.debug.o
+___fldiv@bexp 3E 0 BANK0 1 cstackBANK0 dist/default/debug\OpticalSpeedSensor.X.debug.o
+___fldiv@sign 37 0 BANK0 1 cstackBANK0 dist/default/debug\OpticalSpeedSensor.X.debug.o
 __LnvBANK0 0 0 ABS 0 nvBANK0 -
-__end_of___fldiv 3F6 0 CODE 0 text3 dist/default/production\OpticalSpeedSensor.X.production.o
-_bRisingEdges 63 0 BANK0 1 bssBANK0 dist/default/production\OpticalSpeedSensor.X.production.o
-___stackhi 23EF 0 ABS 0 - C:\Users\np0083\AppData\Local\Temp\sig8.o
-___stacklo 2046 0 ABS 0 - C:\Users\np0083\AppData\Local\Temp\sig8.o
-___fldiv@a 26 0 BANK0 1 cstackBANK0 dist/default/production\OpticalSpeedSensor.X.production.o
-___fldiv@b 2A 0 BANK0 1 cstackBANK0 dist/default/production\OpticalSpeedSensor.X.production.o
-start_initialization 74 0 CODE 0 cinit dist/default/production\OpticalSpeedSensor.X.production.o
-__end_of_Enable_Timer1_Int 994 0 CODE 0 text5 dist/default/production\OpticalSpeedSensor.X.production.o
-_TRISAbits 8C 0 ABS 0 - dist/default/production\OpticalSpeedSensor.X.production.o
-_TRISCbits 8E 0 ABS 0 - dist/default/production\OpticalSpeedSensor.X.production.o
-clear_ram0 97E 0 CODE 0 clrtext dist/default/production\OpticalSpeedSensor.X.production.o
-_SPBRGH 19C 0 ABS 0 - dist/default/production\OpticalSpeedSensor.X.production.o
-_SPBRGL 19B 0 ABS 0 - dist/default/production\OpticalSpeedSensor.X.production.o
-__pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\OpticalSpeedSensor.X.production.o
-_T1GCON 19 0 ABS 0 - dist/default/production\OpticalSpeedSensor.X.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\np0083\AppData\Local\Temp\sig8.o
+__end_of___fldiv 3F6 0 CODE 0 text3 dist/default/debug\OpticalSpeedSensor.X.debug.o
+_bRisingEdges 63 0 BANK0 1 bssBANK0 dist/default/debug\OpticalSpeedSensor.X.debug.o
+___stackhi 23EF 0 ABS 0 - C:\Users\np0083\AppData\Local\Temp\s1a8.o
+___stacklo 2046 0 ABS 0 - C:\Users\np0083\AppData\Local\Temp\s1a8.o
+___fldiv@a 26 0 BANK0 1 cstackBANK0 dist/default/debug\OpticalSpeedSensor.X.debug.o
+___fldiv@b 2A 0 BANK0 1 cstackBANK0 dist/default/debug\OpticalSpeedSensor.X.debug.o
+start_initialization 74 0 CODE 0 cinit dist/default/debug\OpticalSpeedSensor.X.debug.o
+__end_of_Enable_Timer1_Int 994 0 CODE 0 text5 dist/default/debug\OpticalSpeedSensor.X.debug.o
+_TRISAbits 8C 0 ABS 0 - dist/default/debug\OpticalSpeedSensor.X.debug.o
+_TRISCbits 8E 0 ABS 0 - dist/default/debug\OpticalSpeedSensor.X.debug.o
+clear_ram0 97E 0 CODE 0 clrtext dist/default/debug\OpticalSpeedSensor.X.debug.o
+_SPBRGH 19C 0 ABS 0 - dist/default/debug\OpticalSpeedSensor.X.debug.o
+_SPBRGL 19B 0 ABS 0 - dist/default/debug\OpticalSpeedSensor.X.debug.o
+__pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/debug\OpticalSpeedSensor.X.debug.o
+_T1GCON 19 0 ABS 0 - dist/default/debug\OpticalSpeedSensor.X.debug.o
+___int_sp 0 0 STACK 2 stack C:\Users\np0083\AppData\Local\Temp\s1a8.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
@@ -537,12 +537,12 @@ __Hbank28 0 0 BANK28 1 bank28 -
 __Hbank29 0 0 BANK29 1 bank29 -
 __Hbank30 0 0 BANK30 1 bank30 -
 __Hbank31 0 0 BANK31 1 bank31 -
-__size_of___xxtofl 0 0 ABS 0 - dist/default/production\OpticalSpeedSensor.X.production.o
+__size_of___xxtofl 0 0 ABS 0 - dist/default/debug\OpticalSpeedSensor.X.debug.o
 __Hbigram 0 0 ABS 0 bigram -
 __Hmaintext 0 0 ABS 0 maintext -
-___xxtofl@arg 22 0 BANK0 1 cstackBANK0 dist/default/production\OpticalSpeedSensor.X.production.o
-___xxtofl@exp 21 0 BANK0 1 cstackBANK0 dist/default/production\OpticalSpeedSensor.X.production.o
-___xxtofl@val 71 0 COMMON 1 cstackCOMMON dist/default/production\OpticalSpeedSensor.X.production.o
+___xxtofl@arg 22 0 BANK0 1 cstackBANK0 dist/default/debug\OpticalSpeedSensor.X.debug.o
+___xxtofl@exp 21 0 BANK0 1 cstackBANK0 dist/default/debug\OpticalSpeedSensor.X.debug.o
+___xxtofl@val 71 0 COMMON 1 cstackCOMMON dist/default/debug\OpticalSpeedSensor.X.debug.o
 __Hcommon 0 0 ABS 0 common -
 __Hconfig 10012 0 CONFIG 4 config -
 __Lbank0 0 0 ABS 0 bank0 -
@@ -579,9 +579,9 @@ __Lsfr29 0 0 ABS 0 sfr29 -
 __Lsfr30 0 0 ABS 0 sfr30 -
 __Lsfr31 0 0 ABS 0 sfr31 -
 __Lstack 0 0 STACK 2 stack -
-_PORTAbits C 0 ABS 0 - dist/default/production\OpticalSpeedSensor.X.production.o
-_PORTCbits E 0 ABS 0 - dist/default/production\OpticalSpeedSensor.X.production.o
-_INTCONbits B 0 ABS 0 - dist/default/production\OpticalSpeedSensor.X.production.o
+_PORTAbits C 0 ABS 0 - dist/default/debug\OpticalSpeedSensor.X.debug.o
+_PORTCbits E 0 ABS 0 - dist/default/debug\OpticalSpeedSensor.X.debug.o
+_INTCONbits B 0 ABS 0 - dist/default/debug\OpticalSpeedSensor.X.debug.o
 __Habs1 0 0 ABS 0 abs1 -
 __Hcode 0 0 ABS 0 code -
 __Hinit 70 0 CODE 0 init -
@@ -610,34 +610,34 @@ __Lsfr7 0 0 ABS 0 sfr7 -
 __Lsfr8 0 0 ABS 0 sfr8 -
 __Lsfr9 0 0 ABS 0 sfr9 -
 __Ltext 0 0 ABS 0 text -
-__pnvBANK0 64 0 BANK0 1 nvBANK0 dist/default/production\OpticalSpeedSensor.X.production.o
-_SSP1CON1 215 0 ABS 0 - dist/default/production\OpticalSpeedSensor.X.production.o
-_SSP1STAT 214 0 ABS 0 - dist/default/production\OpticalSpeedSensor.X.production.o
-___flge 84E 0 CODE 0 text2 dist/default/production\OpticalSpeedSensor.X.production.o
+__pnvBANK0 64 0 BANK0 1 nvBANK0 dist/default/debug\OpticalSpeedSensor.X.debug.o
+_SSP1CON1 215 0 ABS 0 - dist/default/debug\OpticalSpeedSensor.X.debug.o
+_SSP1STAT 214 0 ABS 0 - dist/default/debug\OpticalSpeedSensor.X.debug.o
+___flge 84E 0 CODE 0 text2 dist/default/debug\OpticalSpeedSensor.X.debug.o
 __LcstackBANK0 0 0 ABS 0 cstackBANK0 -
-int$flags 7E 0 ABS 0 - dist/default/production\OpticalSpeedSensor.X.production.o
+int$flags 7E 0 ABS 0 - dist/default/debug\OpticalSpeedSensor.X.debug.o
 __HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
 __S0 4CF 0 ABS 0 - -
 __S1 7A 0 ABS 0 - -
 __S2 0 0 ABS 0 - -
 __S3 0 0 ABS 0 - -
-main@sGenTimer1InSec 50 0 BANK0 1 cstackBANK0 dist/default/production\OpticalSpeedSensor.X.production.o
-_sCurrentState 64 0 BANK0 1 nvBANK0 dist/default/production\OpticalSpeedSensor.X.production.o
-_Enable_Timer1_Int 98A 0 CODE 0 text5 dist/default/production\OpticalSpeedSensor.X.production.o
-_ISR_Routine 8 0 CODE 0 intentry dist/default/production\OpticalSpeedSensor.X.production.o
-___xxtofl 6F4 0 CODE 0 text1 dist/default/production\OpticalSpeedSensor.X.production.o
+main@sGenTimer1InSec 50 0 BANK0 1 cstackBANK0 dist/default/debug\OpticalSpeedSensor.X.debug.o
+_sCurrentState 64 0 BANK0 1 nvBANK0 dist/default/debug\OpticalSpeedSensor.X.debug.o
+_Enable_Timer1_Int 98A 0 CODE 0 text5 dist/default/debug\OpticalSpeedSensor.X.debug.o
+_ISR_Routine 8 0 CODE 0 intentry dist/default/debug\OpticalSpeedSensor.X.debug.o
+___xxtofl 6F4 0 CODE 0 text1 dist/default/debug\OpticalSpeedSensor.X.debug.o
 __HnvBANK0 0 0 ABS 0 nvBANK0 -
 __Lintentry 8 0 CODE 0 intentry -
-reset_vec 0 0 CODE 0 reset_vec C:\Users\np0083\AppData\Local\Temp\sig8.o
-__end_of___xxtofl 84E 0 CODE 0 text1 dist/default/production\OpticalSpeedSensor.X.production.o
-__size_of___flge 0 0 ABS 0 - dist/default/production\OpticalSpeedSensor.X.production.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\np0083\AppData\Local\Temp\s1a8.o
+__end_of___xxtofl 84E 0 CODE 0 text1 dist/default/debug\OpticalSpeedSensor.X.debug.o
+__size_of___flge 0 0 ABS 0 - dist/default/debug\OpticalSpeedSensor.X.debug.o
 __LbssBANK0 0 0 ABS 0 bssBANK0 -
-_RCSTAbits 19D 0 ABS 0 - dist/default/production\OpticalSpeedSensor.X.production.o
-_PIE1bits 91 0 ABS 0 - dist/default/production\OpticalSpeedSensor.X.production.o
-_sGenTimer1 58 0 BANK0 1 bssBANK0 dist/default/production\OpticalSpeedSensor.X.production.o
-_sGenTimer2 54 0 BANK0 1 bssBANK0 dist/default/production\OpticalSpeedSensor.X.production.o
-___fldiv 8E 0 CODE 0 text3 dist/default/production\OpticalSpeedSensor.X.production.o
-_BAUDCON 19F 0 ABS 0 - dist/default/production\OpticalSpeedSensor.X.production.o
+_RCSTAbits 19D 0 ABS 0 - dist/default/debug\OpticalSpeedSensor.X.debug.o
+_PIE1bits 91 0 ABS 0 - dist/default/debug\OpticalSpeedSensor.X.debug.o
+_sGenTimer1 58 0 BANK0 1 bssBANK0 dist/default/debug\OpticalSpeedSensor.X.debug.o
+_sGenTimer2 54 0 BANK0 1 bssBANK0 dist/default/debug\OpticalSpeedSensor.X.debug.o
+___fldiv 8E 0 CODE 0 text3 dist/default/debug\OpticalSpeedSensor.X.debug.o
+_BAUDCON 19F 0 ABS 0 - dist/default/debug\OpticalSpeedSensor.X.debug.o
 __Lbank10 0 0 ABS 0 bank10 -
 __Lbank11 0 0 ABS 0 bank11 -
 __Lbank12 0 0 ABS 0 bank12 -
@@ -660,71 +660,71 @@ __Lbank28 0 0 BANK28 1 bank28 -
 __Lbank29 0 0 BANK29 1 bank29 -
 __Lbank30 0 0 BANK30 1 bank30 -
 __Lbank31 0 0 BANK31 1 bank31 -
-__pmaintext 3F6 0 CODE 0 maintext dist/default/production\OpticalSpeedSensor.X.production.o
+__pmaintext 3F6 0 CODE 0 maintext dist/default/debug\OpticalSpeedSensor.X.debug.o
 __Lbigram 0 0 ABS 0 bigram -
 __Lcommon 0 0 ABS 0 common -
 __Lconfig 0 0 CONFIG 4 config -
-_LATAbits 10C 0 ABS 0 - dist/default/production\OpticalSpeedSensor.X.production.o
-_LATCbits 10E 0 ABS 0 - dist/default/production\OpticalSpeedSensor.X.production.o
-___fldiv@grs 3A 0 BANK0 1 cstackBANK0 dist/default/production\OpticalSpeedSensor.X.production.o
-___fldiv@rem 33 0 BANK0 1 cstackBANK0 dist/default/production\OpticalSpeedSensor.X.production.o
-___fldiv@new_exp 38 0 BANK0 1 cstackBANK0 dist/default/production\OpticalSpeedSensor.X.production.o
-_bFlags_1 62 0 BANK0 1 bssBANK0 dist/default/production\OpticalSpeedSensor.X.production.o
-_ADCON0bits 9D 0 ABS 0 - dist/default/production\OpticalSpeedSensor.X.production.o
-_ADCON1bits 9E 0 ABS 0 - dist/default/production\OpticalSpeedSensor.X.production.o
+_LATAbits 10C 0 ABS 0 - dist/default/debug\OpticalSpeedSensor.X.debug.o
+_LATCbits 10E 0 ABS 0 - dist/default/debug\OpticalSpeedSensor.X.debug.o
+___fldiv@grs 3A 0 BANK0 1 cstackBANK0 dist/default/debug\OpticalSpeedSensor.X.debug.o
+___fldiv@rem 33 0 BANK0 1 cstackBANK0 dist/default/debug\OpticalSpeedSensor.X.debug.o
+___fldiv@new_exp 38 0 BANK0 1 cstackBANK0 dist/default/debug\OpticalSpeedSensor.X.debug.o
+_bFlags_1 62 0 BANK0 1 bssBANK0 dist/default/debug\OpticalSpeedSensor.X.debug.o
+_ADCON0bits 9D 0 ABS 0 - dist/default/debug\OpticalSpeedSensor.X.debug.o
+_ADCON1bits 9E 0 ABS 0 - dist/default/debug\OpticalSpeedSensor.X.debug.o
 __Lspace_0 0 0 ABS 0 - -
 __Lspace_1 0 0 ABS 0 - -
 __Lspace_2 0 0 ABS 0 - -
 __Lspace_3 0 0 ABS 0 - -
 __Lspace_4 0 0 ABS 0 - -
-__pbssCOMMON 79 0 COMMON 1 bssCOMMON dist/default/production\OpticalSpeedSensor.X.production.o
+__pbssCOMMON 79 0 COMMON 1 bssCOMMON dist/default/debug\OpticalSpeedSensor.X.debug.o
 __HcstackBANK0 0 0 ABS 0 cstackBANK0 -
-___flge@ff1 40 0 BANK0 1 cstackBANK0 dist/default/production\OpticalSpeedSensor.X.production.o
-___flge@ff2 44 0 BANK0 1 cstackBANK0 dist/default/production\OpticalSpeedSensor.X.production.o
-_PIR1bits 11 0 ABS 0 - dist/default/production\OpticalSpeedSensor.X.production.o
+___flge@ff1 40 0 BANK0 1 cstackBANK0 dist/default/debug\OpticalSpeedSensor.X.debug.o
+___flge@ff2 44 0 BANK0 1 cstackBANK0 dist/default/debug\OpticalSpeedSensor.X.debug.o
+_PIR1bits 11 0 ABS 0 - dist/default/debug\OpticalSpeedSensor.X.debug.o
 __Lend_init 70 0 CODE 0 end_init -
 __LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
-end_of_initialization 86 0 CODE 0 cinit dist/default/production\OpticalSpeedSensor.X.production.o
+end_of_initialization 86 0 CODE 0 cinit dist/default/debug\OpticalSpeedSensor.X.debug.o
 __Hintentry 70 0 CODE 0 intentry -
 __Lstrings 0 0 ABS 0 strings -
-?___fldiv 26 0 BANK0 1 cstackBANK0 dist/default/production\OpticalSpeedSensor.X.production.o
+?___fldiv 26 0 BANK0 1 cstackBANK0 dist/default/debug\OpticalSpeedSensor.X.debug.o
 __Hreset_vec 4 0 CODE 0 reset_vec -
 __HbssBANK0 0 0 ABS 0 bssBANK0 -
-__ptext1 6F4 0 CODE 0 text1 dist/default/production\OpticalSpeedSensor.X.production.o
-__ptext2 84E 0 CODE 0 text2 dist/default/production\OpticalSpeedSensor.X.production.o
-__ptext3 8E 0 CODE 0 text3 dist/default/production\OpticalSpeedSensor.X.production.o
-__ptext4 964 0 CODE 0 text4 dist/default/production\OpticalSpeedSensor.X.production.o
-__ptext5 98A 0 CODE 0 text5 dist/default/production\OpticalSpeedSensor.X.production.o
-__ptext6 994 0 CODE 0 text6 dist/default/production\OpticalSpeedSensor.X.production.o
+__ptext1 6F4 0 CODE 0 text1 dist/default/debug\OpticalSpeedSensor.X.debug.o
+__ptext2 84E 0 CODE 0 text2 dist/default/debug\OpticalSpeedSensor.X.debug.o
+__ptext3 8E 0 CODE 0 text3 dist/default/debug\OpticalSpeedSensor.X.debug.o
+__ptext4 964 0 CODE 0 text4 dist/default/debug\OpticalSpeedSensor.X.debug.o
+__ptext5 98A 0 CODE 0 text5 dist/default/debug\OpticalSpeedSensor.X.debug.o
+__ptext6 994 0 CODE 0 text6 dist/default/debug\OpticalSpeedSensor.X.debug.o
 __Lpowerup 0 0 CODE 0 powerup -
-?___xxtofl 71 0 COMMON 1 cstackCOMMON dist/default/production\OpticalSpeedSensor.X.production.o
-_bADCHigh 61 0 BANK0 1 bssBANK0 dist/default/production\OpticalSpeedSensor.X.production.o
+?___xxtofl 71 0 COMMON 1 cstackCOMMON dist/default/debug\OpticalSpeedSensor.X.debug.o
+_bADCHigh 61 0 BANK0 1 bssBANK0 dist/default/debug\OpticalSpeedSensor.X.debug.o
 __Leeprom_data 0 0 EEDATA 3 eeprom_data -
 __Lreset_vec 0 0 CODE 0 reset_vec -
-__end_of_Enable_External_Rising_Int 99E 0 CODE 0 text6 dist/default/production\OpticalSpeedSensor.X.production.o
-__end_of__initialization 86 0 CODE 0 cinit dist/default/production\OpticalSpeedSensor.X.production.o
+__end_of_Enable_External_Rising_Int 99E 0 CODE 0 text6 dist/default/debug\OpticalSpeedSensor.X.debug.o
+__end_of__initialization 86 0 CODE 0 cinit dist/default/debug\OpticalSpeedSensor.X.debug.o
 __Lfunctab 0 0 ENTRY 0 functab -
 __Lclrtext 0 0 ABS 0 clrtext -
-__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\OpticalSpeedSensor.X.production.o
-_TXSTAbits 19E 0 ABS 0 - dist/default/production\OpticalSpeedSensor.X.production.o
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/debug\OpticalSpeedSensor.X.debug.o
+_TXSTAbits 19E 0 ABS 0 - dist/default/debug\OpticalSpeedSensor.X.debug.o
 __Hend_init 74 0 CODE 0 end_init -
-__end_of_main 6F4 0 CODE 0 maintext dist/default/production\OpticalSpeedSensor.X.production.o
-_RCREG 199 0 ABS 0 - dist/default/production\OpticalSpeedSensor.X.production.o
-_RCSTA 19D 0 ABS 0 - dist/default/production\OpticalSpeedSensor.X.production.o
-_TMR1H 17 0 ABS 0 - dist/default/production\OpticalSpeedSensor.X.production.o
-_TMR1L 16 0 ABS 0 - dist/default/production\OpticalSpeedSensor.X.production.o
-_TXREG 19A 0 ABS 0 - dist/default/production\OpticalSpeedSensor.X.production.o
-_TXSTA 19E 0 ABS 0 - dist/default/production\OpticalSpeedSensor.X.production.o
+__end_of_main 6F4 0 CODE 0 maintext dist/default/debug\OpticalSpeedSensor.X.debug.o
+_RCREG 199 0 ABS 0 - dist/default/debug\OpticalSpeedSensor.X.debug.o
+_RCSTA 19D 0 ABS 0 - dist/default/debug\OpticalSpeedSensor.X.debug.o
+_TMR1H 17 0 ABS 0 - dist/default/debug\OpticalSpeedSensor.X.debug.o
+_TMR1L 16 0 ABS 0 - dist/default/debug\OpticalSpeedSensor.X.debug.o
+_TXREG 19A 0 ABS 0 - dist/default/debug\OpticalSpeedSensor.X.debug.o
+_TXSTA 19E 0 ABS 0 - dist/default/debug\OpticalSpeedSensor.X.debug.o
 __Hram 0 0 ABS 0 ram -
 __Lram 0 0 ABS 0 ram -
-__pintentry 8 0 CODE 0 intentry dist/default/production\OpticalSpeedSensor.X.production.o
-__end_of_ISR_Routine 70 0 CODE 0 intentry dist/default/production\OpticalSpeedSensor.X.production.o
-__initialization 74 0 CODE 0 cinit dist/default/production\OpticalSpeedSensor.X.production.o
-___xxtofl@sign 20 0 BANK0 1 cstackBANK0 dist/default/production\OpticalSpeedSensor.X.production.o
-__pbssBANK0 54 0 BANK0 1 bssBANK0 dist/default/production\OpticalSpeedSensor.X.production.o
-_ANSELAbits 18C 0 ABS 0 - dist/default/production\OpticalSpeedSensor.X.production.o
-_ANSELCbits 18E 0 ABS 0 - dist/default/production\OpticalSpeedSensor.X.production.o
-_sLastState 5E 0 BANK0 1 bssBANK0 dist/default/production\OpticalSpeedSensor.X.production.o
+__pintentry 8 0 CODE 0 intentry dist/default/debug\OpticalSpeedSensor.X.debug.o
+__end_of_ISR_Routine 70 0 CODE 0 intentry dist/default/debug\OpticalSpeedSensor.X.debug.o
+__initialization 74 0 CODE 0 cinit dist/default/debug\OpticalSpeedSensor.X.debug.o
+___xxtofl@sign 20 0 BANK0 1 cstackBANK0 dist/default/debug\OpticalSpeedSensor.X.debug.o
+__pbssBANK0 54 0 BANK0 1 bssBANK0 dist/default/debug\OpticalSpeedSensor.X.debug.o
+_ANSELAbits 18C 0 ABS 0 - dist/default/debug\OpticalSpeedSensor.X.debug.o
+_ANSELCbits 18E 0 ABS 0 - dist/default/debug\OpticalSpeedSensor.X.debug.o
+_sLastState 5E 0 BANK0 1 bssBANK0 dist/default/debug\OpticalSpeedSensor.X.debug.o
 # %SPLITSTAB Section
 # This section enumerates all the psect splits performed by the assembler.
 # The beginning of the section is indicated by %SPLITSTAB.

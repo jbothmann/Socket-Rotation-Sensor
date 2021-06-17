@@ -24,8 +24,8 @@ unsigned char bFlags_2;             // Status flags
 signed short swCurrentADCVal;       // Current ADC sample
 unsigned char bADCHigh;             // ADC high byte
 unsigned char bADCLow;              // ADC low byte
-unsigned short sGenTimer1;          // General use timer 1
-unsigned short sGenTimer2;          // General use timer 2
+unsigned long sGenTimer1;          // General use timer 1
+unsigned long sGenTimer2;          // General use timer 2
 
 
 
@@ -52,10 +52,10 @@ unsigned short sGenTimer2;          // General use timer 2
 
 
 // Status bFlags_1 Flags
-#define LEDSTATUS           0x01    // If LED state is to be active  
-#define LEDBLINK            0x02    // Indicates if LED is blinking
+#define SENS_STAT           0x01    // If output is high, set  
+//#define LEDBLINK            0x02    // Indicates if LED is blinking
 #define LEDONOFF            0x04    // Indicates if LED is On or Off
-#define EDGEHIGH            0x08    // Sensor high pulse is still high
+//#define EDGEHIGH            0x08    // Sensor high pulse is still high
 #define BSLEDBLINK          0x10    // Status of BAD_STATE LED blinking
 //#define FlagName            0x20    // Unused  
 //#define FlagName            0x40    // Unused   
@@ -73,17 +73,18 @@ unsigned short sGenTimer2;          // General use timer 2
 //#define FlagName           0x80    // 
 
 
-// SPI State Machine
-#define POWER_UP                    1   // Power up state
-#define CHK_CLKSTATE                2   // Checck state of the idle clock, should be low
-#define INIT_SPIRECEIVE             3   // Ready to start receiving SPI data
-#define RECEIVE_SPIDATA             4   // Start receiving tool data
-#define SEND_BUFTOPC                5   // Send tool data buffer to PC 
-#define BAD_STATE                   6   // State machine will land here if an incorrect case value is given
+// State Machine
+#define RESETSTATE           1   // Power up state
+#define BEGIN_COUNT          2   // Timers and Counters are reset
+#define COUNTING             3   // Count edges with ISR, time duration of state
+#define EVALUATE             4   // Compare edge count and trigger duration
+#define NORMAL_WAIT          5   // Signal that the cycle was within parameters, wait for next enable
+#define ERROR_WAIT           6   // Signal that the cycle was outside parameters, wait for next enable
+#define TIMEOUT_ERROR        7   // Signal that the cycle was enabled for too long, discard cycle
 
+#define TIMER_LIMIT 10000 // (10 seconds) If the timer exceeds this value, the program will ented the timeout_error state
 
-
-
+#define EDGE_TIME_MIN_RATIO 4 // (4 rotations per second) 
 
 #define STAT_LED_OFF    LATAbits.LATA4 = 1  // Turn green Status LED off
 #define STAT_LED_ON     LATAbits.LATA4 = 0  // Turn green Status LED on

@@ -312,8 +312,8 @@ intentry 8 99D CODE 8 0
 cstackCOMMON 70 79 COMMON 70 1
 cstackBANK0 20 65 BANK0 20 1
 %locals
-dist/default/production\OpticalSpeedSensor.X.production.o
-C:\Users\np0083\AppData\Local\Temp\sig8.s
+dist/default/debug\OpticalSpeedSensor.X.debug.o
+C:\Users\np0083\AppData\Local\Temp\s1a8.s
 797 3A 0 CODE 0
 800 3A 0 CODE 0
 851 3A 0 CODE 0

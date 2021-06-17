@@ -10,7 +10,7 @@
 //	This program will detect the optical sensor output that is monitoring the socket
 //  in the bolt run down test. It will also monitor the PLC trigger output to use as feedback
 //  when the tools trigger is moved into the run position.
-//	The output of this sensor board will be an open collector NPN transitor that the PLC
+//	The output of this sensor board will be an open collector NPN transistor that the PLC
 //  will use as an indication when the trigger is active, the socket spins accordingly.
 //
 //	An LED will be used for status, socket spinning/not spinning, possibly power good, and
@@ -164,7 +164,7 @@ void main (void)
 
 
     // Setup Timer1
-    // TMR1_Init();
+    TMR1_Init();
         
     // Enable RS232 Transmit/Receive Port
     // RS232_Init();
@@ -175,7 +175,7 @@ void main (void)
     // Setup SPI as a Slave Port
     // SPI_SlaveInit();
 
-    // Enable_Timer1_Int();
+    Enable_Timer1_Int();
     
     // Enable UART Receive Int
     // Enable_UART_RX_Int();
@@ -183,7 +183,7 @@ void main (void)
     // Enable INTS
     Enable_External_Rising_Int();               // Enable optical sensor external rising edge interrupt
     
-    sCurrentState = POWER_UP;                   // Set up starting state
+    sCurrentState = RESETSTATE;                   // Set up starting state
 
     // This is how you would check if tool trigger is pulled
     if(TRG_STATUS == 0)
@@ -195,131 +195,170 @@ void main (void)
     
     while(1)
     {
-        //!!!!!!!!!!!!!!!!!!!!!!!!THIS IS A GARBAGE STATE MACHINE ITS JUST FILLER
         
         //--------------SENSOR STATE MACHINE
         switch(sCurrentState)
         {
             // Power up
-            case  POWER_UP:
-                bFlags_1 = 0;                       // Reset all flags
-                bFlags_2 = 0;       
+            case RESETSTATE:       
+                //check if the output is on, and change the output to off
+                if (CHKTRUE(bFlags_1, SENS_STAT)){
+                    SENS_STAT_OFF;
+                    RESETBIT(bFlags_1, SENS_STAT);
+                }
                 
-                sLastState = POWER_UP;              // Set last state
-                sCurrentState = CHK_CLKSTATE;       // Set current state
+                RESETBIT(bFlags_1,BSLEDBLINK);          // Reset blink LED flag
+                SETBIT(bFlags_1,LEDONOFF);          // Initialize LED flag to on
+                STAT_LED_ON;                            //Turn On LED
                 
-            break;
-
-
-            // Check the idle state of the incoming SPI clock
-            case CHK_CLKSTATE:
-
-                if(0)
-                {  // SPI clock is low
-                    sLastState = CHK_CLKSTATE;          // Set last state
-                    sCurrentState = INIT_SPIRECEIVE;    // Set current state
-                    break;
+                
+                if (TRG_STATUS)
+                {
+                    sLastState = RESETSTATE;              // Set last state
+                    sCurrentState = BEGIN_COUNT;         // Set current state
                 }
                 else
-                {  // SPI clock is high, don't change state until clock is low
-
-                }
-            break;
-
-
-            // Ready to start receiving SPI data
-            case INIT_SPIRECEIVE:
-                // Clear out tool data buffer
-                
-                
-                SSP1BUF = 0;                        // Clear out SPI buffer
-                PIR1bits.SSP1IF = 0;                // Reset SPI receive flag
-
-                sLastState = INIT_SPIRECEIVE;       // Set last state
-                sCurrentState = RECEIVE_SPIDATA;    // Set current state
-            break;
-
-
-
-            // Start receiving SPI data
-            case RECEIVE_SPIDATA:
-
-                if(PIR1bits.SSP1IF)
-                { // Received SPI byte
-                    
-                    PIR1bits.SSP1IF = 0;                    // Clear SPI receive flag
-
-                    if (0)                                  // Check if data array is full or beyond
-                    {
-                        SETBIT(bFlags_1,EDGEHIGH);            // Buffer is full
-                        
-
-                        sLastState = RECEIVE_SPIDATA;       // Set last state
-                        sCurrentState = SEND_BUFTOPC;        // Set current state
-                        //break;
-                    }
-                    else
-                    {
-                        RESETBIT(bFlags_1,EDGEHIGH);          // Buffer is not full
-                        //break;
-                    }
-                }
-
-            break;
-
-
-
-            // Send tool data to the PC
-            case SEND_BUFTOPC:
-
-                if( CHKTRUE(bFlags_1,EDGEHIGH) )
-                { // SPI buffer is full, send data to PC
-
-                    UART_Write(0x0A);                               // Write Line Feed
-                    UART_Write(0x0D);                               // Write Carriage Return
-
-                    RESETBIT(bFlags_1,EDGEHIGH);                      // Buffer is empty
-
-                    sLastState = SEND_BUFTOPC;                   // Set last state
-                    sCurrentState = BAD_STATE;                   // Set current state
-                    //!!!!!!!!!! THIS WILL RESET THE CONTENTS OF THE SPI BUFFER TO ALL ZEROs
-                }
-
-            break;
-
-
-            // Incorrect state value given
-            case BAD_STATE:
-
-                if( (CHKTRUE(bFlags_1, BSLEDBLINK) && (sGenTimer1 == 0)) )
                 {
-                    if(CHKTRUE(bFlags_1, LEDONOFF))
-                    { // LED was ON
-                        
-                        sGenTimer1 = LEDOFFTIME;    // Load LED off time
-                        RESETBIT(bFlags_1,LEDONOFF);
-                    }
-                    else
-                    { // LED was OFF
-                        
-                        sGenTimer1 = LEDONTIME;     // Load LED on time
-                        SETBIT(bFlags_1,LEDONOFF);
-                    }
+                    sLastState = RESETSTATE;              // Set last state
+                    sCurrentState = NORMAL_WAIT;       // Set current state
                 }
+            break;
+
+
+            // Timers and Counters are reset
+            case BEGIN_COUNT:
+                //check if the output is on, and change the output to off
+                if (CHKTRUE(bFlags_1, SENS_STAT)){
+                    SENS_STAT_OFF;
+                    RESETBIT(bFlags_1, SENS_STAT);
+                }
+
+                bRisingEdges = 0;   //reset edge counter
+                sGenTimer1 = 0;     //reset clock
+                
+                sLastState = BEGIN_COUNT;          // Set last state
+                sCurrentState = COUNTING;    // Set current state
+            
+            break;
+
+
+            // Count edges with ISR, time duration of state
+            case COUNTING:
+                //check if the output is on, and change the output to off
+                if (CHKTRUE(bFlags_1, SENS_STAT)){
+                    SENS_STAT_OFF;
+                    RESETBIT(bFlags_1, SENS_STAT);
+                }
+                //continue timer and count edges, both handled by ISR
+
+                if (!TRG_STATUS) //if enable falls low, move to next state
+                {
+                    sLastState = COUNTING;       // Set last state
+                    sCurrentState = EVALUATE;    // Set current state
+                }
+                else if (sGenTimer1 >= TIMER_LIMIT) //if timer exceeds set limit, move to error state
+                {
+                    sLastState = COUNTING;       // Set last state
+                    sCurrentState = TIMEOUT_ERROR;    // Set current state
+                }
+                
+            break;
+
+
+
+            // Compare edge count and trigger duration
+            case EVALUATE:
+                //check if the output is on, and change the output to off
+                if (CHKTRUE(bFlags_1, SENS_STAT)){
+                    SENS_STAT_OFF;
+                    RESETBIT(bFlags_1, SENS_STAT);
+                }
+                float sGenTimer1InSec = sGenTimer1/(float)1000; // convert from ms to s
+                if (bRisingEdges/sGenTimer1InSec >= EDGE_TIME_MIN_RATIO)
+                {
+                    sLastState = EVALUATE;       // Set last state
+                    sCurrentState = NORMAL_WAIT;    // Set current state
+                }
+                else // error detected
+                {
+                    sLastState = EVALUATE;       // Set last state
+                    sCurrentState = ERROR_WAIT;    // Set current state
+                }
+                
+
+            break;
+
+
+
+            // Signal that the cycle was within parameters, wait for next enable
+            case NORMAL_WAIT:
+                //check if the output is on, and change the output to off
+                if (CHKTRUE(bFlags_1, SENS_STAT)){
+                    SENS_STAT_OFF;
+                    RESETBIT(bFlags_1, SENS_STAT);
+                }
+                if (TRG_STATUS)
+                {
+                    sLastState = NORMAL_WAIT;              // Set last state
+                    sCurrentState = BEGIN_COUNT;         // Set current state
+                }
+                
+
+            break;
+
+
+            // Signal that the cycle was outside parameters, wait for next enable
+            case ERROR_WAIT:
+                //check if the output is off, and change the output to on
+                if (CHKFALSE(bFlags_1, SENS_STAT)){
+                    SENS_STAT_ON;
+                    SETBIT(bFlags_1, SENS_STAT);
+                }
+                if (TRG_STATUS)
+                {
+                    sLastState = ERROR_WAIT;              // Set last state
+                    sCurrentState = BEGIN_COUNT;         // Set current state
+                }
+                
+            break;
+            
+            // Signal that the cycle was enabled for too long, discard cycle
+            case TIMEOUT_ERROR:
+                //check if the output is off, and change the output to on
+                if (CHKFALSE(bFlags_1, SENS_STAT)){
+                    SENS_STAT_ON;
+                    SETBIT(bFlags_1, SENS_STAT);
+                }
+                if (!TRG_STATUS)
+                {
+                    sLastState = TIMEOUT_ERROR;              // Set last state
+                    sCurrentState = ERROR_WAIT;         // Set current state
+                }
+                
             break;
 
 
             default:    // Should never get here....but never say never
-                                                    // Disable ISO outputs on side 2
-                                                    // Turn OFF Yellow LED
-                                                    // Turn OFF Green LED
-                TMR1_Init();                        // Setup Timer1
-                PIE1bits.TMR1IE = 1;                // Enable Timer1 overflow int
+                //check if the output is off, and change the output to on
+                if (CHKFALSE(bFlags_1, SENS_STAT)){
+                    SENS_STAT_ON;
+                    SETBIT(bFlags_1, SENS_STAT);
+                }
+                
                 SETBIT(bFlags_1,BSLEDBLINK);          // Set BAD_STATE blink LED flag
-                RESETBIT(bFlags_1,LEDONOFF);          // Initialize LED to off
-                sCurrentState = BAD_STATE;          // Go blink the RED LED due to an incorrect state value, power needs to be cycled
-
-                break;  // Normally after (default:) program would come out of switch
+                RESETBIT(bFlags_1,LEDONOFF);          // Initialize LED flag to off
+                
+                for(int ii = 0; ii > 3; ii++){
+                    STAT_LED_OFF;
+                    sGenTimer1 = 0;     //reset clock
+                    while(sGenTimer1 < 500){} //wait 500 ms
+                    STAT_LED_ON;
+                    sGenTimer1 = 0;     //reset clock
+                    while(sGenTimer1 < 500){} //wait 500 ms
+                }
+                
+                sCurrentState = RESETSTATE;         // Set current state
+            break;  // Normally after (default:) program would come out of switch
         }
         //--------------END SPI STATE MACHINE
     }
@@ -373,13 +412,18 @@ void __interrupt() ISR_Routine(void)
         TMR1H = TIMER1HVAL;
         TMR1L = TIMER1LVAL;
         
-        // Check if General timers are running
+        // Check if General timers are running and decrement
+        /*
         if(sGenTimer1)
             sGenTimer1--;
             
         if(sGenTimer2)
             sGenTimer2--;
+        */
         
+        //increment timers
+        sGenTimer1++;
+        sGenTimer2++;
                
         PIR1bits.TMR1IF = 0;                        // Clear timer1 int flag
     }
@@ -437,7 +481,7 @@ void TMR1_Init(void)
 
     // Set up the Timer1 Control Register (T1CON)
     T1CONbits.TMR1CS = 0;       // Timer 1 source is instruction clock (Fosc/4)= 250ns
-    T1CONbits.T1CKPS = 3;       // 1ms, Set prescale 1:8 (250ns * 4 = 1us)
+    T1CONbits.T1CKPS = 2;       // 1ms, Set prescale 1:4 (250ns * 4 = 1us)
     T1CONbits.T1OSCEN = 0;      // Dedicated Timer1 oscillator circuit disabled
     T1CONbits.nT1SYNC = 1;      // Do not synchronize external clock input
     T1CONbits.TMR1ON = 1;       // Timer 1 on
