@@ -1,0 +1,1649 @@
+Version 4.0 HI-TECH Software Intermediate Code
+[p mainexit ]
+"1618 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 1618:     struct {
+[s S90 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S90 . SCS0 SCS1 . IRCF0 IRCF1 IRCF2 IRCF3 SPLLEN ]
+"1628
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 1628:     struct {
+[s S91 :2 `uc 1 :1 `uc 1 :4 `uc 1 ]
+[n S91 . SCS . IRCF ]
+"1617
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 1617: typedef union {
+[u S89 `S90 1 `S91 1 ]
+[n S89 . . . ]
+"1634
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 1634: extern volatile OSCCONbits_t OSCCONbits __attribute__((address(0x099)));
+[v _OSCCONbits `VS89 ~T0 @X0 0 e@153 ]
+"1367
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 1367:     struct {
+[s S79 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S79 . PS0 PS1 PS2 PSA TMR0SE TMR0CS INTEDG nWPUEN ]
+"1377
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 1377:     struct {
+[s S80 :3 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S80 . PS . T0SE T0CS ]
+"1366
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 1366: typedef union {
+[u S78 `S79 1 `S80 1 ]
+[n S78 . . . ]
+"1384
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 1384: extern volatile OPTION_REGbits_t OPTION_REGbits __attribute__((address(0x095)));
+[v _OPTION_REGbits `VS78 ~T0 @X0 0 e@149 ]
+"2741
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 2741:     struct {
+[s S142 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S142 . ANSA0 ANSA1 ANSA2 . ANSA4 ]
+"2748
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 2748:     struct {
+[s S143 :5 `uc 1 ]
+[n S143 . ANSELA ]
+"2740
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 2740: typedef union {
+[u S141 `S142 1 `S143 1 ]
+[n S141 . . . ]
+"2752
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 2752: extern volatile ANSELAbits_t ANSELAbits __attribute__((address(0x18C)));
+[v _ANSELAbits `VS141 ~T0 @X0 0 e@396 ]
+"3285
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 3285: extern volatile unsigned char WPUA __attribute__((address(0x20C)));
+[v _WPUA `Vuc ~T0 @X0 0 e@524 ]
+"1114
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 1114:     struct {
+[s S69 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S69 . TRISA0 TRISA1 TRISA2 TRISA3 TRISA4 TRISA5 ]
+"1113
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 1113: typedef union {
+[u S68 `S69 1 ]
+[n S68 . . ]
+"1123
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 1123: extern volatile TRISAbits_t TRISAbits __attribute__((address(0x08C)));
+[v _TRISAbits `VS68 ~T0 @X0 0 e@140 ]
+"1951
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 1951:     struct {
+[s S106 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S106 . LATA0 LATA1 LATA2 . LATA4 LATA5 ]
+"1950
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 1950: typedef union {
+[u S105 `S106 1 ]
+[n S105 . . ]
+"1960
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 1960: extern volatile LATAbits_t LATAbits __attribute__((address(0x10C)));
+[v _LATAbits `VS105 ~T0 @X0 0 e@268 ]
+"2788
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 2788:     struct {
+[s S145 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S145 . ANSC0 ANSC1 ANSC2 ANSC3 ]
+"2794
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 2794:     struct {
+[s S146 :4 `uc 1 ]
+[n S146 . ANSELC ]
+"2787
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 2787: typedef union {
+[u S144 `S145 1 `S146 1 ]
+[n S144 . . . ]
+"2798
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 2798: extern volatile ANSELCbits_t ANSELCbits __attribute__((address(0x18E)));
+[v _ANSELCbits `VS144 ~T0 @X0 0 e@398 ]
+"3343
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 3343: extern volatile unsigned char WPUC __attribute__((address(0x20E)));
+[v _WPUC `Vuc ~T0 @X0 0 e@526 ]
+"1164
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 1164:     struct {
+[s S71 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S71 . TRISC0 TRISC1 TRISC2 TRISC3 TRISC4 TRISC5 ]
+"1163
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 1163: typedef union {
+[u S70 `S71 1 ]
+[n S70 . . ]
+"1173
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 1173: extern volatile TRISCbits_t TRISCbits __attribute__((address(0x08E)));
+[v _TRISCbits `VS70 ~T0 @X0 0 e@142 ]
+"1996
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 1996:     struct {
+[s S108 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S108 . LATC0 LATC1 LATC2 LATC3 LATC4 LATC5 ]
+"1995
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 1995: typedef union {
+[u S107 `S108 1 ]
+[n S107 . . ]
+"2005
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 2005: extern volatile LATCbits_t LATCbits __attribute__((address(0x10E)));
+[v _LATCbits `VS107 ~T0 @X0 0 e@270 ]
+"2415
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 2415: extern volatile unsigned char DACCON0 __attribute__((address(0x118)));
+[v _DACCON0 `Vuc ~T0 @X0 0 e@280 ]
+"127 ./OpticalSpeedSensor.h
+[; ;./OpticalSpeedSensor.h: 127: void Enable_External_Rising_Int(void);
+[v _Enable_External_Rising_Int `(v ~T0 @X0 0 ef ]
+"485 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 485:     struct {
+[s S36 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S36 . RC0 RC1 RC2 RC3 RC4 RC5 ]
+"484
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 484: typedef union {
+[u S35 `S36 1 ]
+[n S35 . . ]
+"494
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 494: extern volatile PORTCbits_t PORTCbits __attribute__((address(0x00E)));
+[v _PORTCbits `VS35 ~T0 @X0 0 e@14 ]
+"3393
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 3393: extern volatile unsigned char SSP1BUF __attribute__((address(0x211)));
+[v _SSP1BUF `Vuc ~T0 @X0 0 e@529 ]
+"535
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 535:     struct {
+[s S38 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S38 . TMR1IF TMR2IF CCP1IF SSP1IF TXIF RCIF ADIF TMR1GIF ]
+"534
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 534: typedef union {
+[u S37 `S38 1 ]
+[n S37 . . ]
+"546
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 546: extern volatile PIR1bits_t PIR1bits __attribute__((address(0x011)));
+[v _PIR1bits `VS37 ~T0 @X0 0 e@17 ]
+"122 ./OpticalSpeedSensor.h
+[; ;./OpticalSpeedSensor.h: 122: void UART_Write(unsigned short data);
+[v _UART_Write `(v ~T0 @X0 0 ef1`us ]
+"117
+[; ;./OpticalSpeedSensor.h: 117: void TMR1_Init(void);
+[v _TMR1_Init `(v ~T0 @X0 0 ef ]
+"1214 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 1214:     struct {
+[s S73 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S73 . TMR1IE TMR2IE CCP1IE SSP1IE TXIE RCIE ADIE TMR1GIE ]
+"1213
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 1213: typedef union {
+[u S72 `S73 1 ]
+[n S72 . . ]
+"1225
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 1225: extern volatile PIE1bits_t PIE1bits __attribute__((address(0x091)));
+[v _PIE1bits `VS72 ~T0 @X0 0 e@145 ]
+[t ~ __interrupt . k ]
+[t T2 __interrupt ]
+"729
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 729: extern volatile unsigned char TMR1H __attribute__((address(0x017)));
+[v _TMR1H `Vuc ~T0 @X0 0 e@23 ]
+"709
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 709: extern volatile unsigned char TMR1L __attribute__((address(0x016)));
+[v _TMR1L `Vuc ~T0 @X0 0 e@22 ]
+"357
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 357:     struct {
+[s S31 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S31 . IOCIF INTF TMR0IF IOCIE INTE TMR0IE PEIE GIE ]
+"367
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 367:     struct {
+[s S32 :2 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
+[n S32 . . T0IF . T0IE ]
+"356
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 356: typedef union {
+[u S30 `S31 1 `S32 1 ]
+[n S30 . . . ]
+"374
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 374: extern volatile INTCONbits_t INTCONbits __attribute__((address(0x00B)));
+[v _INTCONbits `VS30 ~T0 @X0 0 e@11 ]
+[v F2300 `(v ~T0 @X0 1 tf1`ul ]
+"92 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic.h
+[v __delay `JF2300 ~T0 @X0 0 e ]
+[p i __delay ]
+"435 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 435:     struct {
+[s S34 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S34 . RA0 RA1 RA2 RA3 RA4 RA5 ]
+"434
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 434: typedef union {
+[u S33 `S34 1 ]
+[n S33 . . ]
+"444
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 444: extern volatile PORTAbits_t PORTAbits __attribute__((address(0x00C)));
+[v _PORTAbits `VS33 ~T0 @X0 0 e@12 ]
+"755
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 755:     struct {
+[s S50 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S50 . TMR1ON . nT1SYNC T1OSCEN T1CKPS0 T1CKPS1 TMR1CS0 TMR1CS1 ]
+"765
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 765:     struct {
+[s S51 :4 `uc 1 :2 `uc 1 :2 `uc 1 ]
+[n S51 . . T1CKPS TMR1CS ]
+"754
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 754: typedef union {
+[u S49 `S50 1 `S51 1 ]
+[n S49 . . . ]
+"771
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 771: extern volatile T1CONbits_t T1CONbits __attribute__((address(0x018)));
+[v _T1CONbits `VS49 ~T0 @X0 0 e@24 ]
+"821
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 821: extern volatile unsigned char T1GCON __attribute__((address(0x019)));
+[v _T1GCON `Vuc ~T0 @X0 0 e@25 ]
+"1879
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 1879:     struct {
+[s S103 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S103 . ADPREF0 ADPREF1 ADNREF . ADCS0 ADCS1 ADCS2 ADFM ]
+"1889
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 1889:     struct {
+[s S104 :2 `uc 1 :2 `uc 1 :3 `uc 1 ]
+[n S104 . ADPREF . ADCS ]
+"1878
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 1878: typedef union {
+[u S102 `S103 1 `S104 1 ]
+[n S102 . . . ]
+"1895
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 1895: extern volatile ADCON1bits_t ADCON1bits __attribute__((address(0x09E)));
+[v _ADCON1bits `VS102 ~T0 @X0 0 e@158 ]
+"3507
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 3507: extern volatile unsigned char SSP1STAT __attribute__((address(0x214)));
+[v _SSP1STAT `Vuc ~T0 @X0 0 e@532 ]
+"3629
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 3629: extern volatile unsigned char SSP1CON1 __attribute__((address(0x215)));
+[v _SSP1CON1 `Vuc ~T0 @X0 0 e@533 ]
+"3233
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 3233: extern volatile unsigned char BAUDCON __attribute__((address(0x19F)));
+[v _BAUDCON `Vuc ~T0 @X0 0 e@415 ]
+"3171
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 3171: extern volatile unsigned char TXSTA __attribute__((address(0x19E)));
+[v _TXSTA `Vuc ~T0 @X0 0 e@414 ]
+"3109
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 3109: extern volatile unsigned char RCSTA __attribute__((address(0x19D)));
+[v _RCSTA `Vuc ~T0 @X0 0 e@413 ]
+"3089
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 3089: extern volatile unsigned char SPBRGH __attribute__((address(0x19C)));
+[v _SPBRGH `Vuc ~T0 @X0 0 e@412 ]
+"3069
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 3069: extern volatile unsigned char SPBRGL __attribute__((address(0x19B)));
+[v _SPBRGL `Vuc ~T0 @X0 0 e@411 ]
+"3177
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 3177:     struct {
+[s S172 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S172 . TX9D TRMT BRGH SENDB SYNC TXEN TX9 CSRC ]
+"3176
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 3176: typedef union {
+[u S171 `S172 1 ]
+[n S171 . . ]
+"3188
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 3188: extern volatile TXSTAbits_t TXSTAbits __attribute__((address(0x19E)));
+[v _TXSTAbits `VS171 ~T0 @X0 0 e@414 ]
+"3042
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 3042: extern volatile unsigned char TXREG __attribute__((address(0x19A)));
+[v _TXREG `Vuc ~T0 @X0 0 e@410 ]
+"3115
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 3115:     struct {
+[s S170 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S170 . RX9D OERR FERR ADDEN CREN SREN RX9 SPEN ]
+"3114
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 3114: typedef union {
+[u S169 `S170 1 ]
+[n S169 . . ]
+"3126
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 3126: extern volatile RCSTAbits_t RCSTAbits __attribute__((address(0x19D)));
+[v _RCSTAbits `VS169 ~T0 @X0 0 e@413 ]
+"3022
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 3022: extern volatile unsigned char RCREG __attribute__((address(0x199)));
+[v _RCREG `Vuc ~T0 @X0 0 e@409 ]
+"1799
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 1799:     struct {
+[s S99 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S99 . ADON GO_nDONE CHS0 CHS1 CHS2 CHS3 CHS4 ]
+"1808
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 1808:     struct {
+[s S100 :1 `uc 1 :1 `uc 1 :5 `uc 1 ]
+[n S100 . . ADGO CHS ]
+"1813
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 1813:     struct {
+[s S101 :1 `uc 1 :1 `uc 1 ]
+[n S101 . . GO ]
+"1798
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 1798: typedef union {
+[u S98 `S99 1 `S100 1 `S101 1 ]
+[n S98 . . . . ]
+"1818
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 1818: extern volatile ADCON0bits_t ADCON0bits __attribute__((address(0x09D)));
+[v _ADCON0bits `VS98 ~T0 @X0 0 e@157 ]
+"1773
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 1773: extern volatile unsigned char ADRESH __attribute__((address(0x09C)));
+[v _ADRESH `Vuc ~T0 @X0 0 e@156 ]
+"1753
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 1753: extern volatile unsigned char ADRESL __attribute__((address(0x09B)));
+[v _ADRESL `Vuc ~T0 @X0 0 e@155 ]
+"34 OpticalSpeedSensor.c
+[p x FOSC = INTOSC ]
+"35
+[p x WDTE = OFF ]
+"36
+[p x PWRTE = OFF ]
+"37
+[p x MCLRE = OFF ]
+"38
+[p x CP = OFF ]
+"39
+[p x CPD = OFF ]
+"40
+[p x BOREN = OFF ]
+"41
+[p x CLKOUTEN = OFF ]
+"42
+[p x IESO = OFF ]
+"43
+[p x FCMEN = OFF ]
+"46
+[p x WRT = OFF ]
+"47
+[p x PLLEN = OFF ]
+"48
+[p x STVREN = ON ]
+"49
+[p x BORV = LO ]
+"50
+[p x LVP = OFF ]
+"54 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 54: __asm("INDF0 equ 00h");
+[; <" INDF0 equ 00h ;# ">
+"74
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 74: __asm("INDF1 equ 01h");
+[; <" INDF1 equ 01h ;# ">
+"94
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 94: __asm("PCL equ 02h");
+[; <" PCL equ 02h ;# ">
+"114
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 114: __asm("STATUS equ 03h");
+[; <" STATUS equ 03h ;# ">
+"177
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 177: __asm("FSR0L equ 04h");
+[; <" FSR0L equ 04h ;# ">
+"197
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 197: __asm("FSR0H equ 05h");
+[; <" FSR0H equ 05h ;# ">
+"221
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 221: __asm("FSR1L equ 06h");
+[; <" FSR1L equ 06h ;# ">
+"241
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 241: __asm("FSR1H equ 07h");
+[; <" FSR1H equ 07h ;# ">
+"261
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 261: __asm("BSR equ 08h");
+[; <" BSR equ 08h ;# ">
+"313
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 313: __asm("WREG equ 09h");
+[; <" WREG equ 09h ;# ">
+"333
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 333: __asm("PCLATH equ 0Ah");
+[; <" PCLATH equ 0Ah ;# ">
+"353
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 353: __asm("INTCON equ 0Bh");
+[; <" INTCON equ 0Bh ;# ">
+"431
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 431: __asm("PORTA equ 0Ch");
+[; <" PORTA equ 0Ch ;# ">
+"481
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 481: __asm("PORTC equ 0Eh");
+[; <" PORTC equ 0Eh ;# ">
+"531
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 531: __asm("PIR1 equ 011h");
+[; <" PIR1 equ 011h ;# ">
+"593
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 593: __asm("PIR2 equ 012h");
+[; <" PIR2 equ 012h ;# ">
+"644
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 644: __asm("PIR3 equ 013h");
+[; <" PIR3 equ 013h ;# ">
+"684
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 684: __asm("TMR0 equ 015h");
+[; <" TMR0 equ 015h ;# ">
+"704
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 704: __asm("TMR1 equ 016h");
+[; <" TMR1 equ 016h ;# ">
+"711
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 711: __asm("TMR1L equ 016h");
+[; <" TMR1L equ 016h ;# ">
+"731
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 731: __asm("TMR1H equ 017h");
+[; <" TMR1H equ 017h ;# ">
+"751
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 751: __asm("T1CON equ 018h");
+[; <" T1CON equ 018h ;# ">
+"823
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 823: __asm("T1GCON equ 019h");
+[; <" T1GCON equ 019h ;# ">
+"893
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 893: __asm("TMR2 equ 01Ah");
+[; <" TMR2 equ 01Ah ;# ">
+"913
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 913: __asm("PR2 equ 01Bh");
+[; <" PR2 equ 01Bh ;# ">
+"933
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 933: __asm("T2CON equ 01Ch");
+[; <" T2CON equ 01Ch ;# ">
+"1004
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 1004: __asm("CPSCON0 equ 01Eh");
+[; <" CPSCON0 equ 01Eh ;# ">
+"1064
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 1064: __asm("CPSCON1 equ 01Fh");
+[; <" CPSCON1 equ 01Fh ;# ">
+"1110
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 1110: __asm("TRISA equ 08Ch");
+[; <" TRISA equ 08Ch ;# ">
+"1160
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 1160: __asm("TRISC equ 08Eh");
+[; <" TRISC equ 08Eh ;# ">
+"1210
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 1210: __asm("PIE1 equ 091h");
+[; <" PIE1 equ 091h ;# ">
+"1272
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 1272: __asm("PIE2 equ 092h");
+[; <" PIE2 equ 092h ;# ">
+"1323
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 1323: __asm("PIE3 equ 093h");
+[; <" PIE3 equ 093h ;# ">
+"1363
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 1363: __asm("OPTION_REG equ 095h");
+[; <" OPTION_REG equ 095h ;# ">
+"1446
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 1446: __asm("PCON equ 096h");
+[; <" PCON equ 096h ;# ">
+"1497
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 1497: __asm("WDTCON equ 097h");
+[; <" WDTCON equ 097h ;# ">
+"1556
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 1556: __asm("OSCTUNE equ 098h");
+[; <" OSCTUNE equ 098h ;# ">
+"1614
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 1614: __asm("OSCCON equ 099h");
+[; <" OSCCON equ 099h ;# ">
+"1686
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 1686: __asm("OSCSTAT equ 09Ah");
+[; <" OSCSTAT equ 09Ah ;# ">
+"1748
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 1748: __asm("ADRES equ 09Bh");
+[; <" ADRES equ 09Bh ;# ">
+"1755
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 1755: __asm("ADRESL equ 09Bh");
+[; <" ADRESL equ 09Bh ;# ">
+"1775
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 1775: __asm("ADRESH equ 09Ch");
+[; <" ADRESH equ 09Ch ;# ">
+"1795
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 1795: __asm("ADCON0 equ 09Dh");
+[; <" ADCON0 equ 09Dh ;# ">
+"1875
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 1875: __asm("ADCON1 equ 09Eh");
+[; <" ADCON1 equ 09Eh ;# ">
+"1947
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 1947: __asm("LATA equ 010Ch");
+[; <" LATA equ 010Ch ;# ">
+"1992
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 1992: __asm("LATC equ 010Eh");
+[; <" LATC equ 010Eh ;# ">
+"2042
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 2042: __asm("CM1CON0 equ 0111h");
+[; <" CM1CON0 equ 0111h ;# ">
+"2099
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 2099: __asm("CM1CON1 equ 0112h");
+[; <" CM1CON1 equ 0112h ;# ">
+"2165
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 2165: __asm("CM2CON0 equ 0113h");
+[; <" CM2CON0 equ 0113h ;# ">
+"2222
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 2222: __asm("CM2CON1 equ 0114h");
+[; <" CM2CON1 equ 0114h ;# ">
+"2288
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 2288: __asm("CMOUT equ 0115h");
+[; <" CMOUT equ 0115h ;# ">
+"2314
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 2314: __asm("BORCON equ 0116h");
+[; <" BORCON equ 0116h ;# ">
+"2341
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 2341: __asm("FVRCON equ 0117h");
+[; <" FVRCON equ 0117h ;# ">
+"2417
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 2417: __asm("DACCON0 equ 0118h");
+[; <" DACCON0 equ 0118h ;# ">
+"2478
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 2478: __asm("DACCON1 equ 0119h");
+[; <" DACCON1 equ 0119h ;# ">
+"2530
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 2530: __asm("SRCON0 equ 011Ah");
+[; <" SRCON0 equ 011Ah ;# ">
+"2601
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 2601: __asm("SRCON1 equ 011Bh");
+[; <" SRCON1 equ 011Bh ;# ">
+"2653
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 2653: __asm("APFCON0 equ 011Dh");
+[; <" APFCON0 equ 011Dh ;# ">
+"2699
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 2699: __asm("APFCON1 equ 011Eh");
+[; <" APFCON1 equ 011Eh ;# ">
+"2737
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 2737: __asm("ANSELA equ 018Ch");
+[; <" ANSELA equ 018Ch ;# ">
+"2784
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 2784: __asm("ANSELC equ 018Eh");
+[; <" ANSELC equ 018Eh ;# ">
+"2830
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 2830: __asm("EEADR equ 0191h");
+[; <" EEADR equ 0191h ;# ">
+"2837
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 2837: __asm("EEADRL equ 0191h");
+[; <" EEADRL equ 0191h ;# ">
+"2857
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 2857: __asm("EEADRH equ 0192h");
+[; <" EEADRH equ 0192h ;# ">
+"2877
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 2877: __asm("EEDAT equ 0193h");
+[; <" EEDAT equ 0193h ;# ">
+"2884
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 2884: __asm("EEDATL equ 0193h");
+[; <" EEDATL equ 0193h ;# ">
+"2889
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 2889: __asm("EEDATA equ 0193h");
+[; <" EEDATA equ 0193h ;# ">
+"2922
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 2922: __asm("EEDATH equ 0194h");
+[; <" EEDATH equ 0194h ;# ">
+"2942
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 2942: __asm("EECON1 equ 0195h");
+[; <" EECON1 equ 0195h ;# ">
+"3004
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 3004: __asm("EECON2 equ 0196h");
+[; <" EECON2 equ 0196h ;# ">
+"3024
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 3024: __asm("RCREG equ 0199h");
+[; <" RCREG equ 0199h ;# ">
+"3044
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 3044: __asm("TXREG equ 019Ah");
+[; <" TXREG equ 019Ah ;# ">
+"3064
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 3064: __asm("SPBRG equ 019Bh");
+[; <" SPBRG equ 019Bh ;# ">
+"3071
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 3071: __asm("SPBRGL equ 019Bh");
+[; <" SPBRGL equ 019Bh ;# ">
+"3091
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 3091: __asm("SPBRGH equ 019Ch");
+[; <" SPBRGH equ 019Ch ;# ">
+"3111
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 3111: __asm("RCSTA equ 019Dh");
+[; <" RCSTA equ 019Dh ;# ">
+"3173
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 3173: __asm("TXSTA equ 019Eh");
+[; <" TXSTA equ 019Eh ;# ">
+"3235
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 3235: __asm("BAUDCON equ 019Fh");
+[; <" BAUDCON equ 019Fh ;# ">
+"3287
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 3287: __asm("WPUA equ 020Ch");
+[; <" WPUA equ 020Ch ;# ">
+"3345
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 3345: __asm("WPUC equ 020Eh");
+[; <" WPUC equ 020Eh ;# ">
+"3395
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 3395: __asm("SSP1BUF equ 0211h");
+[; <" SSP1BUF equ 0211h ;# ">
+"3400
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 3400: __asm("SSPBUF equ 0211h");
+[; <" SSPBUF equ 0211h ;# ">
+"3433
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 3433: __asm("SSP1ADD equ 0212h");
+[; <" SSP1ADD equ 0212h ;# ">
+"3438
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 3438: __asm("SSPADD equ 0212h");
+[; <" SSPADD equ 0212h ;# ">
+"3471
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 3471: __asm("SSP1MSK equ 0213h");
+[; <" SSP1MSK equ 0213h ;# ">
+"3476
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 3476: __asm("SSPMSK equ 0213h");
+[; <" SSPMSK equ 0213h ;# ">
+"3509
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 3509: __asm("SSP1STAT equ 0214h");
+[; <" SSP1STAT equ 0214h ;# ">
+"3514
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 3514: __asm("SSPSTAT equ 0214h");
+[; <" SSPSTAT equ 0214h ;# ">
+"3631
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 3631: __asm("SSP1CON1 equ 0215h");
+[; <" SSP1CON1 equ 0215h ;# ">
+"3636
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 3636: __asm("SSPCON1 equ 0215h");
+[; <" SSPCON1 equ 0215h ;# ">
+"3640
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 3640: __asm("SSPCON equ 0215h");
+[; <" SSPCON equ 0215h ;# ">
+"3835
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 3835: __asm("SSP1CON2 equ 0216h");
+[; <" SSP1CON2 equ 0216h ;# ">
+"3840
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 3840: __asm("SSPCON2 equ 0216h");
+[; <" SSPCON2 equ 0216h ;# ">
+"3957
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 3957: __asm("SSP1CON3 equ 0217h");
+[; <" SSP1CON3 equ 0217h ;# ">
+"3962
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 3962: __asm("SSPCON3 equ 0217h");
+[; <" SSPCON3 equ 0217h ;# ">
+"4079
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 4079: __asm("CCPR1 equ 0291h");
+[; <" CCPR1 equ 0291h ;# ">
+"4086
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 4086: __asm("CCPR1L equ 0291h");
+[; <" CCPR1L equ 0291h ;# ">
+"4106
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 4106: __asm("CCPR1H equ 0292h");
+[; <" CCPR1H equ 0292h ;# ">
+"4126
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 4126: __asm("CCP1CON equ 0293h");
+[; <" CCP1CON equ 0293h ;# ">
+"4208
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 4208: __asm("PWM1CON equ 0294h");
+[; <" PWM1CON equ 0294h ;# ">
+"4278
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 4278: __asm("CCP1AS equ 0295h");
+[; <" CCP1AS equ 0295h ;# ">
+"4283
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 4283: __asm("ECCP1AS equ 0295h");
+[; <" ECCP1AS equ 0295h ;# ">
+"4440
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 4440: __asm("PSTR1CON equ 0296h");
+[; <" PSTR1CON equ 0296h ;# ">
+"4484
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 4484: __asm("CCPR2 equ 0298h");
+[; <" CCPR2 equ 0298h ;# ">
+"4491
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 4491: __asm("CCPR2L equ 0298h");
+[; <" CCPR2L equ 0298h ;# ">
+"4511
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 4511: __asm("CCPR2H equ 0299h");
+[; <" CCPR2H equ 0299h ;# ">
+"4531
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 4531: __asm("CCP2CON equ 029Ah");
+[; <" CCP2CON equ 029Ah ;# ">
+"4613
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 4613: __asm("PWM2CON equ 029Bh");
+[; <" PWM2CON equ 029Bh ;# ">
+"4683
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 4683: __asm("CCP2AS equ 029Ch");
+[; <" CCP2AS equ 029Ch ;# ">
+"4765
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 4765: __asm("PSTR2CON equ 029Dh");
+[; <" PSTR2CON equ 029Dh ;# ">
+"4809
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 4809: __asm("CCPTMRS equ 029Eh");
+[; <" CCPTMRS equ 029Eh ;# ">
+"4897
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 4897: __asm("CCPR3 equ 0311h");
+[; <" CCPR3 equ 0311h ;# ">
+"4904
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 4904: __asm("CCPR3L equ 0311h");
+[; <" CCPR3L equ 0311h ;# ">
+"4924
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 4924: __asm("CCPR3H equ 0312h");
+[; <" CCPR3H equ 0312h ;# ">
+"4944
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 4944: __asm("CCP3CON equ 0313h");
+[; <" CCP3CON equ 0313h ;# ">
+"5008
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 5008: __asm("CCPR4 equ 0318h");
+[; <" CCPR4 equ 0318h ;# ">
+"5015
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 5015: __asm("CCPR4L equ 0318h");
+[; <" CCPR4L equ 0318h ;# ">
+"5035
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 5035: __asm("CCPR4H equ 0319h");
+[; <" CCPR4H equ 0319h ;# ">
+"5055
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 5055: __asm("CCP4CON equ 031Ah");
+[; <" CCP4CON equ 031Ah ;# ">
+"5119
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 5119: __asm("INLVLA equ 038Ch");
+[; <" INLVLA equ 038Ch ;# ">
+"5177
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 5177: __asm("INLVLC equ 038Eh");
+[; <" INLVLC equ 038Eh ;# ">
+"5235
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 5235: __asm("IOCAP equ 0391h");
+[; <" IOCAP equ 0391h ;# ">
+"5293
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 5293: __asm("IOCAN equ 0392h");
+[; <" IOCAN equ 0392h ;# ">
+"5351
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 5351: __asm("IOCAF equ 0393h");
+[; <" IOCAF equ 0393h ;# ">
+"5409
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 5409: __asm("CLKRCON equ 039Ah");
+[; <" CLKRCON equ 039Ah ;# ">
+"5485
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 5485: __asm("MDCON equ 039Ch");
+[; <" MDCON equ 039Ch ;# ">
+"5536
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 5536: __asm("MDSRC equ 039Dh");
+[; <" MDSRC equ 039Dh ;# ">
+"5589
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 5589: __asm("MDCARL equ 039Eh");
+[; <" MDCARL equ 039Eh ;# ">
+"5654
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 5654: __asm("MDCARH equ 039Fh");
+[; <" MDCARH equ 039Fh ;# ">
+"5719
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 5719: __asm("TMR4 equ 0415h");
+[; <" TMR4 equ 0415h ;# ">
+"5739
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 5739: __asm("PR4 equ 0416h");
+[; <" PR4 equ 0416h ;# ">
+"5759
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 5759: __asm("T4CON equ 0417h");
+[; <" T4CON equ 0417h ;# ">
+"5830
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 5830: __asm("TMR6 equ 041Ch");
+[; <" TMR6 equ 041Ch ;# ">
+"5850
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 5850: __asm("PR6 equ 041Dh");
+[; <" PR6 equ 041Dh ;# ">
+"5870
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 5870: __asm("T6CON equ 041Eh");
+[; <" T6CON equ 041Eh ;# ">
+"5941
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 5941: __asm("STATUS_SHAD equ 0FE4h");
+[; <" STATUS_SHAD equ 0FE4h ;# ">
+"5973
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 5973: __asm("WREG_SHAD equ 0FE5h");
+[; <" WREG_SHAD equ 0FE5h ;# ">
+"5993
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 5993: __asm("BSR_SHAD equ 0FE6h");
+[; <" BSR_SHAD equ 0FE6h ;# ">
+"6013
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 6013: __asm("PCLATH_SHAD equ 0FE7h");
+[; <" PCLATH_SHAD equ 0FE7h ;# ">
+"6033
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 6033: __asm("FSR0L_SHAD equ 0FE8h");
+[; <" FSR0L_SHAD equ 0FE8h ;# ">
+"6053
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 6053: __asm("FSR0H_SHAD equ 0FE9h");
+[; <" FSR0H_SHAD equ 0FE9h ;# ">
+"6073
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 6073: __asm("FSR1L_SHAD equ 0FEAh");
+[; <" FSR1L_SHAD equ 0FEAh ;# ">
+"6093
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 6093: __asm("FSR1H_SHAD equ 0FEBh");
+[; <" FSR1H_SHAD equ 0FEBh ;# ">
+"6113
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 6113: __asm("STKPTR equ 0FEDh");
+[; <" STKPTR equ 0FEDh ;# ">
+"6133
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 6133: __asm("TOSL equ 0FEEh");
+[; <" TOSL equ 0FEEh ;# ">
+"6153
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1825.h: 6153: __asm("TOSH equ 0FEFh");
+[; <" TOSH equ 0FEFh ;# ">
+"19 ./OpticalSpeedSensor.h
+[; ;./OpticalSpeedSensor.h: 19: unsigned char bRisingEdges;
+[v _bRisingEdges `uc ~T0 @X0 1 e ]
+"20
+[; ;./OpticalSpeedSensor.h: 20: unsigned short sCurrentState;
+[v _sCurrentState `us ~T0 @X0 1 e ]
+"21
+[; ;./OpticalSpeedSensor.h: 21: unsigned short sLastState;
+[v _sLastState `us ~T0 @X0 1 e ]
+"22
+[; ;./OpticalSpeedSensor.h: 22: unsigned char bFlags_1;
+[v _bFlags_1 `uc ~T0 @X0 1 e ]
+"23
+[; ;./OpticalSpeedSensor.h: 23: unsigned char bFlags_2;
+[v _bFlags_2 `uc ~T0 @X0 1 e ]
+"24
+[; ;./OpticalSpeedSensor.h: 24: signed short swCurrentADCVal;
+[v _swCurrentADCVal `s ~T0 @X0 1 e ]
+"25
+[; ;./OpticalSpeedSensor.h: 25: unsigned char bADCHigh;
+[v _bADCHigh `uc ~T0 @X0 1 e ]
+"26
+[; ;./OpticalSpeedSensor.h: 26: unsigned char bADCLow;
+[v _bADCLow `uc ~T0 @X0 1 e ]
+"27
+[; ;./OpticalSpeedSensor.h: 27: unsigned short sGenTimer1;
+[v _sGenTimer1 `us ~T0 @X0 1 e ]
+"28
+[; ;./OpticalSpeedSensor.h: 28: unsigned short sGenTimer2;
+[v _sGenTimer2 `us ~T0 @X0 1 e ]
+[v $root$_main `(v ~T0 @X0 0 e ]
+"65 OpticalSpeedSensor.c
+[; ;OpticalSpeedSensor.c: 65: void main (void)
+[v _main `(v ~T0 @X0 1 ef ]
+"66
+[; ;OpticalSpeedSensor.c: 66: {
+{
+[e :U _main ]
+[f ]
+"69
+[; ;OpticalSpeedSensor.c: 69:     OSCCONbits.SPLLEN=0x00;
+[e = . . _OSCCONbits 0 7 -> -> 0 `i `uc ]
+"70
+[; ;OpticalSpeedSensor.c: 70:     OSCCONbits.SCS=0x02;
+[e = . . _OSCCONbits 1 0 -> -> 2 `i `uc ]
+"71
+[; ;OpticalSpeedSensor.c: 71:     OSCCONbits.IRCF=0x0F;
+[e = . . _OSCCONbits 1 2 -> -> 15 `i `uc ]
+"76
+[; ;OpticalSpeedSensor.c: 76:     OPTION_REGbits.nWPUEN = 0;
+[e = . . _OPTION_REGbits 0 7 -> -> 0 `i `uc ]
+"81
+[; ;OpticalSpeedSensor.c: 81:     ANSELAbits.ANSA0 = 0;
+[e = . . _ANSELAbits 0 0 -> -> 0 `i `uc ]
+"82
+[; ;OpticalSpeedSensor.c: 82:     ANSELAbits.ANSA1 = 0;
+[e = . . _ANSELAbits 0 1 -> -> 0 `i `uc ]
+"83
+[; ;OpticalSpeedSensor.c: 83:     ANSELAbits.ANSA2 = 0;
+[e = . . _ANSELAbits 0 2 -> -> 0 `i `uc ]
+"84
+[; ;OpticalSpeedSensor.c: 84:     ANSELAbits.ANSA4 = 0;
+[e = . . _ANSELAbits 0 4 -> -> 0 `i `uc ]
+"86
+[; ;OpticalSpeedSensor.c: 86:     WPUA = 0x00;
+[e = _WPUA -> -> 0 `i `uc ]
+"95
+[; ;OpticalSpeedSensor.c: 95:     TRISAbits.TRISA0 = 0;
+[e = . . _TRISAbits 0 0 -> -> 0 `i `uc ]
+"96
+[; ;OpticalSpeedSensor.c: 96:     LATAbits.LATA0 = 0;
+[e = . . _LATAbits 0 0 -> -> 0 `i `uc ]
+"98
+[; ;OpticalSpeedSensor.c: 98:     TRISAbits.TRISA1 = 0;
+[e = . . _TRISAbits 0 1 -> -> 0 `i `uc ]
+"99
+[; ;OpticalSpeedSensor.c: 99:     LATAbits.LATA1 = 0;
+[e = . . _LATAbits 0 1 -> -> 0 `i `uc ]
+"101
+[; ;OpticalSpeedSensor.c: 101:     TRISAbits.TRISA2 = 1;
+[e = . . _TRISAbits 0 2 -> -> 1 `i `uc ]
+"104
+[; ;OpticalSpeedSensor.c: 104:     TRISAbits.TRISA3 = 1;
+[e = . . _TRISAbits 0 3 -> -> 1 `i `uc ]
+"106
+[; ;OpticalSpeedSensor.c: 106:     TRISAbits.TRISA4 = 0;
+[e = . . _TRISAbits 0 4 -> -> 0 `i `uc ]
+"107
+[; ;OpticalSpeedSensor.c: 107:     LATAbits.LATA4 = 1;
+[e = . . _LATAbits 0 4 -> -> 1 `i `uc ]
+"109
+[; ;OpticalSpeedSensor.c: 109:     TRISAbits.TRISA5 = 0;
+[e = . . _TRISAbits 0 5 -> -> 0 `i `uc ]
+"110
+[; ;OpticalSpeedSensor.c: 110:     LATAbits.LATA5 = 1;
+[e = . . _LATAbits 0 5 -> -> 1 `i `uc ]
+"118
+[; ;OpticalSpeedSensor.c: 118:     ANSELCbits.ANSC0 = 0;
+[e = . . _ANSELCbits 0 0 -> -> 0 `i `uc ]
+"119
+[; ;OpticalSpeedSensor.c: 119:     ANSELCbits.ANSC1 = 0;
+[e = . . _ANSELCbits 0 1 -> -> 0 `i `uc ]
+"120
+[; ;OpticalSpeedSensor.c: 120:     ANSELCbits.ANSC2 = 0;
+[e = . . _ANSELCbits 0 2 -> -> 0 `i `uc ]
+"121
+[; ;OpticalSpeedSensor.c: 121:     ANSELCbits.ANSC3 = 0;
+[e = . . _ANSELCbits 0 3 -> -> 0 `i `uc ]
+"123
+[; ;OpticalSpeedSensor.c: 123:     WPUC = 0x00;
+[e = _WPUC -> -> 0 `i `uc ]
+"133
+[; ;OpticalSpeedSensor.c: 133:     TRISCbits.TRISC0 = 0;
+[e = . . _TRISCbits 0 0 -> -> 0 `i `uc ]
+"134
+[; ;OpticalSpeedSensor.c: 134:     LATCbits.LATC0 = 0;
+[e = . . _LATCbits 0 0 -> -> 0 `i `uc ]
+"137
+[; ;OpticalSpeedSensor.c: 137:     TRISCbits.TRISC1 = 0;
+[e = . . _TRISCbits 0 1 -> -> 0 `i `uc ]
+"138
+[; ;OpticalSpeedSensor.c: 138:     LATCbits.LATC1 = 0;
+[e = . . _LATCbits 0 1 -> -> 0 `i `uc ]
+"141
+[; ;OpticalSpeedSensor.c: 141:     TRISCbits.TRISC2 = 0;
+[e = . . _TRISCbits 0 2 -> -> 0 `i `uc ]
+"142
+[; ;OpticalSpeedSensor.c: 142:     LATCbits.LATC2 = 0;
+[e = . . _LATCbits 0 2 -> -> 0 `i `uc ]
+"145
+[; ;OpticalSpeedSensor.c: 145:     TRISCbits.TRISC3 = 1;
+[e = . . _TRISCbits 0 3 -> -> 1 `i `uc ]
+"148
+[; ;OpticalSpeedSensor.c: 148:     TRISCbits.TRISC4 = 0;
+[e = . . _TRISCbits 0 4 -> -> 0 `i `uc ]
+"149
+[; ;OpticalSpeedSensor.c: 149:     LATCbits.LATC4 = 0;
+[e = . . _LATCbits 0 4 -> -> 0 `i `uc ]
+"152
+[; ;OpticalSpeedSensor.c: 152:     TRISCbits.TRISC5 = 0;
+[e = . . _TRISCbits 0 5 -> -> 0 `i `uc ]
+"153
+[; ;OpticalSpeedSensor.c: 153:     LATCbits.LATC5 = 0;
+[e = . . _LATCbits 0 5 -> -> 0 `i `uc ]
+"162
+[; ;OpticalSpeedSensor.c: 162:     DACCON0 = 0;
+[e = _DACCON0 -> -> 0 `i `uc ]
+"184
+[; ;OpticalSpeedSensor.c: 184:     Enable_External_Rising_Int();
+[e ( _Enable_External_Rising_Int ..  ]
+"186
+[; ;OpticalSpeedSensor.c: 186:     sCurrentState = 1;
+[e = _sCurrentState -> -> 1 `i `us ]
+"189
+[; ;OpticalSpeedSensor.c: 189:     if(PORTCbits.RC3 == 0)
+[e $ ! == -> . . _PORTCbits 0 3 `i -> 0 `i 329  ]
+"190
+[; ;OpticalSpeedSensor.c: 190:     {
+{
+"192
+[; ;OpticalSpeedSensor.c: 192:     }
+}
+[e :U 329 ]
+"196
+[; ;OpticalSpeedSensor.c: 196:     while(1)
+[e :U 331 ]
+"197
+[; ;OpticalSpeedSensor.c: 197:     {
+{
+"201
+[; ;OpticalSpeedSensor.c: 201:         switch(sCurrentState)
+[e $U 334  ]
+"202
+[; ;OpticalSpeedSensor.c: 202:         {
+{
+"204
+[; ;OpticalSpeedSensor.c: 204:             case 1:
+[e :U 335 ]
+"205
+[; ;OpticalSpeedSensor.c: 205:                 bFlags_1 = 0;
+[e = _bFlags_1 -> -> 0 `i `uc ]
+"206
+[; ;OpticalSpeedSensor.c: 206:                 bFlags_2 = 0;
+[e = _bFlags_2 -> -> 0 `i `uc ]
+"208
+[; ;OpticalSpeedSensor.c: 208:                 sLastState = 1;
+[e = _sLastState -> -> 1 `i `us ]
+"209
+[; ;OpticalSpeedSensor.c: 209:                 sCurrentState = 2;
+[e = _sCurrentState -> -> 2 `i `us ]
+"211
+[; ;OpticalSpeedSensor.c: 211:             break;
+[e $U 333  ]
+"215
+[; ;OpticalSpeedSensor.c: 215:             case 2:
+[e :U 336 ]
+"217
+[; ;OpticalSpeedSensor.c: 217:                 if(0)
+[e $ ! != -> 0 `i -> 0 `i 337  ]
+"218
+[; ;OpticalSpeedSensor.c: 218:                 {
+{
+"219
+[; ;OpticalSpeedSensor.c: 219:                     sLastState = 2;
+[e = _sLastState -> -> 2 `i `us ]
+"220
+[; ;OpticalSpeedSensor.c: 220:                     sCurrentState = 3;
+[e = _sCurrentState -> -> 3 `i `us ]
+"221
+[; ;OpticalSpeedSensor.c: 221:                     break;
+[e $U 333  ]
+"222
+[; ;OpticalSpeedSensor.c: 222:                 }
+}
+[e $U 338  ]
+"223
+[; ;OpticalSpeedSensor.c: 223:                 else
+[e :U 337 ]
+"224
+[; ;OpticalSpeedSensor.c: 224:                 {
+{
+"226
+[; ;OpticalSpeedSensor.c: 226:                 }
+}
+[e :U 338 ]
+"227
+[; ;OpticalSpeedSensor.c: 227:             break;
+[e $U 333  ]
+"231
+[; ;OpticalSpeedSensor.c: 231:             case 3:
+[e :U 339 ]
+"235
+[; ;OpticalSpeedSensor.c: 235:                 SSP1BUF = 0;
+[e = _SSP1BUF -> -> 0 `i `uc ]
+"236
+[; ;OpticalSpeedSensor.c: 236:                 PIR1bits.SSP1IF = 0;
+[e = . . _PIR1bits 0 3 -> -> 0 `i `uc ]
+"238
+[; ;OpticalSpeedSensor.c: 238:                 sLastState = 3;
+[e = _sLastState -> -> 3 `i `us ]
+"239
+[; ;OpticalSpeedSensor.c: 239:                 sCurrentState = 4;
+[e = _sCurrentState -> -> 4 `i `us ]
+"240
+[; ;OpticalSpeedSensor.c: 240:             break;
+[e $U 333  ]
+"245
+[; ;OpticalSpeedSensor.c: 245:             case 4:
+[e :U 340 ]
+"247
+[; ;OpticalSpeedSensor.c: 247:                 if(PIR1bits.SSP1IF)
+[e $ ! != -> . . _PIR1bits 0 3 `i -> 0 `i 341  ]
+"248
+[; ;OpticalSpeedSensor.c: 248:                 {
+{
+"250
+[; ;OpticalSpeedSensor.c: 250:                     PIR1bits.SSP1IF = 0;
+[e = . . _PIR1bits 0 3 -> -> 0 `i `uc ]
+"252
+[; ;OpticalSpeedSensor.c: 252:                     if (0)
+[e $ ! != -> 0 `i -> 0 `i 342  ]
+"253
+[; ;OpticalSpeedSensor.c: 253:                     {
+{
+"254
+[; ;OpticalSpeedSensor.c: 254:                         ((bFlags_1) |= (0x08));
+[e =| _bFlags_1 -> -> 8 `i `uc ]
+"257
+[; ;OpticalSpeedSensor.c: 257:                         sLastState = 4;
+[e = _sLastState -> -> 4 `i `us ]
+"258
+[; ;OpticalSpeedSensor.c: 258:                         sCurrentState = 5;
+[e = _sCurrentState -> -> 5 `i `us ]
+"260
+[; ;OpticalSpeedSensor.c: 260:                     }
+}
+[e $U 343  ]
+"261
+[; ;OpticalSpeedSensor.c: 261:                     else
+[e :U 342 ]
+"262
+[; ;OpticalSpeedSensor.c: 262:                     {
+{
+"263
+[; ;OpticalSpeedSensor.c: 263:                         ((bFlags_1) &= ((~(0x08))));
+[e =& _bFlags_1 -> ~ -> 8 `i `uc ]
+"265
+[; ;OpticalSpeedSensor.c: 265:                     }
+}
+[e :U 343 ]
+"266
+[; ;OpticalSpeedSensor.c: 266:                 }
+}
+[e :U 341 ]
+"268
+[; ;OpticalSpeedSensor.c: 268:             break;
+[e $U 333  ]
+"273
+[; ;OpticalSpeedSensor.c: 273:             case 5:
+[e :U 344 ]
+"275
+[; ;OpticalSpeedSensor.c: 275:                 if( (((bFlags_1) & (0x08)) != 0) )
+[e $ ! != & -> _bFlags_1 `i -> 8 `i -> 0 `i 345  ]
+"276
+[; ;OpticalSpeedSensor.c: 276:                 {
+{
+"278
+[; ;OpticalSpeedSensor.c: 278:                     UART_Write(0x0A);
+[e ( _UART_Write (1 -> -> 10 `i `us ]
+"279
+[; ;OpticalSpeedSensor.c: 279:                     UART_Write(0x0D);
+[e ( _UART_Write (1 -> -> 13 `i `us ]
+"281
+[; ;OpticalSpeedSensor.c: 281:                     ((bFlags_1) &= ((~(0x08))));
+[e =& _bFlags_1 -> ~ -> 8 `i `uc ]
+"283
+[; ;OpticalSpeedSensor.c: 283:                     sLastState = 5;
+[e = _sLastState -> -> 5 `i `us ]
+"284
+[; ;OpticalSpeedSensor.c: 284:                     sCurrentState = 6;
+[e = _sCurrentState -> -> 6 `i `us ]
+"286
+[; ;OpticalSpeedSensor.c: 286:                 }
+}
+[e :U 345 ]
+"288
+[; ;OpticalSpeedSensor.c: 288:             break;
+[e $U 333  ]
+"292
+[; ;OpticalSpeedSensor.c: 292:             case 6:
+[e :U 346 ]
+"294
+[; ;OpticalSpeedSensor.c: 294:                 if( ((((bFlags_1) & (0x10)) != 0) && (sGenTimer1 == 0)) )
+[e $ ! && != & -> _bFlags_1 `i -> 16 `i -> 0 `i == -> _sGenTimer1 `ui -> -> 0 `i `ui 347  ]
+"295
+[; ;OpticalSpeedSensor.c: 295:                 {
+{
+"296
+[; ;OpticalSpeedSensor.c: 296:                     if((((bFlags_1) & (0x04)) != 0))
+[e $ ! != & -> _bFlags_1 `i -> 4 `i -> 0 `i 348  ]
+"297
+[; ;OpticalSpeedSensor.c: 297:                     {
+{
+"299
+[; ;OpticalSpeedSensor.c: 299:                         sGenTimer1 = 250;
+[e = _sGenTimer1 -> -> 250 `i `us ]
+"300
+[; ;OpticalSpeedSensor.c: 300:                         ((bFlags_1) &= ((~(0x04))));
+[e =& _bFlags_1 -> ~ -> 4 `i `uc ]
+"301
+[; ;OpticalSpeedSensor.c: 301:                     }
+}
+[e $U 349  ]
+"302
+[; ;OpticalSpeedSensor.c: 302:                     else
+[e :U 348 ]
+"303
+[; ;OpticalSpeedSensor.c: 303:                     {
+{
+"305
+[; ;OpticalSpeedSensor.c: 305:                         sGenTimer1 = 250;
+[e = _sGenTimer1 -> -> 250 `i `us ]
+"306
+[; ;OpticalSpeedSensor.c: 306:                         ((bFlags_1) |= (0x04));
+[e =| _bFlags_1 -> -> 4 `i `uc ]
+"307
+[; ;OpticalSpeedSensor.c: 307:                     }
+}
+[e :U 349 ]
+"308
+[; ;OpticalSpeedSensor.c: 308:                 }
+}
+[e :U 347 ]
+"309
+[; ;OpticalSpeedSensor.c: 309:             break;
+[e $U 333  ]
+"312
+[; ;OpticalSpeedSensor.c: 312:             default:
+[e :U 350 ]
+"316
+[; ;OpticalSpeedSensor.c: 316:                 TMR1_Init();
+[e ( _TMR1_Init ..  ]
+"317
+[; ;OpticalSpeedSensor.c: 317:                 PIE1bits.TMR1IE = 1;
+[e = . . _PIE1bits 0 0 -> -> 1 `i `uc ]
+"318
+[; ;OpticalSpeedSensor.c: 318:                 ((bFlags_1) |= (0x10));
+[e =| _bFlags_1 -> -> 16 `i `uc ]
+"319
+[; ;OpticalSpeedSensor.c: 319:                 ((bFlags_1) &= ((~(0x04))));
+[e =& _bFlags_1 -> ~ -> 4 `i `uc ]
+"320
+[; ;OpticalSpeedSensor.c: 320:                 sCurrentState = 6;
+[e = _sCurrentState -> -> 6 `i `us ]
+"322
+[; ;OpticalSpeedSensor.c: 322:                 break;
+[e $U 333  ]
+"323
+[; ;OpticalSpeedSensor.c: 323:         }
+}
+[e $U 333  ]
+[e :U 334 ]
+[e [\ -> _sCurrentState `ui , $ -> -> 1 `i `ui 335
+ , $ -> -> 2 `i `ui 336
+ , $ -> -> 3 `i `ui 339
+ , $ -> -> 4 `i `ui 340
+ , $ -> -> 5 `i `ui 344
+ , $ -> -> 6 `i `ui 346
+ 350 ]
+[e :U 333 ]
+"325
+[; ;OpticalSpeedSensor.c: 325:     }
+}
+[e :U 330 ]
+[e $U 331  ]
+[e :U 332 ]
+"340
+[; ;OpticalSpeedSensor.c: 340: }
+[e :UE 328 ]
+}
+[v $root$_ISR_Routine `(v ~T0 @X0 0 e ]
+"358
+[; ;OpticalSpeedSensor.c: 358: void __attribute__((picinterrupt(("")))) ISR_Routine(void)
+[v _ISR_Routine `(v ~T2 @X0 1 ef ]
+"359
+[; ;OpticalSpeedSensor.c: 359: {
+{
+[e :U _ISR_Routine ]
+[f ]
+"361
+[; ;OpticalSpeedSensor.c: 361:     if (PIR1bits.TMR1IF)
+[e $ ! != -> . . _PIR1bits 0 0 `i -> 0 `i 352  ]
+"362
+[; ;OpticalSpeedSensor.c: 362:     {
+{
+"373
+[; ;OpticalSpeedSensor.c: 373:         TMR1H = 0xFC;
+[e = _TMR1H -> -> 252 `i `uc ]
+"374
+[; ;OpticalSpeedSensor.c: 374:         TMR1L = 0x18;
+[e = _TMR1L -> -> 24 `i `uc ]
+"377
+[; ;OpticalSpeedSensor.c: 377:         if(sGenTimer1)
+[e $ ! != -> _sGenTimer1 `ui -> -> 0 `i `ui 353  ]
+"378
+[; ;OpticalSpeedSensor.c: 378:             sGenTimer1--;
+[e -- _sGenTimer1 -> -> 1 `i `us ]
+[e :U 353 ]
+"380
+[; ;OpticalSpeedSensor.c: 380:         if(sGenTimer2)
+[e $ ! != -> _sGenTimer2 `ui -> -> 0 `i `ui 354  ]
+"381
+[; ;OpticalSpeedSensor.c: 381:             sGenTimer2--;
+[e -- _sGenTimer2 -> -> 1 `i `us ]
+[e :U 354 ]
+"384
+[; ;OpticalSpeedSensor.c: 384:         PIR1bits.TMR1IF = 0;
+[e = . . _PIR1bits 0 0 -> -> 0 `i `uc ]
+"385
+[; ;OpticalSpeedSensor.c: 385:     }
+}
+[e :U 352 ]
+"392
+[; ;OpticalSpeedSensor.c: 392:     if (INTCONbits.INTF)
+[e $ ! != -> . . _INTCONbits 0 1 `i -> 0 `i 355  ]
+"393
+[; ;OpticalSpeedSensor.c: 393:     {
+{
+"396
+[; ;OpticalSpeedSensor.c: 396:         _delay((unsigned long)((10)*(16000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
+"399
+[; ;OpticalSpeedSensor.c: 399:         if(PORTAbits.RA2)
+[e $ ! != -> . . _PORTAbits 0 2 `i -> 0 `i 356  ]
+"400
+[; ;OpticalSpeedSensor.c: 400:         {
+{
+"401
+[; ;OpticalSpeedSensor.c: 401:             bRisingEdges++;
+[e ++ _bRisingEdges -> -> 1 `i `uc ]
+"403
+[; ;OpticalSpeedSensor.c: 403:             ((bFlags_1) |= (0x08));
+[e =| _bFlags_1 -> -> 8 `i `uc ]
+"405
+[; ;OpticalSpeedSensor.c: 405:         }
+}
+[e :U 356 ]
+"413
+[; ;OpticalSpeedSensor.c: 413:         INTCONbits.INTF = 0;
+[e = . . _INTCONbits 0 1 -> -> 0 `i `uc ]
+"414
+[; ;OpticalSpeedSensor.c: 414:     }
+}
+[e :U 355 ]
+"424
+[; ;OpticalSpeedSensor.c: 424: }
+[e :UE 351 ]
+}
+"434
+[; ;OpticalSpeedSensor.c: 434: void TMR1_Init(void)
+[v _TMR1_Init `(v ~T0 @X0 1 ef ]
+"435
+[; ;OpticalSpeedSensor.c: 435: {
+{
+[e :U _TMR1_Init ]
+[f ]
+"439
+[; ;OpticalSpeedSensor.c: 439:     T1CONbits.TMR1CS = 0;
+[e = . . _T1CONbits 1 2 -> -> 0 `i `uc ]
+"440
+[; ;OpticalSpeedSensor.c: 440:     T1CONbits.T1CKPS = 3;
+[e = . . _T1CONbits 1 1 -> -> 3 `i `uc ]
+"441
+[; ;OpticalSpeedSensor.c: 441:     T1CONbits.T1OSCEN = 0;
+[e = . . _T1CONbits 0 3 -> -> 0 `i `uc ]
+"442
+[; ;OpticalSpeedSensor.c: 442:     T1CONbits.nT1SYNC = 1;
+[e = . . _T1CONbits 0 2 -> -> 1 `i `uc ]
+"443
+[; ;OpticalSpeedSensor.c: 443:     T1CONbits.TMR1ON = 1;
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+"446
+[; ;OpticalSpeedSensor.c: 446:     T1GCON = 0;
+[e = _T1GCON -> -> 0 `i `uc ]
+"464
+[; ;OpticalSpeedSensor.c: 464:     PIR1bits.TMR1IF = 0;
+[e = . . _PIR1bits 0 0 -> -> 0 `i `uc ]
+"465
+[; ;OpticalSpeedSensor.c: 465: }
+[e :UE 357 ]
+}
+"469
+[; ;OpticalSpeedSensor.c: 469: void ADC_Init(void)
+[v _ADC_Init `(v ~T0 @X0 1 ef ]
+"470
+[; ;OpticalSpeedSensor.c: 470: {
+{
+[e :U _ADC_Init ]
+[f ]
+"473
+[; ;OpticalSpeedSensor.c: 473:     ADCON1bits.ADFM = 1;
+[e = . . _ADCON1bits 0 7 -> -> 1 `i `uc ]
+"474
+[; ;OpticalSpeedSensor.c: 474:     ADCON1bits.ADCS = 0x02;
+[e = . . _ADCON1bits 1 2 -> -> 2 `i `uc ]
+"475
+[; ;OpticalSpeedSensor.c: 475:     ADCON1bits.ADPREF = 0x00;
+[e = . . _ADCON1bits 1 0 -> -> 0 `i `uc ]
+"499
+[; ;OpticalSpeedSensor.c: 499: }
+[e :UE 358 ]
+}
+"501
+[; ;OpticalSpeedSensor.c: 501: void SPI_MasterInit(void)
+[v _SPI_MasterInit `(v ~T0 @X0 1 ef ]
+"502
+[; ;OpticalSpeedSensor.c: 502: {
+{
+[e :U _SPI_MasterInit ]
+[f ]
+"531
+[; ;OpticalSpeedSensor.c: 531:     SSP1STAT = 0b00000000;
+[e = _SSP1STAT -> -> 0 `i `uc ]
+"537
+[; ;OpticalSpeedSensor.c: 537:     SSP1CON1 = 0b00100010;
+[e = _SSP1CON1 -> -> 34 `i `uc ]
+"543
+[; ;OpticalSpeedSensor.c: 543: }
+[e :UE 359 ]
+}
+"546
+[; ;OpticalSpeedSensor.c: 546: void SPI_SlaveInit(void)
+[v _SPI_SlaveInit `(v ~T0 @X0 1 ef ]
+"547
+[; ;OpticalSpeedSensor.c: 547: {
+{
+[e :U _SPI_SlaveInit ]
+[f ]
+"579
+[; ;OpticalSpeedSensor.c: 579:     SSP1STAT = 0b01000000;
+[e = _SSP1STAT -> -> 64 `i `uc ]
+"585
+[; ;OpticalSpeedSensor.c: 585:     SSP1CON1 = 0b00100100;
+[e = _SSP1CON1 -> -> 36 `i `uc ]
+"591
+[; ;OpticalSpeedSensor.c: 591: }
+[e :UE 360 ]
+}
+"594
+[; ;OpticalSpeedSensor.c: 594: void RS232_Init(void)
+[v _RS232_Init `(v ~T0 @X0 1 ef ]
+"595
+[; ;OpticalSpeedSensor.c: 595: {
+{
+[e :U _RS232_Init ]
+[f ]
+"597
+[; ;OpticalSpeedSensor.c: 597:     BAUDCON = 0x00;
+[e = _BAUDCON -> -> 0 `i `uc ]
+"607
+[; ;OpticalSpeedSensor.c: 607:     TXSTA = 0x20;
+[e = _TXSTA -> -> 32 `i `uc ]
+"617
+[; ;OpticalSpeedSensor.c: 617:     RCSTA = 0x90;
+[e = _RCSTA -> -> 144 `i `uc ]
+"630
+[; ;OpticalSpeedSensor.c: 630:     SPBRGH = 0;
+[e = _SPBRGH -> -> 0 `i `uc ]
+"631
+[; ;OpticalSpeedSensor.c: 631:     SPBRGL = 12;
+[e = _SPBRGL -> -> 12 `i `uc ]
+"635
+[; ;OpticalSpeedSensor.c: 635: }
+[e :UE 361 ]
+}
+"638
+[; ;OpticalSpeedSensor.c: 638: void UART_Write( unsigned short data)
+[v _UART_Write `(v ~T0 @X0 1 ef1`us ]
+"639
+[; ;OpticalSpeedSensor.c: 639: {
+{
+[e :U _UART_Write ]
+"638
+[; ;OpticalSpeedSensor.c: 638: void UART_Write( unsigned short data)
+[v _data `us ~T0 @X0 1 r1 ]
+"639
+[; ;OpticalSpeedSensor.c: 639: {
+[f ]
+"641
+[; ;OpticalSpeedSensor.c: 641:     while(!TXSTAbits.TRMT);
+[e $U 363  ]
+[e :U 364 ]
+[e :U 363 ]
+[e $ ! != -> . . _TXSTAbits 0 1 `i -> 0 `i 364  ]
+[e :U 365 ]
+"642
+[; ;OpticalSpeedSensor.c: 642:     TXREG = data;
+[e = _TXREG -> _data `uc ]
+"643
+[; ;OpticalSpeedSensor.c: 643: }
+[e :UE 362 ]
+}
+"646
+[; ;OpticalSpeedSensor.c: 646: unsigned char UART_ChkRec_Err()
+[v _UART_ChkRec_Err `(uc ~T0 @X0 1 ef ]
+"647
+[; ;OpticalSpeedSensor.c: 647: {
+{
+[e :U _UART_ChkRec_Err ]
+[f ]
+"652
+[; ;OpticalSpeedSensor.c: 652:     unsigned char tmpdata;
+[v _tmpdata `uc ~T0 @X0 1 a ]
+"654
+[; ;OpticalSpeedSensor.c: 654:     if(RCSTAbits.FERR)
+[e $ ! != -> . . _RCSTAbits 0 2 `i -> 0 `i 367  ]
+"655
+[; ;OpticalSpeedSensor.c: 655:     {
+{
+"656
+[; ;OpticalSpeedSensor.c: 656:         tmpdata = RCREG;
+[e = _tmpdata _RCREG ]
+"657
+[; ;OpticalSpeedSensor.c: 657:         return(1);
+[e ) -> -> 1 `i `uc ]
+[e $UE 366  ]
+"658
+[; ;OpticalSpeedSensor.c: 658:     }
+}
+[e $U 368  ]
+"659
+[; ;OpticalSpeedSensor.c: 659:     else if(RCSTAbits.OERR)
+[e :U 367 ]
+[e $ ! != -> . . _RCSTAbits 0 1 `i -> 0 `i 369  ]
+"660
+[; ;OpticalSpeedSensor.c: 660:     {
+{
+"662
+[; ;OpticalSpeedSensor.c: 662:         RCSTAbits.CREN = 0;
+[e = . . _RCSTAbits 0 4 -> -> 0 `i `uc ]
+"663
+[; ;OpticalSpeedSensor.c: 663:         RCSTAbits.CREN = 1;
+[e = . . _RCSTAbits 0 4 -> -> 1 `i `uc ]
+"664
+[; ;OpticalSpeedSensor.c: 664:         return(2);
+[e ) -> -> 2 `i `uc ]
+[e $UE 366  ]
+"665
+[; ;OpticalSpeedSensor.c: 665:     }
+}
+[e $U 370  ]
+"666
+[; ;OpticalSpeedSensor.c: 666:     else
+[e :U 369 ]
+"667
+[; ;OpticalSpeedSensor.c: 667:     {
+{
+"668
+[; ;OpticalSpeedSensor.c: 668:         return(0);
+[e ) -> -> 0 `i `uc ]
+[e $UE 366  ]
+"669
+[; ;OpticalSpeedSensor.c: 669:     }
+}
+[e :U 370 ]
+[e :U 368 ]
+"670
+[; ;OpticalSpeedSensor.c: 670: }
+[e :UE 366 ]
+}
+"674
+[; ;OpticalSpeedSensor.c: 674: void Enable_Timer1_Int(void)
+[v _Enable_Timer1_Int `(v ~T0 @X0 1 ef ]
+"675
+[; ;OpticalSpeedSensor.c: 675: {
+{
+[e :U _Enable_Timer1_Int ]
+[f ]
+"676
+[; ;OpticalSpeedSensor.c: 676:     PIR1bits.TMR1IF = 0;
+[e = . . _PIR1bits 0 0 -> -> 0 `i `uc ]
+"677
+[; ;OpticalSpeedSensor.c: 677:     PIE1bits.TMR1IE = 1;
+[e = . . _PIE1bits 0 0 -> -> 1 `i `uc ]
+"678
+[; ;OpticalSpeedSensor.c: 678: }
+[e :UE 371 ]
+}
+"680
+[; ;OpticalSpeedSensor.c: 680: void Disable_Timer1_Int(void)
+[v _Disable_Timer1_Int `(v ~T0 @X0 1 ef ]
+"681
+[; ;OpticalSpeedSensor.c: 681: {
+{
+[e :U _Disable_Timer1_Int ]
+[f ]
+"682
+[; ;OpticalSpeedSensor.c: 682:     PIR1bits.TMR1IF = 0;
+[e = . . _PIR1bits 0 0 -> -> 0 `i `uc ]
+"683
+[; ;OpticalSpeedSensor.c: 683:     PIE1bits.TMR1IE = 0;
+[e = . . _PIE1bits 0 0 -> -> 0 `i `uc ]
+"684
+[; ;OpticalSpeedSensor.c: 684: }
+[e :UE 372 ]
+}
+"686
+[; ;OpticalSpeedSensor.c: 686: void Enable_External_Rising_Int(void)
+[v _Enable_External_Rising_Int `(v ~T0 @X0 1 ef ]
+"687
+[; ;OpticalSpeedSensor.c: 687: {
+{
+[e :U _Enable_External_Rising_Int ]
+[f ]
+"688
+[; ;OpticalSpeedSensor.c: 688:     OPTION_REGbits.INTEDG = 1;
+[e = . . _OPTION_REGbits 0 6 -> -> 1 `i `uc ]
+"689
+[; ;OpticalSpeedSensor.c: 689:     INTCONbits.INTF = 0;
+[e = . . _INTCONbits 0 1 -> -> 0 `i `uc ]
+"690
+[; ;OpticalSpeedSensor.c: 690:     INTCONbits.INTE = 1;
+[e = . . _INTCONbits 0 4 -> -> 1 `i `uc ]
+"691
+[; ;OpticalSpeedSensor.c: 691: }
+[e :UE 373 ]
+}
+"693
+[; ;OpticalSpeedSensor.c: 693: void Disable_External_Rising_Int(void)
+[v _Disable_External_Rising_Int `(v ~T0 @X0 1 ef ]
+"694
+[; ;OpticalSpeedSensor.c: 694: {
+{
+[e :U _Disable_External_Rising_Int ]
+[f ]
+"695
+[; ;OpticalSpeedSensor.c: 695:     INTCONbits.INTF = 0;
+[e = . . _INTCONbits 0 1 -> -> 0 `i `uc ]
+"696
+[; ;OpticalSpeedSensor.c: 696:     INTCONbits.INTE = 0;
+[e = . . _INTCONbits 0 4 -> -> 0 `i `uc ]
+"697
+[; ;OpticalSpeedSensor.c: 697: }
+[e :UE 374 ]
+}
+"699
+[; ;OpticalSpeedSensor.c: 699: void Enable_UART_RX_Int(void)
+[v _Enable_UART_RX_Int `(v ~T0 @X0 1 ef ]
+"700
+[; ;OpticalSpeedSensor.c: 700: {
+{
+[e :U _Enable_UART_RX_Int ]
+[f ]
+"701
+[; ;OpticalSpeedSensor.c: 701:     PIR1bits.RCIF = 0;
+[e = . . _PIR1bits 0 5 -> -> 0 `i `uc ]
+"702
+[; ;OpticalSpeedSensor.c: 702:     PIE1bits.RCIE = 1;
+[e = . . _PIE1bits 0 5 -> -> 1 `i `uc ]
+"703
+[; ;OpticalSpeedSensor.c: 703: }
+[e :UE 375 ]
+}
+"707
+[; ;OpticalSpeedSensor.c: 707: unsigned short Read_ADC_Value(void)
+[v _Read_ADC_Value `(us ~T0 @X0 1 ef ]
+"708
+[; ;OpticalSpeedSensor.c: 708: {
+{
+[e :U _Read_ADC_Value ]
+[f ]
+"709
+[; ;OpticalSpeedSensor.c: 709:     unsigned short ADCValue;
+[v _ADCValue `us ~T0 @X0 1 a ]
+"710
+[; ;OpticalSpeedSensor.c: 710:     char i;
+[v _i `uc ~T0 @X0 1 a ]
+"712
+[; ;OpticalSpeedSensor.c: 712:     ADCON0bits.CHS = 0x04;
+[e = . . _ADCON0bits 1 2 -> -> 4 `i `uc ]
+"713
+[; ;OpticalSpeedSensor.c: 713:     ADCON0bits.ADON = 1;
+[e = . . _ADCON0bits 0 0 -> -> 1 `i `uc ]
+"714
+[; ;OpticalSpeedSensor.c: 714:     for(i=0; i<2;i++)
+{
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 2 `i 377  ]
+[e $U 378  ]
+[e :U 377 ]
+"715
+[; ;OpticalSpeedSensor.c: 715:     {
+{
+"716
+[; ;OpticalSpeedSensor.c: 716:         __asm("NOP");
+[; <" NOP ;# ">
+"717
+[; ;OpticalSpeedSensor.c: 717:     }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 2 `i 377  ]
+[e :U 378 ]
+}
+"718
+[; ;OpticalSpeedSensor.c: 718:     ADCON0bits.GO = 1;
+[e = . . _ADCON0bits 2 1 -> -> 1 `i `uc ]
+"719
+[; ;OpticalSpeedSensor.c: 719:     while (ADCON0bits.GO);
+[e $U 380  ]
+[e :U 381 ]
+[e :U 380 ]
+[e $ != -> . . _ADCON0bits 2 1 `i -> 0 `i 381  ]
+[e :U 382 ]
+"720
+[; ;OpticalSpeedSensor.c: 720:     ADCValue = ADRESH << 8;
+[e = _ADCValue -> << -> _ADRESH `i -> 8 `i `us ]
+"721
+[; ;OpticalSpeedSensor.c: 721:     bADCHigh = ADRESH;
+[e = _bADCHigh _ADRESH ]
+"722
+[; ;OpticalSpeedSensor.c: 722:     bADCLow = ADRESL;
+[e = _bADCLow _ADRESL ]
+"723
+[; ;OpticalSpeedSensor.c: 723:     ADCValue = (unsigned short) ADCValue + ADRESL;
+[e = _ADCValue -> + -> _ADCValue `ui -> _ADRESL `ui `us ]
+"724
+[; ;OpticalSpeedSensor.c: 724:     ADCON0bits.ADON = 0;
+[e = . . _ADCON0bits 0 0 -> -> 0 `i `uc ]
+"725
+[; ;OpticalSpeedSensor.c: 725:     return (ADCValue);
+[e ) _ADCValue ]
+[e $UE 376  ]
+"726
+[; ;OpticalSpeedSensor.c: 726: }
+[e :UE 376 ]
+}
