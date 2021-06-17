@@ -113,37 +113,27 @@ Version 4.0 HI-TECH Software Intermediate Code
 "2415
 [; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f1825.h: 2415: extern volatile unsigned char DACCON0 __attribute__((address(0x118)));
 [v _DACCON0 `Vuc ~T0 @X0 0 e@280 ]
-"118 ./OpticalSpeedSensor.h
-[; ;./OpticalSpeedSensor.h: 118: void TMR1_Init(void);
+"120 ./OpticalSpeedSensor.h
+[; ;./OpticalSpeedSensor.h: 120: void TMR1_Init(void);
 [v _TMR1_Init `(v ~T0 @X0 0 ef ]
-"126
-[; ;./OpticalSpeedSensor.h: 126: void Enable_Timer1_Int(void);
-[v _Enable_Timer1_Int `(v ~T0 @X0 0 ef ]
 "128
-[; ;./OpticalSpeedSensor.h: 128: void Enable_External_Rising_Int(void);
+[; ;./OpticalSpeedSensor.h: 128: void Enable_Int(void);
+[v _Enable_Int `(v ~T0 @X0 0 ef ]
+"130
+[; ;./OpticalSpeedSensor.h: 130: void Enable_Timer1_Int(void);
+[v _Enable_Timer1_Int `(v ~T0 @X0 0 ef ]
+"132
+[; ;./OpticalSpeedSensor.h: 132: void Enable_External_Rising_Int(void);
 [v _Enable_External_Rising_Int `(v ~T0 @X0 0 ef ]
-"485 C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f1825.h
-[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f1825.h: 485:     struct {
-[s S36 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S36 . RC0 RC1 RC2 RC3 RC4 RC5 ]
-"484
-[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f1825.h: 484: typedef union {
-[u S35 `S36 1 ]
-[n S35 . . ]
-"494
-[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f1825.h: 494: extern volatile PORTCbits_t PORTCbits __attribute__((address(0x00E)));
-[v _PORTCbits `VS35 ~T0 @X0 0 e@14 ]
-"1214
-[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f1825.h: 1214:     struct {
-[s S73 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S73 . TMR1IE TMR2IE CCP1IE SSP1IE TXIE RCIE ADIE TMR1GIE ]
-"1213
-[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f1825.h: 1213: typedef union {
-[u S72 `S73 1 ]
-[n S72 . . ]
-"1225
-[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f1825.h: 1225: extern volatile PIE1bits_t PIE1bits __attribute__((address(0x091)));
-[v _PIE1bits `VS72 ~T0 @X0 0 e@145 ]
+"31 C:\Program Files\Microchip\xc8\v2.20\pic\include\pic.h
+[v ___nop `(v ~T0 @X0 0 ef ]
+[p i ___nop ]
+"729 C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f1825.h
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f1825.h: 729: extern volatile unsigned char TMR1H __attribute__((address(0x017)));
+[v _TMR1H `Vuc ~T0 @X0 0 e@23 ]
+"709
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f1825.h: 709: extern volatile unsigned char TMR1L __attribute__((address(0x016)));
+[v _TMR1L `Vuc ~T0 @X0 0 e@22 ]
 [t ~ __interrupt . k ]
 [t T2 __interrupt ]
 "535
@@ -157,12 +147,6 @@ Version 4.0 HI-TECH Software Intermediate Code
 "546
 [; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f1825.h: 546: extern volatile PIR1bits_t PIR1bits __attribute__((address(0x011)));
 [v _PIR1bits `VS37 ~T0 @X0 0 e@17 ]
-"729
-[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f1825.h: 729: extern volatile unsigned char TMR1H __attribute__((address(0x017)));
-[v _TMR1H `Vuc ~T0 @X0 0 e@23 ]
-"709
-[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f1825.h: 709: extern volatile unsigned char TMR1L __attribute__((address(0x016)));
-[v _TMR1L `Vuc ~T0 @X0 0 e@22 ]
 "357
 [; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f1825.h: 357:     struct {
 [s S31 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
@@ -275,6 +259,17 @@ Version 4.0 HI-TECH Software Intermediate Code
 "3022
 [; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f1825.h: 3022: extern volatile unsigned char RCREG __attribute__((address(0x199)));
 [v _RCREG `Vuc ~T0 @X0 0 e@409 ]
+"1214
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f1825.h: 1214:     struct {
+[s S73 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S73 . TMR1IE TMR2IE CCP1IE SSP1IE TXIE RCIE ADIE TMR1GIE ]
+"1213
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f1825.h: 1213: typedef union {
+[u S72 `S73 1 ]
+[n S72 . . ]
+"1225
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f1825.h: 1225: extern volatile PIE1bits_t PIE1bits __attribute__((address(0x091)));
+[v _PIE1bits `VS72 ~T0 @X0 0 e@145 ]
 "1799
 [; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f1825.h: 1799:     struct {
 [s S99 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
@@ -798,6 +793,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 "28
 [; ;./OpticalSpeedSensor.h: 28: unsigned long sGenTimer2;
 [v _sGenTimer2 `ul ~T0 @X0 1 e ]
+"30
+[; ;./OpticalSpeedSensor.h: 30: unsigned short trigStatDebug;
+[v _trigStatDebug `us ~T0 @X0 1 e ]
 [v $root$_main `(v ~T0 @X0 0 e ]
 "65 OpticalSpeedSensor.c
 [; ;OpticalSpeedSensor.c: 65: void main (void)
@@ -919,756 +917,951 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;OpticalSpeedSensor.c: 167:     TMR1_Init();
 [e ( _TMR1_Init ..  ]
 "178
-[; ;OpticalSpeedSensor.c: 178:     Enable_Timer1_Int();
+[; ;OpticalSpeedSensor.c: 178:     Enable_Int();
+[e ( _Enable_Int ..  ]
+"180
+[; ;OpticalSpeedSensor.c: 180:     Enable_Timer1_Int();
 [e ( _Enable_Timer1_Int ..  ]
-"184
-[; ;OpticalSpeedSensor.c: 184:     Enable_External_Rising_Int();
-[e ( _Enable_External_Rising_Int ..  ]
 "186
-[; ;OpticalSpeedSensor.c: 186:     sCurrentState = 1;
+[; ;OpticalSpeedSensor.c: 186:     Enable_External_Rising_Int();
+[e ( _Enable_External_Rising_Int ..  ]
+"188
+[; ;OpticalSpeedSensor.c: 188:     sCurrentState = 1;
 [e = _sCurrentState -> -> 1 `i `us ]
-"189
-[; ;OpticalSpeedSensor.c: 189:     if(PORTCbits.RC3 == 0)
-[e $ ! == -> . . _PORTCbits 0 3 `i -> 0 `i 329  ]
 "190
-[; ;OpticalSpeedSensor.c: 190:     {
-{
+[; ;OpticalSpeedSensor.c: 190:     trigStatDebug = 0;
+[e = _trigStatDebug -> -> 0 `i `us ]
 "192
-[; ;OpticalSpeedSensor.c: 192:     }
+[; ;OpticalSpeedSensor.c: 192:     if(trigStatDebug == 0)
+[e $ ! == -> _trigStatDebug `ui -> -> 0 `i `ui 329  ]
+"193
+[; ;OpticalSpeedSensor.c: 193:     {
+{
+"195
+[; ;OpticalSpeedSensor.c: 195:     }
 }
 [e :U 329 ]
-"196
-[; ;OpticalSpeedSensor.c: 196:     while(1)
+"199
+[; ;OpticalSpeedSensor.c: 199:     while(1)
 [e :U 331 ]
-"197
-[; ;OpticalSpeedSensor.c: 197:     {
-{
 "200
-[; ;OpticalSpeedSensor.c: 200:         switch(sCurrentState)
-[e $U 334  ]
+[; ;OpticalSpeedSensor.c: 200:     {
+{
 "201
-[; ;OpticalSpeedSensor.c: 201:         {
-{
+[; ;OpticalSpeedSensor.c: 201:         __nop();
+[e ( ___nop ..  ]
 "203
-[; ;OpticalSpeedSensor.c: 203:             case 1:
-[e :U 335 ]
+[; ;OpticalSpeedSensor.c: 203:         switch(sCurrentState)
+[e $U 334  ]
 "204
-[; ;OpticalSpeedSensor.c: 204:                 LATAbits.LATA5 = 1;
-[e = . . _LATAbits 0 5 -> -> 1 `i `uc ]
+[; ;OpticalSpeedSensor.c: 204:         {
+{
 "206
-[; ;OpticalSpeedSensor.c: 206:                 if (PORTCbits.RC3)
-[e $ ! != -> . . _PORTCbits 0 3 `i -> 0 `i 336  ]
-"207
-[; ;OpticalSpeedSensor.c: 207:                 {
-{
+[; ;OpticalSpeedSensor.c: 206:             case 1:
+[e :U 335 ]
 "208
-[; ;OpticalSpeedSensor.c: 208:                     sLastState = 1;
-[e = _sLastState -> -> 1 `i `us ]
-"209
-[; ;OpticalSpeedSensor.c: 209:                     sCurrentState = 2;
-[e = _sCurrentState -> -> 2 `i `us ]
-"210
-[; ;OpticalSpeedSensor.c: 210:                 }
-}
-[e $U 337  ]
-"211
-[; ;OpticalSpeedSensor.c: 211:                 else
-[e :U 336 ]
-"212
-[; ;OpticalSpeedSensor.c: 212:                 {
+[; ;OpticalSpeedSensor.c: 208:                 if ((((bFlags_1) & (0x01)) != 0)){
+[e $ ! != & -> _bFlags_1 `i -> 1 `i -> 0 `i 336  ]
 {
-"213
-[; ;OpticalSpeedSensor.c: 213:                     sLastState = 1;
-[e = _sLastState -> -> 1 `i `us ]
-"214
-[; ;OpticalSpeedSensor.c: 214:                     sCurrentState = 5;
-[e = _sCurrentState -> -> 5 `i `us ]
-"215
-[; ;OpticalSpeedSensor.c: 215:                 }
-}
-[e :U 337 ]
-"216
-[; ;OpticalSpeedSensor.c: 216:             break;
-[e $U 333  ]
-"220
-[; ;OpticalSpeedSensor.c: 220:             case 2:
-[e :U 338 ]
-"221
-[; ;OpticalSpeedSensor.c: 221:                 LATAbits.LATA5 = 1;
+"209
+[; ;OpticalSpeedSensor.c: 209:                     LATAbits.LATA5 = 1;
 [e = . . _LATAbits 0 5 -> -> 1 `i `uc ]
+"210
+[; ;OpticalSpeedSensor.c: 210:                     ((bFlags_1) &= ((~(0x01))));
+[e =& _bFlags_1 -> ~ -> 1 `i `uc ]
+"211
+[; ;OpticalSpeedSensor.c: 211:                 }
+}
+[e :U 336 ]
+"213
+[; ;OpticalSpeedSensor.c: 213:                 ((bFlags_1) &= ((~(0x10))));
+[e =& _bFlags_1 -> ~ -> 16 `i `uc ]
+"214
+[; ;OpticalSpeedSensor.c: 214:                 ((bFlags_1) |= (0x04));
+[e =| _bFlags_1 -> -> 4 `i `uc ]
+"215
+[; ;OpticalSpeedSensor.c: 215:                 LATAbits.LATA4 = 0;
+[e = . . _LATAbits 0 4 -> -> 0 `i `uc ]
+"218
+[; ;OpticalSpeedSensor.c: 218:                 if (trigStatDebug)
+[e $ ! != -> _trigStatDebug `ui -> -> 0 `i `ui 337  ]
+"219
+[; ;OpticalSpeedSensor.c: 219:                 {
+{
+"220
+[; ;OpticalSpeedSensor.c: 220:                     sLastState = 1;
+[e = _sLastState -> -> 1 `i `us ]
+"221
+[; ;OpticalSpeedSensor.c: 221:                     sCurrentState = 2;
+[e = _sCurrentState -> -> 2 `i `us ]
+"222
+[; ;OpticalSpeedSensor.c: 222:                 }
+}
+[e $U 338  ]
 "223
-[; ;OpticalSpeedSensor.c: 223:                 bRisingEdges = 0;
-[e = _bRisingEdges -> -> 0 `i `uc ]
+[; ;OpticalSpeedSensor.c: 223:                 else
+[e :U 337 ]
 "224
-[; ;OpticalSpeedSensor.c: 224:                 sGenTimer1 = 0;
-[e = _sGenTimer1 -> -> -> 0 `i `l `ul ]
+[; ;OpticalSpeedSensor.c: 224:                 {
+{
+"225
+[; ;OpticalSpeedSensor.c: 225:                     sLastState = 1;
+[e = _sLastState -> -> 1 `i `us ]
 "226
-[; ;OpticalSpeedSensor.c: 226:                 sLastState = 2;
-[e = _sLastState -> -> 2 `i `us ]
+[; ;OpticalSpeedSensor.c: 226:                     sCurrentState = 5;
+[e = _sCurrentState -> -> 5 `i `us ]
 "227
-[; ;OpticalSpeedSensor.c: 227:                 sCurrentState = 3;
-[e = _sCurrentState -> -> 3 `i `us ]
-"229
-[; ;OpticalSpeedSensor.c: 229:             break;
+[; ;OpticalSpeedSensor.c: 227:                 }
+}
+[e :U 338 ]
+"228
+[; ;OpticalSpeedSensor.c: 228:             break;
 [e $U 333  ]
-"233
-[; ;OpticalSpeedSensor.c: 233:             case 3:
+"232
+[; ;OpticalSpeedSensor.c: 232:             case 2:
 [e :U 339 ]
 "234
-[; ;OpticalSpeedSensor.c: 234:                 LATAbits.LATA5 = 1;
+[; ;OpticalSpeedSensor.c: 234:                 if ((((bFlags_1) & (0x01)) != 0)){
+[e $ ! != & -> _bFlags_1 `i -> 1 `i -> 0 `i 340  ]
+{
+"235
+[; ;OpticalSpeedSensor.c: 235:                     LATAbits.LATA5 = 1;
 [e = . . _LATAbits 0 5 -> -> 1 `i `uc ]
+"236
+[; ;OpticalSpeedSensor.c: 236:                     ((bFlags_1) &= ((~(0x01))));
+[e =& _bFlags_1 -> ~ -> 1 `i `uc ]
 "237
-[; ;OpticalSpeedSensor.c: 237:                 if (!PORTCbits.RC3)
-[e $ ! ! != -> . . _PORTCbits 0 3 `i -> 0 `i 340  ]
-"238
-[; ;OpticalSpeedSensor.c: 238:                 {
-{
-"239
-[; ;OpticalSpeedSensor.c: 239:                     sLastState = 3;
-[e = _sLastState -> -> 3 `i `us ]
-"240
-[; ;OpticalSpeedSensor.c: 240:                     sCurrentState = 4;
-[e = _sCurrentState -> -> 4 `i `us ]
-"241
-[; ;OpticalSpeedSensor.c: 241:                 }
+[; ;OpticalSpeedSensor.c: 237:                 }
 }
-[e $U 341  ]
-"242
-[; ;OpticalSpeedSensor.c: 242:                 else if (sGenTimer1 >= 10000)
 [e :U 340 ]
-[e $ ! >= _sGenTimer1 -> -> -> 10000 `i `l `ul 342  ]
+"240
+[; ;OpticalSpeedSensor.c: 240:                 TMR1H = 0xFC;
+[e = _TMR1H -> -> 252 `i `uc ]
+"241
+[; ;OpticalSpeedSensor.c: 241:                 TMR1L = 0x18;
+[e = _TMR1L -> -> 24 `i `uc ]
 "243
-[; ;OpticalSpeedSensor.c: 243:                 {
-{
+[; ;OpticalSpeedSensor.c: 243:                 bRisingEdges = 0;
+[e = _bRisingEdges -> -> 0 `i `uc ]
 "244
-[; ;OpticalSpeedSensor.c: 244:                     sLastState = 3;
-[e = _sLastState -> -> 3 `i `us ]
-"245
-[; ;OpticalSpeedSensor.c: 245:                     sCurrentState = 7;
-[e = _sCurrentState -> -> 7 `i `us ]
+[; ;OpticalSpeedSensor.c: 244:                 sGenTimer1 = 0;
+[e = _sGenTimer1 -> -> -> 0 `i `l `ul ]
 "246
-[; ;OpticalSpeedSensor.c: 246:                 }
-}
-[e :U 342 ]
-[e :U 341 ]
-"248
-[; ;OpticalSpeedSensor.c: 248:             break;
+[; ;OpticalSpeedSensor.c: 246:                 sLastState = 2;
+[e = _sLastState -> -> 2 `i `us ]
+"247
+[; ;OpticalSpeedSensor.c: 247:                 sCurrentState = 3;
+[e = _sCurrentState -> -> 3 `i `us ]
+"249
+[; ;OpticalSpeedSensor.c: 249:             break;
 [e $U 333  ]
 "253
-[; ;OpticalSpeedSensor.c: 253:             case 4:
-[e :U 343 ]
-"254
-[; ;OpticalSpeedSensor.c: 254:                 LATAbits.LATA5 = 1;
-[e = . . _LATAbits 0 5 -> -> 1 `i `uc ]
+[; ;OpticalSpeedSensor.c: 253:             case 3:
+[e :U 341 ]
 "255
-[; ;OpticalSpeedSensor.c: 255:                 float sGenTimer1InSec = sGenTimer1/(float)1000;
-[v _sGenTimer1InSec `f ~T0 @X0 1 a ]
-[e = _sGenTimer1InSec / -> _sGenTimer1 `f -> -> 1000 `i `f ]
-"256
-[; ;OpticalSpeedSensor.c: 256:                 if (bRisingEdges/sGenTimer1InSec >= 2)
-[e $ ! >= / -> -> _bRisingEdges `i `f _sGenTimer1InSec -> -> 2 `i `f 344  ]
-"257
-[; ;OpticalSpeedSensor.c: 257:                 {
+[; ;OpticalSpeedSensor.c: 255:                 if ((((bFlags_1) & (0x01)) != 0)){
+[e $ ! != & -> _bFlags_1 `i -> 1 `i -> 0 `i 342  ]
 {
+"256
+[; ;OpticalSpeedSensor.c: 256:                     LATAbits.LATA5 = 1;
+[e = . . _LATAbits 0 5 -> -> 1 `i `uc ]
+"257
+[; ;OpticalSpeedSensor.c: 257:                     ((bFlags_1) &= ((~(0x01))));
+[e =& _bFlags_1 -> ~ -> 1 `i `uc ]
 "258
-[; ;OpticalSpeedSensor.c: 258:                     sLastState = 4;
-[e = _sLastState -> -> 4 `i `us ]
-"259
-[; ;OpticalSpeedSensor.c: 259:                     sCurrentState = 5;
-[e = _sCurrentState -> -> 5 `i `us ]
-"260
-[; ;OpticalSpeedSensor.c: 260:                 }
+[; ;OpticalSpeedSensor.c: 258:                 }
 }
-[e $U 345  ]
+[e :U 342 ]
 "261
-[; ;OpticalSpeedSensor.c: 261:                 else
-[e :U 344 ]
+[; ;OpticalSpeedSensor.c: 261:                 if (!trigStatDebug)
+[e $ ! ! != -> _trigStatDebug `ui -> -> 0 `i `ui 343  ]
 "262
 [; ;OpticalSpeedSensor.c: 262:                 {
 {
 "263
-[; ;OpticalSpeedSensor.c: 263:                     sLastState = 4;
-[e = _sLastState -> -> 4 `i `us ]
+[; ;OpticalSpeedSensor.c: 263:                     sLastState = 3;
+[e = _sLastState -> -> 3 `i `us ]
 "264
-[; ;OpticalSpeedSensor.c: 264:                     sCurrentState = 6;
-[e = _sCurrentState -> -> 6 `i `us ]
+[; ;OpticalSpeedSensor.c: 264:                     sCurrentState = 4;
+[e = _sCurrentState -> -> 4 `i `us ]
 "265
 [; ;OpticalSpeedSensor.c: 265:                 }
 }
-[e :U 345 ]
+[e $U 344  ]
+"266
+[; ;OpticalSpeedSensor.c: 266:                 else if (sGenTimer1 >= 10000)
+[e :U 343 ]
+[e $ ! >= _sGenTimer1 -> -> -> 10000 `i `l `ul 345  ]
+"267
+[; ;OpticalSpeedSensor.c: 267:                 {
+{
 "268
-[; ;OpticalSpeedSensor.c: 268:             break;
+[; ;OpticalSpeedSensor.c: 268:                     sLastState = 3;
+[e = _sLastState -> -> 3 `i `us ]
+"269
+[; ;OpticalSpeedSensor.c: 269:                     sCurrentState = 7;
+[e = _sCurrentState -> -> 7 `i `us ]
+"270
+[; ;OpticalSpeedSensor.c: 270:                 }
+}
+[e :U 345 ]
+[e :U 344 ]
+"272
+[; ;OpticalSpeedSensor.c: 272:             break;
 [e $U 333  ]
-"273
-[; ;OpticalSpeedSensor.c: 273:             case 5:
+"277
+[; ;OpticalSpeedSensor.c: 277:             case 4:
 [e :U 346 ]
-"274
-[; ;OpticalSpeedSensor.c: 274:                 if ((((bFlags_1) & (0x01)) != 0)){
+"279
+[; ;OpticalSpeedSensor.c: 279:                 if ((((bFlags_1) & (0x01)) != 0)){
 [e $ ! != & -> _bFlags_1 `i -> 1 `i -> 0 `i 347  ]
 {
-"275
-[; ;OpticalSpeedSensor.c: 275:                     LATAbits.LATA5 = 1;
+"280
+[; ;OpticalSpeedSensor.c: 280:                     LATAbits.LATA5 = 1;
 [e = . . _LATAbits 0 5 -> -> 1 `i `uc ]
-"276
-[; ;OpticalSpeedSensor.c: 276:                 }
+"281
+[; ;OpticalSpeedSensor.c: 281:                     ((bFlags_1) &= ((~(0x01))));
+[e =& _bFlags_1 -> ~ -> 1 `i `uc ]
+"282
+[; ;OpticalSpeedSensor.c: 282:                 }
 }
 [e :U 347 ]
-"277
-[; ;OpticalSpeedSensor.c: 277:                 if (PORTCbits.RC3)
-[e $ ! != -> . . _PORTCbits 0 3 `i -> 0 `i 348  ]
-"278
-[; ;OpticalSpeedSensor.c: 278:                 {
-{
-"279
-[; ;OpticalSpeedSensor.c: 279:                     sLastState = 5;
-[e = _sLastState -> -> 5 `i `us ]
-"280
-[; ;OpticalSpeedSensor.c: 280:                     sCurrentState = 2;
-[e = _sCurrentState -> -> 2 `i `us ]
-"281
-[; ;OpticalSpeedSensor.c: 281:                 }
-}
-[e :U 348 ]
+"283
+[; ;OpticalSpeedSensor.c: 283:                 float sGenTimer1InSec = sGenTimer1/(float)1000;
+[v _sGenTimer1InSec `f ~T0 @X0 1 a ]
+[e = _sGenTimer1InSec / -> _sGenTimer1 `f -> -> 1000 `i `f ]
 "284
-[; ;OpticalSpeedSensor.c: 284:             break;
-[e $U 333  ]
-"288
-[; ;OpticalSpeedSensor.c: 288:             case 6:
-[e :U 349 ]
-"289
-[; ;OpticalSpeedSensor.c: 289:                 LATAbits.LATA5 = 0;
-[e = . . _LATAbits 0 5 -> -> 0 `i `uc ]
-"290
-[; ;OpticalSpeedSensor.c: 290:                 if (PORTCbits.RC3)
-[e $ ! != -> . . _PORTCbits 0 3 `i -> 0 `i 350  ]
-"291
-[; ;OpticalSpeedSensor.c: 291:                 {
+[; ;OpticalSpeedSensor.c: 284:                 if (bRisingEdges/sGenTimer1InSec >= 1)
+[e $ ! >= / -> -> _bRisingEdges `i `f _sGenTimer1InSec -> -> 1 `i `f 348  ]
+"285
+[; ;OpticalSpeedSensor.c: 285:                 {
 {
-"292
-[; ;OpticalSpeedSensor.c: 292:                     sLastState = 6;
-[e = _sLastState -> -> 6 `i `us ]
-"293
-[; ;OpticalSpeedSensor.c: 293:                     sCurrentState = 2;
-[e = _sCurrentState -> -> 2 `i `us ]
-"294
-[; ;OpticalSpeedSensor.c: 294:                 }
+"286
+[; ;OpticalSpeedSensor.c: 286:                     sLastState = 4;
+[e = _sLastState -> -> 4 `i `us ]
+"287
+[; ;OpticalSpeedSensor.c: 287:                     sCurrentState = 5;
+[e = _sCurrentState -> -> 5 `i `us ]
+"288
+[; ;OpticalSpeedSensor.c: 288:                 }
 }
-[e :U 350 ]
+[e $U 349  ]
+"289
+[; ;OpticalSpeedSensor.c: 289:                 else
+[e :U 348 ]
+"290
+[; ;OpticalSpeedSensor.c: 290:                 {
+{
+"291
+[; ;OpticalSpeedSensor.c: 291:                     sLastState = 4;
+[e = _sLastState -> -> 4 `i `us ]
+"292
+[; ;OpticalSpeedSensor.c: 292:                     sCurrentState = 6;
+[e = _sCurrentState -> -> 6 `i `us ]
+"293
+[; ;OpticalSpeedSensor.c: 293:                 }
+}
+[e :U 349 ]
 "296
 [; ;OpticalSpeedSensor.c: 296:             break;
 [e $U 333  ]
-"299
-[; ;OpticalSpeedSensor.c: 299:             case 7:
-[e :U 351 ]
-"300
-[; ;OpticalSpeedSensor.c: 300:                 LATAbits.LATA5 = 0;
-[e = . . _LATAbits 0 5 -> -> 0 `i `uc ]
 "301
-[; ;OpticalSpeedSensor.c: 301:                 if (!PORTCbits.RC3)
-[e $ ! ! != -> . . _PORTCbits 0 3 `i -> 0 `i 352  ]
-"302
-[; ;OpticalSpeedSensor.c: 302:                 {
-{
+[; ;OpticalSpeedSensor.c: 301:             case 5:
+[e :U 350 ]
 "303
-[; ;OpticalSpeedSensor.c: 303:                     sLastState = 7;
-[e = _sLastState -> -> 7 `i `us ]
+[; ;OpticalSpeedSensor.c: 303:                 if ((((bFlags_1) & (0x01)) != 0)){
+[e $ ! != & -> _bFlags_1 `i -> 1 `i -> 0 `i 351  ]
+{
 "304
-[; ;OpticalSpeedSensor.c: 304:                     sCurrentState = 6;
-[e = _sCurrentState -> -> 6 `i `us ]
+[; ;OpticalSpeedSensor.c: 304:                     LATAbits.LATA5 = 1;
+[e = . . _LATAbits 0 5 -> -> 1 `i `uc ]
 "305
-[; ;OpticalSpeedSensor.c: 305:                 }
+[; ;OpticalSpeedSensor.c: 305:                     ((bFlags_1) &= ((~(0x01))));
+[e =& _bFlags_1 -> ~ -> 1 `i `uc ]
+"306
+[; ;OpticalSpeedSensor.c: 306:                 }
+}
+[e :U 351 ]
+"307
+[; ;OpticalSpeedSensor.c: 307:                 if (trigStatDebug)
+[e $ ! != -> _trigStatDebug `ui -> -> 0 `i `ui 352  ]
+"308
+[; ;OpticalSpeedSensor.c: 308:                 {
+{
+"309
+[; ;OpticalSpeedSensor.c: 309:                     sLastState = 5;
+[e = _sLastState -> -> 5 `i `us ]
+"310
+[; ;OpticalSpeedSensor.c: 310:                     sCurrentState = 2;
+[e = _sCurrentState -> -> 2 `i `us ]
+"311
+[; ;OpticalSpeedSensor.c: 311:                 }
 }
 [e :U 352 ]
-"307
-[; ;OpticalSpeedSensor.c: 307:             break;
-[e $U 333  ]
-"310
-[; ;OpticalSpeedSensor.c: 310:             default:
-[e :U 353 ]
 "314
-[; ;OpticalSpeedSensor.c: 314:                 TMR1_Init();
-[e ( _TMR1_Init ..  ]
-"315
-[; ;OpticalSpeedSensor.c: 315:                 PIE1bits.TMR1IE = 1;
-[e = . . _PIE1bits 0 0 -> -> 1 `i `uc ]
-"316
-[; ;OpticalSpeedSensor.c: 316:                 ((bFlags_1) |= (0x10));
-[e =| _bFlags_1 -> -> 16 `i `uc ]
-"317
-[; ;OpticalSpeedSensor.c: 317:                 ((bFlags_1) &= ((~(0x04))));
-[e =& _bFlags_1 -> ~ -> 4 `i `uc ]
-"320
-[; ;OpticalSpeedSensor.c: 320:                 break;
+[; ;OpticalSpeedSensor.c: 314:             break;
 [e $U 333  ]
+"318
+[; ;OpticalSpeedSensor.c: 318:             case 6:
+[e :U 353 ]
+"320
+[; ;OpticalSpeedSensor.c: 320:                 if ((((bFlags_1) & (0x01)) == 0)){
+[e $ ! == & -> _bFlags_1 `i -> 1 `i -> 0 `i 354  ]
+{
 "321
-[; ;OpticalSpeedSensor.c: 321:         }
+[; ;OpticalSpeedSensor.c: 321:                     LATAbits.LATA5 = 0;
+[e = . . _LATAbits 0 5 -> -> 0 `i `uc ]
+"322
+[; ;OpticalSpeedSensor.c: 322:                     ((bFlags_1) |= (0x01));
+[e =| _bFlags_1 -> -> 1 `i `uc ]
+"323
+[; ;OpticalSpeedSensor.c: 323:                 }
+}
+[e :U 354 ]
+"324
+[; ;OpticalSpeedSensor.c: 324:                 if (trigStatDebug)
+[e $ ! != -> _trigStatDebug `ui -> -> 0 `i `ui 355  ]
+"325
+[; ;OpticalSpeedSensor.c: 325:                 {
+{
+"326
+[; ;OpticalSpeedSensor.c: 326:                     sLastState = 6;
+[e = _sLastState -> -> 6 `i `us ]
+"327
+[; ;OpticalSpeedSensor.c: 327:                     sCurrentState = 2;
+[e = _sCurrentState -> -> 2 `i `us ]
+"328
+[; ;OpticalSpeedSensor.c: 328:                 }
+}
+[e :U 355 ]
+"330
+[; ;OpticalSpeedSensor.c: 330:             break;
+[e $U 333  ]
+"333
+[; ;OpticalSpeedSensor.c: 333:             case 7:
+[e :U 356 ]
+"335
+[; ;OpticalSpeedSensor.c: 335:                 if ((((bFlags_1) & (0x01)) == 0)){
+[e $ ! == & -> _bFlags_1 `i -> 1 `i -> 0 `i 357  ]
+{
+"336
+[; ;OpticalSpeedSensor.c: 336:                     LATAbits.LATA5 = 0;
+[e = . . _LATAbits 0 5 -> -> 0 `i `uc ]
+"337
+[; ;OpticalSpeedSensor.c: 337:                     ((bFlags_1) |= (0x01));
+[e =| _bFlags_1 -> -> 1 `i `uc ]
+"338
+[; ;OpticalSpeedSensor.c: 338:                 }
+}
+[e :U 357 ]
+"339
+[; ;OpticalSpeedSensor.c: 339:                 if (!trigStatDebug)
+[e $ ! ! != -> _trigStatDebug `ui -> -> 0 `i `ui 358  ]
+"340
+[; ;OpticalSpeedSensor.c: 340:                 {
+{
+"341
+[; ;OpticalSpeedSensor.c: 341:                     sLastState = 7;
+[e = _sLastState -> -> 7 `i `us ]
+"342
+[; ;OpticalSpeedSensor.c: 342:                     sCurrentState = 6;
+[e = _sCurrentState -> -> 6 `i `us ]
+"343
+[; ;OpticalSpeedSensor.c: 343:                 }
+}
+[e :U 358 ]
+"345
+[; ;OpticalSpeedSensor.c: 345:             break;
+[e $U 333  ]
+"348
+[; ;OpticalSpeedSensor.c: 348:             default:
+[e :U 359 ]
+"350
+[; ;OpticalSpeedSensor.c: 350:                 if ((((bFlags_1) & (0x01)) == 0)){
+[e $ ! == & -> _bFlags_1 `i -> 1 `i -> 0 `i 360  ]
+{
+"351
+[; ;OpticalSpeedSensor.c: 351:                     LATAbits.LATA5 = 0;
+[e = . . _LATAbits 0 5 -> -> 0 `i `uc ]
+"352
+[; ;OpticalSpeedSensor.c: 352:                     ((bFlags_1) |= (0x01));
+[e =| _bFlags_1 -> -> 1 `i `uc ]
+"353
+[; ;OpticalSpeedSensor.c: 353:                 }
+}
+[e :U 360 ]
+"355
+[; ;OpticalSpeedSensor.c: 355:                 ((bFlags_1) |= (0x10));
+[e =| _bFlags_1 -> -> 16 `i `uc ]
+"356
+[; ;OpticalSpeedSensor.c: 356:                 ((bFlags_1) &= ((~(0x04))));
+[e =& _bFlags_1 -> ~ -> 4 `i `uc ]
+"358
+[; ;OpticalSpeedSensor.c: 358:                 for(int ii = 0; ii > 3; ii++){
+{
+[v _ii `i ~T0 @X0 1 a ]
+[e = _ii -> 0 `i ]
+[e $ > _ii -> 3 `i 361  ]
+[e $U 362  ]
+[e :U 361 ]
+{
+"359
+[; ;OpticalSpeedSensor.c: 359:                     LATAbits.LATA4 = 1;
+[e = . . _LATAbits 0 4 -> -> 1 `i `uc ]
+"360
+[; ;OpticalSpeedSensor.c: 360:                     sGenTimer1 = 0;
+[e = _sGenTimer1 -> -> -> 0 `i `l `ul ]
+"361
+[; ;OpticalSpeedSensor.c: 361:                     while(sGenTimer1 < 500){}
+[e $U 364  ]
+[e :U 365 ]
+{
+}
+[e :U 364 ]
+[e $ < _sGenTimer1 -> -> -> 500 `i `l `ul 365  ]
+[e :U 366 ]
+"362
+[; ;OpticalSpeedSensor.c: 362:                     LATAbits.LATA4 = 0;
+[e = . . _LATAbits 0 4 -> -> 0 `i `uc ]
+"363
+[; ;OpticalSpeedSensor.c: 363:                     sGenTimer1 = 0;
+[e = _sGenTimer1 -> -> -> 0 `i `l `ul ]
+"364
+[; ;OpticalSpeedSensor.c: 364:                     while(sGenTimer1 < 500){}
+[e $U 367  ]
+[e :U 368 ]
+{
+}
+[e :U 367 ]
+[e $ < _sGenTimer1 -> -> -> 500 `i `l `ul 368  ]
+[e :U 369 ]
+"365
+[; ;OpticalSpeedSensor.c: 365:                 }
+}
+[e ++ _ii -> 1 `i ]
+[e $ > _ii -> 3 `i 361  ]
+[e :U 362 ]
+}
+"367
+[; ;OpticalSpeedSensor.c: 367:                 sCurrentState = 1;
+[e = _sCurrentState -> -> 1 `i `us ]
+"368
+[; ;OpticalSpeedSensor.c: 368:             break;
+[e $U 333  ]
+"369
+[; ;OpticalSpeedSensor.c: 369:         }
 }
 [e $U 333  ]
 [e :U 334 ]
 [e [\ -> _sCurrentState `ui , $ -> -> 1 `i `ui 335
- , $ -> -> 2 `i `ui 338
- , $ -> -> 3 `i `ui 339
- , $ -> -> 4 `i `ui 343
- , $ -> -> 5 `i `ui 346
- , $ -> -> 6 `i `ui 349
- , $ -> -> 7 `i `ui 351
- 353 ]
+ , $ -> -> 2 `i `ui 339
+ , $ -> -> 3 `i `ui 341
+ , $ -> -> 4 `i `ui 346
+ , $ -> -> 5 `i `ui 350
+ , $ -> -> 6 `i `ui 353
+ , $ -> -> 7 `i `ui 356
+ 359 ]
 [e :U 333 ]
-"323
-[; ;OpticalSpeedSensor.c: 323:     }
+"371
+[; ;OpticalSpeedSensor.c: 371:     }
 }
 [e :U 330 ]
 [e $U 331  ]
 [e :U 332 ]
-"338
-[; ;OpticalSpeedSensor.c: 338: }
+"386
+[; ;OpticalSpeedSensor.c: 386: }
 [e :UE 328 ]
 }
 [v $root$_ISR_Routine `(v ~T0 @X0 0 e ]
-"356
-[; ;OpticalSpeedSensor.c: 356: void __attribute__((picinterrupt(("")))) ISR_Routine(void)
+"404
+[; ;OpticalSpeedSensor.c: 404: void __attribute__((picinterrupt(("")))) ISR_Routine(void)
 [v _ISR_Routine `(v ~T2 @X0 1 ef ]
-"357
-[; ;OpticalSpeedSensor.c: 357: {
+"405
+[; ;OpticalSpeedSensor.c: 405: {
 {
 [e :U _ISR_Routine ]
 [f ]
-"359
-[; ;OpticalSpeedSensor.c: 359:     if (PIR1bits.TMR1IF)
-[e $ ! != -> . . _PIR1bits 0 0 `i -> 0 `i 355  ]
-"360
-[; ;OpticalSpeedSensor.c: 360:     {
+"407
+[; ;OpticalSpeedSensor.c: 407:     __asm("NOP");
+[; <" NOP ;# ">
+"409
+[; ;OpticalSpeedSensor.c: 409:     if (PIR1bits.TMR1IF)
+[e $ ! != -> . . _PIR1bits 0 0 `i -> 0 `i 371  ]
+"410
+[; ;OpticalSpeedSensor.c: 410:     {
 {
-"371
-[; ;OpticalSpeedSensor.c: 371:         TMR1H = 0xFC;
+"412
+[; ;OpticalSpeedSensor.c: 412:         __asm("NOP");
+[; <" NOP ;# ">
+"421
+[; ;OpticalSpeedSensor.c: 421:         TMR1H = 0xFC;
 [e = _TMR1H -> -> 252 `i `uc ]
-"372
-[; ;OpticalSpeedSensor.c: 372:         TMR1L = 0x18;
+"422
+[; ;OpticalSpeedSensor.c: 422:         TMR1L = 0x18;
 [e = _TMR1L -> -> 24 `i `uc ]
-"384
-[; ;OpticalSpeedSensor.c: 384:         sGenTimer1++;
+"434
+[; ;OpticalSpeedSensor.c: 434:         sGenTimer1++;
 [e ++ _sGenTimer1 -> -> -> 1 `i `l `ul ]
-"385
-[; ;OpticalSpeedSensor.c: 385:         sGenTimer2++;
+"435
+[; ;OpticalSpeedSensor.c: 435:         sGenTimer2++;
 [e ++ _sGenTimer2 -> -> -> 1 `i `l `ul ]
-"387
-[; ;OpticalSpeedSensor.c: 387:         PIR1bits.TMR1IF = 0;
-[e = . . _PIR1bits 0 0 -> -> 0 `i `uc ]
-"388
-[; ;OpticalSpeedSensor.c: 388:     }
-}
-[e :U 355 ]
-"395
-[; ;OpticalSpeedSensor.c: 395:     if (INTCONbits.INTF)
-[e $ ! != -> . . _INTCONbits 0 1 `i -> 0 `i 356  ]
-"396
-[; ;OpticalSpeedSensor.c: 396:     {
-{
-"399
-[; ;OpticalSpeedSensor.c: 399:         _delay((unsigned long)((10)*(16000000/4000.0)));
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
-"402
-[; ;OpticalSpeedSensor.c: 402:         if(PORTAbits.RA2)
-[e $ ! != -> . . _PORTAbits 0 2 `i -> 0 `i 357  ]
-"403
-[; ;OpticalSpeedSensor.c: 403:         {
-{
-"404
-[; ;OpticalSpeedSensor.c: 404:             bRisingEdges++;
-[e ++ _bRisingEdges -> -> 1 `i `uc ]
-"406
-[; ;OpticalSpeedSensor.c: 406:             ((bFlags_1) |= (0x08));
-[e =| _bFlags_1 -> -> 8 `i `uc ]
-"408
-[; ;OpticalSpeedSensor.c: 408:         }
-}
-[e :U 357 ]
-"416
-[; ;OpticalSpeedSensor.c: 416:         INTCONbits.INTF = 0;
-[e = . . _INTCONbits 0 1 -> -> 0 `i `uc ]
-"417
-[; ;OpticalSpeedSensor.c: 417:     }
-}
-[e :U 356 ]
-"427
-[; ;OpticalSpeedSensor.c: 427: }
-[e :UE 354 ]
-}
 "437
-[; ;OpticalSpeedSensor.c: 437: void TMR1_Init(void)
-[v _TMR1_Init `(v ~T0 @X0 1 ef ]
+[; ;OpticalSpeedSensor.c: 437:         PIR1bits.TMR1IF = 0;
+[e = . . _PIR1bits 0 0 -> -> 0 `i `uc ]
 "438
-[; ;OpticalSpeedSensor.c: 438: {
+[; ;OpticalSpeedSensor.c: 438:     }
+}
+[e :U 371 ]
+"445
+[; ;OpticalSpeedSensor.c: 445:     if (INTCONbits.INTF)
+[e $ ! != -> . . _INTCONbits 0 1 `i -> 0 `i 372  ]
+"446
+[; ;OpticalSpeedSensor.c: 446:     {
+{
+"449
+[; ;OpticalSpeedSensor.c: 449:         _delay((unsigned long)((10)*(16000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
+"451
+[; ;OpticalSpeedSensor.c: 451:         __asm("NOP");
+[; <" NOP ;# ">
+"454
+[; ;OpticalSpeedSensor.c: 454:         if(PORTAbits.RA2)
+[e $ ! != -> . . _PORTAbits 0 2 `i -> 0 `i 373  ]
+"455
+[; ;OpticalSpeedSensor.c: 455:         {
+{
+"456
+[; ;OpticalSpeedSensor.c: 456:             bRisingEdges++;
+[e ++ _bRisingEdges -> -> 1 `i `uc ]
+"458
+[; ;OpticalSpeedSensor.c: 458:             ((bFlags_1) |= (0x08));
+[e =| _bFlags_1 -> -> 8 `i `uc ]
+"460
+[; ;OpticalSpeedSensor.c: 460:         }
+}
+[e :U 373 ]
+"468
+[; ;OpticalSpeedSensor.c: 468:         INTCONbits.INTF = 0;
+[e = . . _INTCONbits 0 1 -> -> 0 `i `uc ]
+"469
+[; ;OpticalSpeedSensor.c: 469:     }
+}
+[e :U 372 ]
+"479
+[; ;OpticalSpeedSensor.c: 479: }
+[e :UE 370 ]
+}
+"489
+[; ;OpticalSpeedSensor.c: 489: void TMR1_Init(void)
+[v _TMR1_Init `(v ~T0 @X0 1 ef ]
+"490
+[; ;OpticalSpeedSensor.c: 490: {
 {
 [e :U _TMR1_Init ]
 [f ]
-"442
-[; ;OpticalSpeedSensor.c: 442:     T1CONbits.TMR1CS = 0;
+"494
+[; ;OpticalSpeedSensor.c: 494:     T1CONbits.TMR1CS = 0;
 [e = . . _T1CONbits 1 2 -> -> 0 `i `uc ]
-"443
-[; ;OpticalSpeedSensor.c: 443:     T1CONbits.T1CKPS = 2;
+"495
+[; ;OpticalSpeedSensor.c: 495:     T1CONbits.T1CKPS = 2;
 [e = . . _T1CONbits 1 1 -> -> 2 `i `uc ]
-"444
-[; ;OpticalSpeedSensor.c: 444:     T1CONbits.T1OSCEN = 0;
+"496
+[; ;OpticalSpeedSensor.c: 496:     T1CONbits.T1OSCEN = 0;
 [e = . . _T1CONbits 0 3 -> -> 0 `i `uc ]
-"445
-[; ;OpticalSpeedSensor.c: 445:     T1CONbits.nT1SYNC = 1;
+"497
+[; ;OpticalSpeedSensor.c: 497:     T1CONbits.nT1SYNC = 1;
 [e = . . _T1CONbits 0 2 -> -> 1 `i `uc ]
-"446
-[; ;OpticalSpeedSensor.c: 446:     T1CONbits.TMR1ON = 1;
+"498
+[; ;OpticalSpeedSensor.c: 498:     T1CONbits.TMR1ON = 1;
 [e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-"449
-[; ;OpticalSpeedSensor.c: 449:     T1GCON = 0;
+"501
+[; ;OpticalSpeedSensor.c: 501:     T1GCON = 0;
 [e = _T1GCON -> -> 0 `i `uc ]
-"467
-[; ;OpticalSpeedSensor.c: 467:     PIR1bits.TMR1IF = 0;
+"519
+[; ;OpticalSpeedSensor.c: 519:     PIR1bits.TMR1IF = 0;
 [e = . . _PIR1bits 0 0 -> -> 0 `i `uc ]
-"468
-[; ;OpticalSpeedSensor.c: 468: }
-[e :UE 358 ]
+"520
+[; ;OpticalSpeedSensor.c: 520: }
+[e :UE 374 ]
 }
-"472
-[; ;OpticalSpeedSensor.c: 472: void ADC_Init(void)
+"524
+[; ;OpticalSpeedSensor.c: 524: void ADC_Init(void)
 [v _ADC_Init `(v ~T0 @X0 1 ef ]
-"473
-[; ;OpticalSpeedSensor.c: 473: {
+"525
+[; ;OpticalSpeedSensor.c: 525: {
 {
 [e :U _ADC_Init ]
 [f ]
-"476
-[; ;OpticalSpeedSensor.c: 476:     ADCON1bits.ADFM = 1;
+"528
+[; ;OpticalSpeedSensor.c: 528:     ADCON1bits.ADFM = 1;
 [e = . . _ADCON1bits 0 7 -> -> 1 `i `uc ]
-"477
-[; ;OpticalSpeedSensor.c: 477:     ADCON1bits.ADCS = 0x02;
+"529
+[; ;OpticalSpeedSensor.c: 529:     ADCON1bits.ADCS = 0x02;
 [e = . . _ADCON1bits 1 2 -> -> 2 `i `uc ]
-"478
-[; ;OpticalSpeedSensor.c: 478:     ADCON1bits.ADPREF = 0x00;
+"530
+[; ;OpticalSpeedSensor.c: 530:     ADCON1bits.ADPREF = 0x00;
 [e = . . _ADCON1bits 1 0 -> -> 0 `i `uc ]
-"502
-[; ;OpticalSpeedSensor.c: 502: }
-[e :UE 359 ]
+"554
+[; ;OpticalSpeedSensor.c: 554: }
+[e :UE 375 ]
 }
-"504
-[; ;OpticalSpeedSensor.c: 504: void SPI_MasterInit(void)
+"556
+[; ;OpticalSpeedSensor.c: 556: void SPI_MasterInit(void)
 [v _SPI_MasterInit `(v ~T0 @X0 1 ef ]
-"505
-[; ;OpticalSpeedSensor.c: 505: {
+"557
+[; ;OpticalSpeedSensor.c: 557: {
 {
 [e :U _SPI_MasterInit ]
 [f ]
-"534
-[; ;OpticalSpeedSensor.c: 534:     SSP1STAT = 0b00000000;
+"586
+[; ;OpticalSpeedSensor.c: 586:     SSP1STAT = 0b00000000;
 [e = _SSP1STAT -> -> 0 `i `uc ]
-"540
-[; ;OpticalSpeedSensor.c: 540:     SSP1CON1 = 0b00100010;
+"592
+[; ;OpticalSpeedSensor.c: 592:     SSP1CON1 = 0b00100010;
 [e = _SSP1CON1 -> -> 34 `i `uc ]
-"546
-[; ;OpticalSpeedSensor.c: 546: }
-[e :UE 360 ]
+"598
+[; ;OpticalSpeedSensor.c: 598: }
+[e :UE 376 ]
 }
-"549
-[; ;OpticalSpeedSensor.c: 549: void SPI_SlaveInit(void)
+"601
+[; ;OpticalSpeedSensor.c: 601: void SPI_SlaveInit(void)
 [v _SPI_SlaveInit `(v ~T0 @X0 1 ef ]
-"550
-[; ;OpticalSpeedSensor.c: 550: {
+"602
+[; ;OpticalSpeedSensor.c: 602: {
 {
 [e :U _SPI_SlaveInit ]
 [f ]
-"582
-[; ;OpticalSpeedSensor.c: 582:     SSP1STAT = 0b01000000;
-[e = _SSP1STAT -> -> 64 `i `uc ]
-"588
-[; ;OpticalSpeedSensor.c: 588:     SSP1CON1 = 0b00100100;
-[e = _SSP1CON1 -> -> 36 `i `uc ]
-"594
-[; ;OpticalSpeedSensor.c: 594: }
-[e :UE 361 ]
-}
-"597
-[; ;OpticalSpeedSensor.c: 597: void RS232_Init(void)
-[v _RS232_Init `(v ~T0 @X0 1 ef ]
-"598
-[; ;OpticalSpeedSensor.c: 598: {
-{
-[e :U _RS232_Init ]
-[f ]
-"600
-[; ;OpticalSpeedSensor.c: 600:     BAUDCON = 0x00;
-[e = _BAUDCON -> -> 0 `i `uc ]
-"610
-[; ;OpticalSpeedSensor.c: 610:     TXSTA = 0x20;
-[e = _TXSTA -> -> 32 `i `uc ]
-"620
-[; ;OpticalSpeedSensor.c: 620:     RCSTA = 0x90;
-[e = _RCSTA -> -> 144 `i `uc ]
-"633
-[; ;OpticalSpeedSensor.c: 633:     SPBRGH = 0;
-[e = _SPBRGH -> -> 0 `i `uc ]
 "634
-[; ;OpticalSpeedSensor.c: 634:     SPBRGL = 12;
-[e = _SPBRGL -> -> 12 `i `uc ]
-"638
-[; ;OpticalSpeedSensor.c: 638: }
-[e :UE 362 ]
-}
-"641
-[; ;OpticalSpeedSensor.c: 641: void UART_Write( unsigned short data)
-[v _UART_Write `(v ~T0 @X0 1 ef1`us ]
-"642
-[; ;OpticalSpeedSensor.c: 642: {
-{
-[e :U _UART_Write ]
-"641
-[; ;OpticalSpeedSensor.c: 641: void UART_Write( unsigned short data)
-[v _data `us ~T0 @X0 1 r1 ]
-"642
-[; ;OpticalSpeedSensor.c: 642: {
-[f ]
-"644
-[; ;OpticalSpeedSensor.c: 644:     while(!TXSTAbits.TRMT);
-[e $U 364  ]
-[e :U 365 ]
-[e :U 364 ]
-[e $ ! != -> . . _TXSTAbits 0 1 `i -> 0 `i 365  ]
-[e :U 366 ]
-"645
-[; ;OpticalSpeedSensor.c: 645:     TXREG = data;
-[e = _TXREG -> _data `uc ]
+[; ;OpticalSpeedSensor.c: 634:     SSP1STAT = 0b01000000;
+[e = _SSP1STAT -> -> 64 `i `uc ]
+"640
+[; ;OpticalSpeedSensor.c: 640:     SSP1CON1 = 0b00100100;
+[e = _SSP1CON1 -> -> 36 `i `uc ]
 "646
 [; ;OpticalSpeedSensor.c: 646: }
-[e :UE 363 ]
+[e :UE 377 ]
 }
 "649
-[; ;OpticalSpeedSensor.c: 649: unsigned char UART_ChkRec_Err()
-[v _UART_ChkRec_Err `(uc ~T0 @X0 1 ef ]
+[; ;OpticalSpeedSensor.c: 649: void RS232_Init(void)
+[v _RS232_Init `(v ~T0 @X0 1 ef ]
 "650
 [; ;OpticalSpeedSensor.c: 650: {
 {
+[e :U _RS232_Init ]
+[f ]
+"652
+[; ;OpticalSpeedSensor.c: 652:     BAUDCON = 0x00;
+[e = _BAUDCON -> -> 0 `i `uc ]
+"662
+[; ;OpticalSpeedSensor.c: 662:     TXSTA = 0x20;
+[e = _TXSTA -> -> 32 `i `uc ]
+"672
+[; ;OpticalSpeedSensor.c: 672:     RCSTA = 0x90;
+[e = _RCSTA -> -> 144 `i `uc ]
+"685
+[; ;OpticalSpeedSensor.c: 685:     SPBRGH = 0;
+[e = _SPBRGH -> -> 0 `i `uc ]
+"686
+[; ;OpticalSpeedSensor.c: 686:     SPBRGL = 12;
+[e = _SPBRGL -> -> 12 `i `uc ]
+"690
+[; ;OpticalSpeedSensor.c: 690: }
+[e :UE 378 ]
+}
+"693
+[; ;OpticalSpeedSensor.c: 693: void UART_Write( unsigned short data)
+[v _UART_Write `(v ~T0 @X0 1 ef1`us ]
+"694
+[; ;OpticalSpeedSensor.c: 694: {
+{
+[e :U _UART_Write ]
+"693
+[; ;OpticalSpeedSensor.c: 693: void UART_Write( unsigned short data)
+[v _data `us ~T0 @X0 1 r1 ]
+"694
+[; ;OpticalSpeedSensor.c: 694: {
+[f ]
+"696
+[; ;OpticalSpeedSensor.c: 696:     while(!TXSTAbits.TRMT);
+[e $U 380  ]
+[e :U 381 ]
+[e :U 380 ]
+[e $ ! != -> . . _TXSTAbits 0 1 `i -> 0 `i 381  ]
+[e :U 382 ]
+"697
+[; ;OpticalSpeedSensor.c: 697:     TXREG = data;
+[e = _TXREG -> _data `uc ]
+"698
+[; ;OpticalSpeedSensor.c: 698: }
+[e :UE 379 ]
+}
+"701
+[; ;OpticalSpeedSensor.c: 701: unsigned char UART_ChkRec_Err()
+[v _UART_ChkRec_Err `(uc ~T0 @X0 1 ef ]
+"702
+[; ;OpticalSpeedSensor.c: 702: {
+{
 [e :U _UART_ChkRec_Err ]
 [f ]
-"655
-[; ;OpticalSpeedSensor.c: 655:     unsigned char tmpdata;
+"707
+[; ;OpticalSpeedSensor.c: 707:     unsigned char tmpdata;
 [v _tmpdata `uc ~T0 @X0 1 a ]
-"657
-[; ;OpticalSpeedSensor.c: 657:     if(RCSTAbits.FERR)
-[e $ ! != -> . . _RCSTAbits 0 2 `i -> 0 `i 368  ]
-"658
-[; ;OpticalSpeedSensor.c: 658:     {
-{
-"659
-[; ;OpticalSpeedSensor.c: 659:         tmpdata = RCREG;
-[e = _tmpdata _RCREG ]
-"660
-[; ;OpticalSpeedSensor.c: 660:         return(1);
-[e ) -> -> 1 `i `uc ]
-[e $UE 367  ]
-"661
-[; ;OpticalSpeedSensor.c: 661:     }
-}
-[e $U 369  ]
-"662
-[; ;OpticalSpeedSensor.c: 662:     else if(RCSTAbits.OERR)
-[e :U 368 ]
-[e $ ! != -> . . _RCSTAbits 0 1 `i -> 0 `i 370  ]
-"663
-[; ;OpticalSpeedSensor.c: 663:     {
-{
-"665
-[; ;OpticalSpeedSensor.c: 665:         RCSTAbits.CREN = 0;
-[e = . . _RCSTAbits 0 4 -> -> 0 `i `uc ]
-"666
-[; ;OpticalSpeedSensor.c: 666:         RCSTAbits.CREN = 1;
-[e = . . _RCSTAbits 0 4 -> -> 1 `i `uc ]
-"667
-[; ;OpticalSpeedSensor.c: 667:         return(2);
-[e ) -> -> 2 `i `uc ]
-[e $UE 367  ]
-"668
-[; ;OpticalSpeedSensor.c: 668:     }
-}
-[e $U 371  ]
-"669
-[; ;OpticalSpeedSensor.c: 669:     else
-[e :U 370 ]
-"670
-[; ;OpticalSpeedSensor.c: 670:     {
-{
-"671
-[; ;OpticalSpeedSensor.c: 671:         return(0);
-[e ) -> -> 0 `i `uc ]
-[e $UE 367  ]
-"672
-[; ;OpticalSpeedSensor.c: 672:     }
-}
-[e :U 371 ]
-[e :U 369 ]
-"673
-[; ;OpticalSpeedSensor.c: 673: }
-[e :UE 367 ]
-}
-"677
-[; ;OpticalSpeedSensor.c: 677: void Enable_Timer1_Int(void)
-[v _Enable_Timer1_Int `(v ~T0 @X0 1 ef ]
-"678
-[; ;OpticalSpeedSensor.c: 678: {
-{
-[e :U _Enable_Timer1_Int ]
-[f ]
-"679
-[; ;OpticalSpeedSensor.c: 679:     PIR1bits.TMR1IF = 0;
-[e = . . _PIR1bits 0 0 -> -> 0 `i `uc ]
-"680
-[; ;OpticalSpeedSensor.c: 680:     PIE1bits.TMR1IE = 1;
-[e = . . _PIE1bits 0 0 -> -> 1 `i `uc ]
-"681
-[; ;OpticalSpeedSensor.c: 681: }
-[e :UE 372 ]
-}
-"683
-[; ;OpticalSpeedSensor.c: 683: void Disable_Timer1_Int(void)
-[v _Disable_Timer1_Int `(v ~T0 @X0 1 ef ]
-"684
-[; ;OpticalSpeedSensor.c: 684: {
-{
-[e :U _Disable_Timer1_Int ]
-[f ]
-"685
-[; ;OpticalSpeedSensor.c: 685:     PIR1bits.TMR1IF = 0;
-[e = . . _PIR1bits 0 0 -> -> 0 `i `uc ]
-"686
-[; ;OpticalSpeedSensor.c: 686:     PIE1bits.TMR1IE = 0;
-[e = . . _PIE1bits 0 0 -> -> 0 `i `uc ]
-"687
-[; ;OpticalSpeedSensor.c: 687: }
-[e :UE 373 ]
-}
-"689
-[; ;OpticalSpeedSensor.c: 689: void Enable_External_Rising_Int(void)
-[v _Enable_External_Rising_Int `(v ~T0 @X0 1 ef ]
-"690
-[; ;OpticalSpeedSensor.c: 690: {
-{
-[e :U _Enable_External_Rising_Int ]
-[f ]
-"691
-[; ;OpticalSpeedSensor.c: 691:     OPTION_REGbits.INTEDG = 1;
-[e = . . _OPTION_REGbits 0 6 -> -> 1 `i `uc ]
-"692
-[; ;OpticalSpeedSensor.c: 692:     INTCONbits.INTF = 0;
-[e = . . _INTCONbits 0 1 -> -> 0 `i `uc ]
-"693
-[; ;OpticalSpeedSensor.c: 693:     INTCONbits.INTE = 1;
-[e = . . _INTCONbits 0 4 -> -> 1 `i `uc ]
-"694
-[; ;OpticalSpeedSensor.c: 694: }
-[e :UE 374 ]
-}
-"696
-[; ;OpticalSpeedSensor.c: 696: void Disable_External_Rising_Int(void)
-[v _Disable_External_Rising_Int `(v ~T0 @X0 1 ef ]
-"697
-[; ;OpticalSpeedSensor.c: 697: {
-{
-[e :U _Disable_External_Rising_Int ]
-[f ]
-"698
-[; ;OpticalSpeedSensor.c: 698:     INTCONbits.INTF = 0;
-[e = . . _INTCONbits 0 1 -> -> 0 `i `uc ]
-"699
-[; ;OpticalSpeedSensor.c: 699:     INTCONbits.INTE = 0;
-[e = . . _INTCONbits 0 4 -> -> 0 `i `uc ]
-"700
-[; ;OpticalSpeedSensor.c: 700: }
-[e :UE 375 ]
-}
-"702
-[; ;OpticalSpeedSensor.c: 702: void Enable_UART_RX_Int(void)
-[v _Enable_UART_RX_Int `(v ~T0 @X0 1 ef ]
-"703
-[; ;OpticalSpeedSensor.c: 703: {
-{
-[e :U _Enable_UART_RX_Int ]
-[f ]
-"704
-[; ;OpticalSpeedSensor.c: 704:     PIR1bits.RCIF = 0;
-[e = . . _PIR1bits 0 5 -> -> 0 `i `uc ]
-"705
-[; ;OpticalSpeedSensor.c: 705:     PIE1bits.RCIE = 1;
-[e = . . _PIE1bits 0 5 -> -> 1 `i `uc ]
-"706
-[; ;OpticalSpeedSensor.c: 706: }
-[e :UE 376 ]
-}
+"709
+[; ;OpticalSpeedSensor.c: 709:     if(RCSTAbits.FERR)
+[e $ ! != -> . . _RCSTAbits 0 2 `i -> 0 `i 384  ]
 "710
-[; ;OpticalSpeedSensor.c: 710: unsigned short Read_ADC_Value(void)
-[v _Read_ADC_Value `(us ~T0 @X0 1 ef ]
+[; ;OpticalSpeedSensor.c: 710:     {
+{
 "711
-[; ;OpticalSpeedSensor.c: 711: {
-{
-[e :U _Read_ADC_Value ]
-[f ]
+[; ;OpticalSpeedSensor.c: 711:         tmpdata = RCREG;
+[e = _tmpdata _RCREG ]
 "712
-[; ;OpticalSpeedSensor.c: 712:     unsigned short ADCValue;
-[v _ADCValue `us ~T0 @X0 1 a ]
+[; ;OpticalSpeedSensor.c: 712:         return(1);
+[e ) -> -> 1 `i `uc ]
+[e $UE 383  ]
 "713
-[; ;OpticalSpeedSensor.c: 713:     char i;
-[v _i `uc ~T0 @X0 1 a ]
+[; ;OpticalSpeedSensor.c: 713:     }
+}
+[e $U 385  ]
+"714
+[; ;OpticalSpeedSensor.c: 714:     else if(RCSTAbits.OERR)
+[e :U 384 ]
+[e $ ! != -> . . _RCSTAbits 0 1 `i -> 0 `i 386  ]
 "715
-[; ;OpticalSpeedSensor.c: 715:     ADCON0bits.CHS = 0x04;
-[e = . . _ADCON0bits 1 2 -> -> 4 `i `uc ]
-"716
-[; ;OpticalSpeedSensor.c: 716:     ADCON0bits.ADON = 1;
-[e = . . _ADCON0bits 0 0 -> -> 1 `i `uc ]
+[; ;OpticalSpeedSensor.c: 715:     {
+{
 "717
-[; ;OpticalSpeedSensor.c: 717:     for(i=0; i<2;i++)
-{
-[e = _i -> -> 0 `i `uc ]
-[e $ < -> _i `i -> 2 `i 378  ]
-[e $U 379  ]
-[e :U 378 ]
+[; ;OpticalSpeedSensor.c: 717:         RCSTAbits.CREN = 0;
+[e = . . _RCSTAbits 0 4 -> -> 0 `i `uc ]
 "718
-[; ;OpticalSpeedSensor.c: 718:     {
-{
+[; ;OpticalSpeedSensor.c: 718:         RCSTAbits.CREN = 1;
+[e = . . _RCSTAbits 0 4 -> -> 1 `i `uc ]
 "719
-[; ;OpticalSpeedSensor.c: 719:         __asm("NOP");
-[; <" NOP ;# ">
+[; ;OpticalSpeedSensor.c: 719:         return(2);
+[e ) -> -> 2 `i `uc ]
+[e $UE 383  ]
 "720
 [; ;OpticalSpeedSensor.c: 720:     }
 }
-[e ++ _i -> -> 1 `i `uc ]
-[e $ < -> _i `i -> 2 `i 378  ]
-[e :U 379 ]
-}
+[e $U 387  ]
 "721
-[; ;OpticalSpeedSensor.c: 721:     ADCON0bits.GO = 1;
-[e = . . _ADCON0bits 2 1 -> -> 1 `i `uc ]
+[; ;OpticalSpeedSensor.c: 721:     else
+[e :U 386 ]
 "722
-[; ;OpticalSpeedSensor.c: 722:     while (ADCON0bits.GO);
-[e $U 381  ]
-[e :U 382 ]
-[e :U 381 ]
-[e $ != -> . . _ADCON0bits 2 1 `i -> 0 `i 382  ]
-[e :U 383 ]
+[; ;OpticalSpeedSensor.c: 722:     {
+{
 "723
-[; ;OpticalSpeedSensor.c: 723:     ADCValue = ADRESH << 8;
-[e = _ADCValue -> << -> _ADRESH `i -> 8 `i `us ]
+[; ;OpticalSpeedSensor.c: 723:         return(0);
+[e ) -> -> 0 `i `uc ]
+[e $UE 383  ]
 "724
-[; ;OpticalSpeedSensor.c: 724:     bADCHigh = ADRESH;
-[e = _bADCHigh _ADRESH ]
+[; ;OpticalSpeedSensor.c: 724:     }
+}
+[e :U 387 ]
+[e :U 385 ]
 "725
-[; ;OpticalSpeedSensor.c: 725:     bADCLow = ADRESL;
-[e = _bADCLow _ADRESL ]
-"726
-[; ;OpticalSpeedSensor.c: 726:     ADCValue = (unsigned short) ADCValue + ADRESL;
-[e = _ADCValue -> + -> _ADCValue `ui -> _ADRESL `ui `us ]
+[; ;OpticalSpeedSensor.c: 725: }
+[e :UE 383 ]
+}
 "727
-[; ;OpticalSpeedSensor.c: 727:     ADCON0bits.ADON = 0;
-[e = . . _ADCON0bits 0 0 -> -> 0 `i `uc ]
+[; ;OpticalSpeedSensor.c: 727: void Enable_Int(void)
+[v _Enable_Int `(v ~T0 @X0 1 ef ]
 "728
-[; ;OpticalSpeedSensor.c: 728:     return (ADCValue);
-[e ) _ADCValue ]
-[e $UE 377  ]
+[; ;OpticalSpeedSensor.c: 728: {
+{
+[e :U _Enable_Int ]
+[f ]
 "729
-[; ;OpticalSpeedSensor.c: 729: }
-[e :UE 377 ]
+[; ;OpticalSpeedSensor.c: 729:     INTCONbits.GIE = 1;
+[e = . . _INTCONbits 0 7 -> -> 1 `i `uc ]
+"730
+[; ;OpticalSpeedSensor.c: 730:     INTCONbits.PEIE = 1;
+[e = . . _INTCONbits 0 6 -> -> 1 `i `uc ]
+"731
+[; ;OpticalSpeedSensor.c: 731: }
+[e :UE 388 ]
+}
+"733
+[; ;OpticalSpeedSensor.c: 733: void Disable_Int(void)
+[v _Disable_Int `(v ~T0 @X0 1 ef ]
+"734
+[; ;OpticalSpeedSensor.c: 734: {
+{
+[e :U _Disable_Int ]
+[f ]
+"735
+[; ;OpticalSpeedSensor.c: 735:     INTCONbits.GIE = 0;
+[e = . . _INTCONbits 0 7 -> -> 0 `i `uc ]
+"736
+[; ;OpticalSpeedSensor.c: 736:     INTCONbits.PEIE = 0;
+[e = . . _INTCONbits 0 6 -> -> 0 `i `uc ]
+"737
+[; ;OpticalSpeedSensor.c: 737: }
+[e :UE 389 ]
+}
+"739
+[; ;OpticalSpeedSensor.c: 739: void Enable_Timer1_Int(void)
+[v _Enable_Timer1_Int `(v ~T0 @X0 1 ef ]
+"740
+[; ;OpticalSpeedSensor.c: 740: {
+{
+[e :U _Enable_Timer1_Int ]
+[f ]
+"741
+[; ;OpticalSpeedSensor.c: 741:     PIR1bits.TMR1IF = 0;
+[e = . . _PIR1bits 0 0 -> -> 0 `i `uc ]
+"742
+[; ;OpticalSpeedSensor.c: 742:     PIE1bits.TMR1IE = 1;
+[e = . . _PIE1bits 0 0 -> -> 1 `i `uc ]
+"743
+[; ;OpticalSpeedSensor.c: 743: }
+[e :UE 390 ]
+}
+"745
+[; ;OpticalSpeedSensor.c: 745: void Disable_Timer1_Int(void)
+[v _Disable_Timer1_Int `(v ~T0 @X0 1 ef ]
+"746
+[; ;OpticalSpeedSensor.c: 746: {
+{
+[e :U _Disable_Timer1_Int ]
+[f ]
+"747
+[; ;OpticalSpeedSensor.c: 747:     PIR1bits.TMR1IF = 0;
+[e = . . _PIR1bits 0 0 -> -> 0 `i `uc ]
+"748
+[; ;OpticalSpeedSensor.c: 748:     PIE1bits.TMR1IE = 0;
+[e = . . _PIE1bits 0 0 -> -> 0 `i `uc ]
+"749
+[; ;OpticalSpeedSensor.c: 749: }
+[e :UE 391 ]
+}
+"751
+[; ;OpticalSpeedSensor.c: 751: void Enable_External_Rising_Int(void)
+[v _Enable_External_Rising_Int `(v ~T0 @X0 1 ef ]
+"752
+[; ;OpticalSpeedSensor.c: 752: {
+{
+[e :U _Enable_External_Rising_Int ]
+[f ]
+"753
+[; ;OpticalSpeedSensor.c: 753:     OPTION_REGbits.INTEDG = 1;
+[e = . . _OPTION_REGbits 0 6 -> -> 1 `i `uc ]
+"754
+[; ;OpticalSpeedSensor.c: 754:     INTCONbits.INTF = 0;
+[e = . . _INTCONbits 0 1 -> -> 0 `i `uc ]
+"755
+[; ;OpticalSpeedSensor.c: 755:     INTCONbits.INTE = 1;
+[e = . . _INTCONbits 0 4 -> -> 1 `i `uc ]
+"756
+[; ;OpticalSpeedSensor.c: 756: }
+[e :UE 392 ]
+}
+"758
+[; ;OpticalSpeedSensor.c: 758: void Disable_External_Rising_Int(void)
+[v _Disable_External_Rising_Int `(v ~T0 @X0 1 ef ]
+"759
+[; ;OpticalSpeedSensor.c: 759: {
+{
+[e :U _Disable_External_Rising_Int ]
+[f ]
+"760
+[; ;OpticalSpeedSensor.c: 760:     INTCONbits.INTF = 0;
+[e = . . _INTCONbits 0 1 -> -> 0 `i `uc ]
+"761
+[; ;OpticalSpeedSensor.c: 761:     INTCONbits.INTE = 0;
+[e = . . _INTCONbits 0 4 -> -> 0 `i `uc ]
+"762
+[; ;OpticalSpeedSensor.c: 762: }
+[e :UE 393 ]
+}
+"764
+[; ;OpticalSpeedSensor.c: 764: void Enable_UART_RX_Int(void)
+[v _Enable_UART_RX_Int `(v ~T0 @X0 1 ef ]
+"765
+[; ;OpticalSpeedSensor.c: 765: {
+{
+[e :U _Enable_UART_RX_Int ]
+[f ]
+"766
+[; ;OpticalSpeedSensor.c: 766:     PIR1bits.RCIF = 0;
+[e = . . _PIR1bits 0 5 -> -> 0 `i `uc ]
+"767
+[; ;OpticalSpeedSensor.c: 767:     PIE1bits.RCIE = 1;
+[e = . . _PIE1bits 0 5 -> -> 1 `i `uc ]
+"768
+[; ;OpticalSpeedSensor.c: 768: }
+[e :UE 394 ]
+}
+"772
+[; ;OpticalSpeedSensor.c: 772: unsigned short Read_ADC_Value(void)
+[v _Read_ADC_Value `(us ~T0 @X0 1 ef ]
+"773
+[; ;OpticalSpeedSensor.c: 773: {
+{
+[e :U _Read_ADC_Value ]
+[f ]
+"774
+[; ;OpticalSpeedSensor.c: 774:     unsigned short ADCValue;
+[v _ADCValue `us ~T0 @X0 1 a ]
+"775
+[; ;OpticalSpeedSensor.c: 775:     char i;
+[v _i `uc ~T0 @X0 1 a ]
+"777
+[; ;OpticalSpeedSensor.c: 777:     ADCON0bits.CHS = 0x04;
+[e = . . _ADCON0bits 1 2 -> -> 4 `i `uc ]
+"778
+[; ;OpticalSpeedSensor.c: 778:     ADCON0bits.ADON = 1;
+[e = . . _ADCON0bits 0 0 -> -> 1 `i `uc ]
+"779
+[; ;OpticalSpeedSensor.c: 779:     for(i=0; i<2;i++)
+{
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 2 `i 396  ]
+[e $U 397  ]
+[e :U 396 ]
+"780
+[; ;OpticalSpeedSensor.c: 780:     {
+{
+"781
+[; ;OpticalSpeedSensor.c: 781:         __asm("NOP");
+[; <" NOP ;# ">
+"782
+[; ;OpticalSpeedSensor.c: 782:     }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 2 `i 396  ]
+[e :U 397 ]
+}
+"783
+[; ;OpticalSpeedSensor.c: 783:     ADCON0bits.GO = 1;
+[e = . . _ADCON0bits 2 1 -> -> 1 `i `uc ]
+"784
+[; ;OpticalSpeedSensor.c: 784:     while (ADCON0bits.GO);
+[e $U 399  ]
+[e :U 400 ]
+[e :U 399 ]
+[e $ != -> . . _ADCON0bits 2 1 `i -> 0 `i 400  ]
+[e :U 401 ]
+"785
+[; ;OpticalSpeedSensor.c: 785:     ADCValue = ADRESH << 8;
+[e = _ADCValue -> << -> _ADRESH `i -> 8 `i `us ]
+"786
+[; ;OpticalSpeedSensor.c: 786:     bADCHigh = ADRESH;
+[e = _bADCHigh _ADRESH ]
+"787
+[; ;OpticalSpeedSensor.c: 787:     bADCLow = ADRESL;
+[e = _bADCLow _ADRESL ]
+"788
+[; ;OpticalSpeedSensor.c: 788:     ADCValue = (unsigned short) ADCValue + ADRESL;
+[e = _ADCValue -> + -> _ADCValue `ui -> _ADRESL `ui `us ]
+"789
+[; ;OpticalSpeedSensor.c: 789:     ADCON0bits.ADON = 0;
+[e = . . _ADCON0bits 0 0 -> -> 0 `i `uc ]
+"790
+[; ;OpticalSpeedSensor.c: 790:     return (ADCValue);
+[e ) _ADCValue ]
+[e $UE 395  ]
+"791
+[; ;OpticalSpeedSensor.c: 791: }
+[e :UE 395 ]
 }

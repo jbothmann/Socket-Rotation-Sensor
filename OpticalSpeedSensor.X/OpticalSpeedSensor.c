@@ -175,7 +175,9 @@ void main (void)
     // Setup SPI as a Slave Port
     // SPI_SlaveInit();
 
-    Enable_Timer1_Int();
+    Enable_Int();  //Enables Interrupts
+    
+    Enable_Timer1_Int();  //Enable Interrupts from timer overflow
     
     // Enable UART Receive Int
     // Enable_UART_RX_Int();
@@ -185,6 +187,7 @@ void main (void)
     
     sCurrentState = RESETSTATE;                   // Set up starting state
 
+    trigStatDebug = 0;
     // This is how you would check if tool trigger is pulled
     if(TRG_STATUS == 0)
     {
@@ -195,7 +198,7 @@ void main (void)
     
     while(1)
     {
-        
+        NOP();
         //--------------SENSOR STATE MACHINE
         switch(sCurrentState)
         {
@@ -232,6 +235,10 @@ void main (void)
                     SENS_STAT_OFF;
                     RESETBIT(bFlags_1, SENS_STAT);
                 }
+                
+                // Re-Load Timer1
+                TMR1H = TIMER1HVAL;
+                TMR1L = TIMER1LVAL;
 
                 bRisingEdges = 0;   //reset edge counter
                 sGenTimer1 = 0;     //reset clock
@@ -396,11 +403,13 @@ void main (void)
 //------------------------------------------------------------------------------
 void __interrupt() ISR_Routine(void)
 {
+    
+    __asm("NOP");
     //----------------------Check if Timer1 overflow occurred
     if (PIR1bits.TMR1IF)                            
     { //Overflow occurred
         
-        //__asm("NOP");                             // Adjust with NOPs if you need to
+        __asm("NOP");                             // Adjust with NOPs if you need to
         
         // The time to get to this point should be 1ms if that was the time to overflow Timer1
         // The interrupt latency time...is the time from when the int event occurs to the time code
@@ -438,6 +447,8 @@ void __interrupt() ISR_Routine(void)
         
         // Could delay a short time to eliminate runt pulses
         __delay_ms(10);
+        
+        __asm("NOP");
         
         // Check if pulse is still high
         if(SENSOR_IN) 
@@ -713,12 +724,22 @@ unsigned char UART_ChkRec_Err()
     }
 }
 
+void Enable_Int(void)
+{
+    INTCONbits.GIE = 1;         //Enables interrupts globally
+    INTCONbits.PEIE = 1;        //Enables active peripheral interrupts
+}
 
+void Disable_Int(void)
+{
+    INTCONbits.GIE = 0;         //Disables interrupts globally
+    INTCONbits.PEIE = 0;        //Disables active peripheral interrupts
+}
 
 void Enable_Timer1_Int(void)
 {   // Enable Timer 1 INTS
     PIR1bits.TMR1IF = 0;        // Clear timer1 int flag
-    PIE1bits.TMR1IE = 1;        // Enable Timer 1 overflow int    
+    PIE1bits.TMR1IE = 1;        // Enable Timer 1 overflow int
 }
 
 void Disable_Timer1_Int(void)

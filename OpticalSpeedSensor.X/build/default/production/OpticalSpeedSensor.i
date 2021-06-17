@@ -4110,7 +4110,9 @@ unsigned char bADCHigh;
 unsigned char bADCLow;
 unsigned long sGenTimer1;
 unsigned long sGenTimer2;
-# 117 "./OpticalSpeedSensor.h"
+
+unsigned short trigStatDebug;
+# 119 "./OpticalSpeedSensor.h"
 void __attribute__((picinterrupt(("")))) ISR_Routine(void);
 void TMR1_Init(void);
 void ADC_Init(void);
@@ -4120,6 +4122,8 @@ void RS232_Init(void);
 void UART_Write(unsigned short data);
 unsigned char UART_ChkRec_Err();
 unsigned short Read_ADC_Value(void);
+void Enable_Int(void);
+void Disable_Int(void);
 void Enable_Timer1_Int(void);
 void Disable_Timer1_Int(void);
 void Enable_External_Rising_Int(void);
@@ -4216,6 +4220,8 @@ void main (void)
 
     TMR1_Init();
 # 178 "OpticalSpeedSensor.c"
+    Enable_Int();
+
     Enable_Timer1_Int();
 
 
@@ -4226,8 +4232,9 @@ void main (void)
 
     sCurrentState = 1;
 
+    trigStatDebug = 0;
 
-    if(PORTCbits.RC3 == 0)
+    if(!PORTCbits.RC3 == 0)
     {
 
     }
@@ -4236,15 +4243,24 @@ void main (void)
 
     while(1)
     {
-
+        __nop();
 
         switch(sCurrentState)
         {
 
             case 1:
-                LATAbits.LATA5 = 1;
 
-                if (PORTCbits.RC3)
+                if ((((bFlags_1) & (0x01)) != 0)){
+                    LATAbits.LATA5 = 1;
+                    ((bFlags_1) &= ((~(0x01))));
+                }
+
+                ((bFlags_1) &= ((~(0x10))));
+                ((bFlags_1) |= (0x04));
+                LATAbits.LATA4 = 0;
+
+
+                if (!PORTCbits.RC3)
                 {
                     sLastState = 1;
                     sCurrentState = 2;
@@ -4259,7 +4275,15 @@ void main (void)
 
 
             case 2:
-                LATAbits.LATA5 = 1;
+
+                if ((((bFlags_1) & (0x01)) != 0)){
+                    LATAbits.LATA5 = 1;
+                    ((bFlags_1) &= ((~(0x01))));
+                }
+
+
+                TMR1H = 0xFC;
+                TMR1L = 0x18;
 
                 bRisingEdges = 0;
                 sGenTimer1 = 0;
@@ -4272,10 +4296,14 @@ void main (void)
 
 
             case 3:
-                LATAbits.LATA5 = 1;
+
+                if ((((bFlags_1) & (0x01)) != 0)){
+                    LATAbits.LATA5 = 1;
+                    ((bFlags_1) &= ((~(0x01))));
+                }
 
 
-                if (!PORTCbits.RC3)
+                if (!!PORTCbits.RC3)
                 {
                     sLastState = 3;
                     sCurrentState = 4;
@@ -4292,9 +4320,13 @@ void main (void)
 
 
             case 4:
-                LATAbits.LATA5 = 1;
+
+                if ((((bFlags_1) & (0x01)) != 0)){
+                    LATAbits.LATA5 = 1;
+                    ((bFlags_1) &= ((~(0x01))));
+                }
                 float sGenTimer1InSec = sGenTimer1/(float)1000;
-                if (bRisingEdges/sGenTimer1InSec >= 2)
+                if (bRisingEdges/sGenTimer1InSec >= 1)
                 {
                     sLastState = 4;
                     sCurrentState = 5;
@@ -4312,10 +4344,12 @@ void main (void)
 
 
             case 5:
+
                 if ((((bFlags_1) & (0x01)) != 0)){
                     LATAbits.LATA5 = 1;
+                    ((bFlags_1) &= ((~(0x01))));
                 }
-                if (PORTCbits.RC3)
+                if (!PORTCbits.RC3)
                 {
                     sLastState = 5;
                     sCurrentState = 2;
@@ -4327,8 +4361,12 @@ void main (void)
 
 
             case 6:
-                LATAbits.LATA5 = 0;
-                if (PORTCbits.RC3)
+
+                if ((((bFlags_1) & (0x01)) == 0)){
+                    LATAbits.LATA5 = 0;
+                    ((bFlags_1) |= (0x01));
+                }
+                if (!PORTCbits.RC3)
                 {
                     sLastState = 6;
                     sCurrentState = 2;
@@ -4338,8 +4376,12 @@ void main (void)
 
 
             case 7:
-                LATAbits.LATA5 = 0;
-                if (!PORTCbits.RC3)
+
+                if ((((bFlags_1) & (0x01)) == 0)){
+                    LATAbits.LATA5 = 0;
+                    ((bFlags_1) |= (0x01));
+                }
+                if (!!PORTCbits.RC3)
                 {
                     sLastState = 7;
                     sCurrentState = 6;
@@ -4350,30 +4392,44 @@ void main (void)
 
             default:
 
+                if ((((bFlags_1) & (0x01)) == 0)){
+                    LATAbits.LATA5 = 0;
+                    ((bFlags_1) |= (0x01));
+                }
 
-
-                TMR1_Init();
-                PIE1bits.TMR1IE = 1;
                 ((bFlags_1) |= (0x10));
                 ((bFlags_1) &= ((~(0x04))));
 
+                for(int ii = 0; ii > 3; ii++){
+                    LATAbits.LATA4 = 1;
+                    sGenTimer1 = 0;
+                    while(sGenTimer1 < 500){}
+                    LATAbits.LATA4 = 0;
+                    sGenTimer1 = 0;
+                    while(sGenTimer1 < 500){}
+                }
 
-                break;
+                sCurrentState = 1;
+            break;
         }
 
     }
-# 338 "OpticalSpeedSensor.c"
+# 386 "OpticalSpeedSensor.c"
 }
-# 356 "OpticalSpeedSensor.c"
+# 404 "OpticalSpeedSensor.c"
 void __attribute__((picinterrupt(("")))) ISR_Routine(void)
 {
 
+    __asm("NOP");
+
     if (PIR1bits.TMR1IF)
     {
-# 371 "OpticalSpeedSensor.c"
+
+        __asm("NOP");
+# 421 "OpticalSpeedSensor.c"
         TMR1H = 0xFC;
         TMR1L = 0x18;
-# 384 "OpticalSpeedSensor.c"
+# 434 "OpticalSpeedSensor.c"
         sGenTimer1++;
         sGenTimer2++;
 
@@ -4390,6 +4446,8 @@ void __attribute__((picinterrupt(("")))) ISR_Routine(void)
 
 
         _delay((unsigned long)((10)*(16000000/4000.0)));
+
+        __asm("NOP");
 
 
         if(PORTAbits.RA2)
@@ -4408,9 +4466,9 @@ void __attribute__((picinterrupt(("")))) ISR_Routine(void)
 
         INTCONbits.INTF = 0;
     }
-# 427 "OpticalSpeedSensor.c"
+# 479 "OpticalSpeedSensor.c"
 }
-# 437 "OpticalSpeedSensor.c"
+# 489 "OpticalSpeedSensor.c"
 void TMR1_Init(void)
 {
 
@@ -4424,7 +4482,7 @@ void TMR1_Init(void)
 
 
     T1GCON = 0;
-# 467 "OpticalSpeedSensor.c"
+# 519 "OpticalSpeedSensor.c"
     PIR1bits.TMR1IF = 0;
 }
 
@@ -4437,12 +4495,12 @@ void ADC_Init(void)
     ADCON1bits.ADFM = 1;
     ADCON1bits.ADCS = 0x02;
     ADCON1bits.ADPREF = 0x00;
-# 502 "OpticalSpeedSensor.c"
+# 554 "OpticalSpeedSensor.c"
 }
 
 void SPI_MasterInit(void)
 {
-# 534 "OpticalSpeedSensor.c"
+# 586 "OpticalSpeedSensor.c"
     SSP1STAT = 0b00000000;
 
 
@@ -4460,7 +4518,7 @@ void SPI_MasterInit(void)
 
 void SPI_SlaveInit(void)
 {
-# 582 "OpticalSpeedSensor.c"
+# 634 "OpticalSpeedSensor.c"
     SSP1STAT = 0b01000000;
 
 
@@ -4480,11 +4538,11 @@ void RS232_Init(void)
 {
 
     BAUDCON = 0x00;
-# 610 "OpticalSpeedSensor.c"
+# 662 "OpticalSpeedSensor.c"
     TXSTA = 0x20;
-# 620 "OpticalSpeedSensor.c"
+# 672 "OpticalSpeedSensor.c"
     RCSTA = 0x90;
-# 633 "OpticalSpeedSensor.c"
+# 685 "OpticalSpeedSensor.c"
     SPBRGH = 0;
     SPBRGL = 12;
 
@@ -4527,7 +4585,17 @@ unsigned char UART_ChkRec_Err()
     }
 }
 
+void Enable_Int(void)
+{
+    INTCONbits.GIE = 1;
+    INTCONbits.PEIE = 1;
+}
 
+void Disable_Int(void)
+{
+    INTCONbits.GIE = 0;
+    INTCONbits.PEIE = 0;
+}
 
 void Enable_Timer1_Int(void)
 {

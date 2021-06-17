@@ -24,8 +24,10 @@ unsigned char bFlags_2;             // Status flags
 signed short swCurrentADCVal;       // Current ADC sample
 unsigned char bADCHigh;             // ADC high byte
 unsigned char bADCLow;              // ADC low byte
-unsigned long sGenTimer1;          // General use timer 1
-unsigned long sGenTimer2;          // General use timer 2
+unsigned long sGenTimer1;           // General use timer 1
+unsigned long sGenTimer2;           // General use timer 2
+
+unsigned short trigStatDebug;       // Variable that controls trigger status for purposes of debugging
 
 
 
@@ -55,7 +57,7 @@ unsigned long sGenTimer2;          // General use timer 2
 #define SENS_STAT           0x01    // If output is high, set  
 //#define LEDBLINK            0x02    // Indicates if LED is blinking
 #define LEDONOFF            0x04    // Indicates if LED is On or Off
-//#define EDGEHIGH            0x08    // Sensor high pulse is still high
+#define EDGEHIGH            0x08    // Sensor high pulse is still high
 #define BSLEDBLINK          0x10    // Status of BAD_STATE LED blinking
 //#define FlagName            0x20    // Unused  
 //#define FlagName            0x40    // Unused   
@@ -84,7 +86,7 @@ unsigned long sGenTimer2;          // General use timer 2
 
 #define TIMER_LIMIT 10000 // (10 seconds) If the timer exceeds this value, the program will ented the timeout_error state
 
-#define EDGE_TIME_MIN_RATIO 4 // (4 rotations per second) 
+#define EDGE_TIME_MIN_RATIO 1 // (1 rotation per second) (bolt rundown ~2.33 rotations per second)
 
 #define STAT_LED_OFF    LATAbits.LATA4 = 1  // Turn green Status LED off
 #define STAT_LED_ON     LATAbits.LATA4 = 0  // Turn green Status LED on
@@ -92,10 +94,10 @@ unsigned long sGenTimer2;          // General use timer 2
 #define SENS_STAT_OFF   LATAbits.LATA5 = 1  // Turn Sensor status off
 #define SENS_STAT_ON    LATAbits.LATA5 = 0  // Turn Sensor status on
 
-#define SENSOR_IN       PORTAbits.RA2       // Optical sensor input line, No light = pin low, Light = pin high 
+#define SENSOR_IN       PORTAbits.RA2       // Optical sensor input line, No light = pin high, Light = pin low
 
-#define TRG_STATUS      PORTCbits.RC3       // Tool trigger status, Low indicates trigger pulled
-
+#define TRG_STATUS      !PORTCbits.RC3      // Tool trigger status, Low indicates trigger pulled
+//#define TRG_STATUS      trigStatDebug       // For use when debugging
 
 
 // S T R U C T U R E S ---------------------------------------------------------
@@ -123,6 +125,8 @@ void RS232_Init(void);
 void UART_Write(unsigned short data);
 unsigned char UART_ChkRec_Err();
 unsigned short Read_ADC_Value(void);
+void Enable_Int(void);
+void Disable_Int(void);
 void Enable_Timer1_Int(void);
 void Disable_Timer1_Int(void);
 void Enable_External_Rising_Int(void);
